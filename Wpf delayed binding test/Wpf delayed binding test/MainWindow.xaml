@@ -1,0 +1,18 @@
+﻿<Window x:Class="Wpf_delayed_binding_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Wpf_delayed_binding_test"
+        Title="MainWindow" Height="350" Width="525"
+        WindowStartupLocation="Manual"
+        Left="10"
+        Top="700"
+        FocusManager.FocusedElement="{Binding ElementName=input_textbox}">
+    <StackPanel>
+        <TextBox x:Name="input_textbox" Text="{local:DelayBinding Text, Delay='0:0:0.5'}"/>
+        <TextBlock Text="{Binding Text}"/>
+        <TextBlock>
+            <Run Text="Update count: "/>
+            <Run Text="{Binding UpdateCount}"/>
+        </TextBlock>
+    </StackPanel>
+</Window>

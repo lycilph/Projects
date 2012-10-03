@@ -1,0 +1,25 @@
+﻿<Window x:Class="ListView_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="http://wpf.common.test/wpf"
+        Title="MainWindow"
+        Height="350"
+        Width="525"
+        Top="600"
+        Left="10">
+    
+    <Grid Margin="10">
+        <ListView ItemsSource="{Binding Posts}"
+                  local:ListViewAttachedProperties.AutoSizeColumns="True"
+                  local:ListViewAttachedProperties.SortCommand="{Binding SortCommand}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100" Header="Date" DisplayMemberBinding="{Binding Date, StringFormat={}{0:dd/MM/yyyy}}"/>
+                    <!--This is NOT needed if the header is a string, that describes the property to sort by local:ListViewAttachedProperties.SortProperty="Date"/>-->
+                    <GridViewColumn Width="100" Header="Text" DisplayMemberBinding="{Binding Text}" local:ListViewAttachedProperties.SortProperty="Text"/>
+                    <GridViewColumn Width="100" Header="Value" DisplayMemberBinding="{Binding Value, StringFormat=F2}" local:ListViewAttachedProperties.SortProperty="Value"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

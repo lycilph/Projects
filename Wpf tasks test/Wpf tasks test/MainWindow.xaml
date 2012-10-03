@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf_tasks_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="btvc"/>
+    </Window.Resources>
+    
+    <Grid>
+        <TextBlock Text="{Binding Status}"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="24"/>
+        
+        <Rectangle Fill="LightGray"
+                   Opacity="0.75"
+                   Visibility="{Binding IsBusy, Converter={StaticResource btvc}}"/>
+    </Grid>
+</Window>

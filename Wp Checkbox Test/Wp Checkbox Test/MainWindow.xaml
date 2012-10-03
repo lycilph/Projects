@@ -1,0 +1,28 @@
+﻿<Window x:Class="Wp_Checkbox_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Wp_Checkbox_Test"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate x:Key="selectable_item" DataType="{x:Type local:Item}">
+            <CheckBox Content="{Binding Name}"
+                      IsChecked="{Binding Selected}"
+                      Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=ToggleItemCommand}"
+                      CommandParameter="{Binding}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="item" DataType="{x:Type local:Item}">
+            <TextBlock Text="{Binding Name}"/>
+        </DataTemplate>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ItemsControl Grid.Column="0" ItemsSource="{Binding Items}" ItemTemplate="{StaticResource selectable_item}"/>
+        <ItemsControl Grid.Column="1" ItemsSource="{Binding SelectedItems}" ItemTemplate="{StaticResource item}"/>
+    </Grid>
+</Window>

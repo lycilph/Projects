@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Windows;
+
+namespace MahAppsMetroTest
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        private void ApplicationStartup(object sender, StartupEventArgs e)
+        {
+            BorderlessWindow borderless_window = new BorderlessWindow();
+            borderless_window.Show();
+        }
+    }
+}

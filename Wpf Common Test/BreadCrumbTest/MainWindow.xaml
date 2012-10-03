@@ -1,0 +1,33 @@
+﻿<Window x:Class="BreadCrumbTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <ItemsControl Margin="10" ItemsSource="{Binding Items}">
+            <ItemsControl.Resources>
+                <DataTemplate DataType="{x:Type sys:String}">
+                    <TextBlock x:Name="text_block" Text="{Binding}" Margin="0,0,10,0"/>
+                    <DataTemplate.Triggers>
+                        <EventTrigger RoutedEvent="FrameworkElement.Loaded" SourceName="text_block">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="text_block" Storyboard.TargetProperty="(UIElement.Opacity)" Duration="0:0:0.3" From="0" To="1"/>
+                                    <ThicknessAnimation Storyboard.TargetName="text_block" Storyboard.TargetProperty="Margin" Duration="0:0:1" From="0,0,0,0" To="0,0,10,0"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </DataTemplate.Triggers>
+                </DataTemplate>
+            </ItemsControl.Resources>
+            
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        
+        <Button Content="Add" Click="AddClick"/>
+    </StackPanel>
+</Window>

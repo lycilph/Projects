@@ -1,0 +1,13 @@
+﻿<Window x:Class="Wpf_ReactiveUI_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        Left="10"
+        Top="500"
+        FocusManager.FocusedElement="{Binding ElementName=input_textbox}">
+    <StackPanel>
+        <TextBox x:Name="input_textbox" Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Text="{Binding SearchText}"/>
+        <ItemsControl ItemsSource="{Binding SearchHistory}"/>
+    </StackPanel>
+</Window>

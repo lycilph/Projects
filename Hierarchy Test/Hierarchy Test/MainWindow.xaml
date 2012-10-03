@@ -1,0 +1,22 @@
+﻿<Window x:Class="Hierarchy_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Hierarchy_Test"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:DesignTimeData x:Key="design_time_data"/>
+        <local:DesignAndRunTimeDatacontext x:Key="data_source"
+                                           DesigntimeDatacontext="{StaticResource design_time_data}"
+                                           RuntimeDatacontext="{StaticResource design_time_data}"/>
+    </Window.Resources>
+    
+    <Window.InputBindings>
+        <KeyBinding Key="ESC" Command="{Binding CloseCommand}"/>
+        <KeyBinding Key="L" Command="{Binding ToggleLogCommand}"/>
+    </Window.InputBindings>
+    
+    <TreeView DataContext="{StaticResource data_source}"
+              ItemsSource="{Binding}"
+              ItemTemplate="{StaticResource level_1_template}"
+              SelectedItemChanged="SelectedNodeChanged"/>
+</Window>
