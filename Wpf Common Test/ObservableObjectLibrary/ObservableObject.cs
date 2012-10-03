@@ -25,6 +25,11 @@ namespace ObservableObjectLibrary
             MapDependencies();
         }
 
+        public void Reset()
+        {
+            ClearDependencies();
+        }
+
         public void UpdateDependencies()
         {
             ClearDependencies();
