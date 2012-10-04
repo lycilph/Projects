@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Wpf Common Test.vsmdi = Wpf Common Test.vsmdi
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationTest", "ValidationTest\ValidationTest.csproj", "{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Wpf Common Test.vsmdi
@@ -141,6 +143,16 @@ Global
 		{8EEC7B2F-3393-456A-8948-99FFE84754DE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{8EEC7B2F-3393-456A-8948-99FFE84754DE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8EEC7B2F-3393-456A-8948-99FFE84754DE}.Release|x86.ActiveCfg = Release|Any CPU
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Debug|x86.ActiveCfg = Debug|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Debug|x86.Build.0 = Debug|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Release|Any CPU.ActiveCfg = Release|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Release|Mixed Platforms.Build.0 = Release|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Release|x86.ActiveCfg = Release|x86
+		{82D07A5B-C0BE-4BAF-9AE6-300364CDA9E8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
