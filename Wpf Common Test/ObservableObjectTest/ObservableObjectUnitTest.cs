@@ -198,5 +198,25 @@ namespace ObservableObjectTest
             Assert.AreEqual(23, obj.Prop2);
             Assert.AreEqual(17, obj.Prop3);
         }
+
+        [TestMethod]
+        public void DrilldownTest()
+        {
+            var obj = new ReflectionDrillDownTestObject(1);
+            Assert.AreEqual(1, obj.inner.InnerProp1);
+            Assert.AreEqual(1, obj.Prop1);
+
+            int prop_call_count = 0;
+            int inner_prop_call_count = 0;
+            obj.Register("Prop1", () => prop_call_count++);
+            obj.inner.Register("InnerProp1", () => inner_prop_call_count++);
+            obj.inner.InnerProp1 = 42;
+
+
+            Assert.AreEqual(1, prop_call_count);
+            Assert.AreEqual(1, inner_prop_call_count);
+            Assert.AreEqual(42, obj.inner.InnerProp1);
+            Assert.AreEqual(42, obj.Prop1);
+        }
     }
 }
