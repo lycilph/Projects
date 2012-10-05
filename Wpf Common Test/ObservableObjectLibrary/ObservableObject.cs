@@ -20,9 +20,10 @@ namespace ObservableObjectLibrary
         private readonly List<PropertyChangedEventListener> property_changed_listeners = new List<PropertyChangedEventListener>();
         private readonly List<CollectionChangedEventListener> collection_changed_event_listeners = new List<CollectionChangedEventListener>(); 
 
-        public ObservableObject()
+        public ObservableObject(bool map_dependencies = true)
         {
-            MapDependencies();
+            if (map_dependencies)
+                MapDependencies();
         }
 
         public void Reset()
@@ -36,6 +37,8 @@ namespace ObservableObjectLibrary
             MapDependencies();
         }
 
+        #region Dependency mapping
+
         private void ClearDependencies()
         {
             property_dependency_map.Clear();
@@ -43,9 +46,7 @@ namespace ObservableObjectLibrary
             RemoveAllWeakEventListeners();
         }
 
-        #region Dependency mapping
-
-        private void MapDependencies()
+        protected void MapDependencies()
         {
             var members = GetType().GetMembers(MemberFlags);
             foreach (var member in members)
@@ -65,100 +66,77 @@ namespace ObservableObjectLibrary
         private void MapDependency(MemberInfo member, DependsUponAttribute attribute)
         {
             // Supported cases
-            // - [x] to property dependencies
-            // -- Property to property dependency (property_dependency_map)
-            // -- INotifyCollectionChanged field to property dependency (collection_changed_event_listeners)
-            // -- INotifyPropertyChanged field to property dependency (property_changed_listeners)
-            // --- With optional property
-            // --- Without optional property
-            // - [x] to method dependencies
-            // -- Property to method dependency (method_dependency_map)
-            // -- INotifyCollectionChanged field to method dependency (collection_changed_event_listeners)
-            // -- INotifyPropertyChanged field to method dependency (property_changed_listeners)
-            // --- With optional property
+            // - Property to (property|method) dependency (property_dependency_map)
+            // - INotifyCollectionChanged (property|field) to (property|method) dependency (collection_changed_event_listeners)
+            // - INotifyPropertyChanged (property|field) to (property|method) dependency (property_changed_listeners)
+            // --- With optional property (only forwards events if it matches the specified property)
             // --- Without optional property
 
-            // Property dependencies
+            // Target actions
+            IDictionary<string, List<string>> map = null;
+            PropertyChangedEventHandler property_handler = null;
+            NotifyCollectionChangedEventHandler collection_handler = null;
             if (IsProperty(member))
             {
-                // Property to property dependency (property_dependency_map)
-                if (IsProperty(attribute.Source) && !attribute.HasObject)
-                {
-                    AddDependency(property_dependency_map, member.Name, attribute.Source);
-                    return;
-                }
-
-                // INotifyCollectionChanged field to property dependency (collection_changed_event_listeners)
-                var collection_source = GetField<INotifyCollectionChanged>(attribute.Source);
-                if (collection_source != null && !attribute.HasObject)
-                {
-                    AddWeakEventListener(collection_source, (sender, args) => NotifyPropertyChanged(member.Name));
-                    return;
-                }
-
-                // INotifyPropertyChanged field to property dependency (property_changed_listeners)
-                var property_source = (attribute.HasObject
-                                           ? GetField<INotifyPropertyChanged>(attribute.Object)   // - With optional property
-                                           : GetField<INotifyPropertyChanged>(attribute.Source)); // - Without optional property
-                if (property_source != null)
-                {
-                    var handler = (attribute.HasObject
-                                       // - With optional property
-                                       ? (PropertyChangedEventHandler) ((sender, args) =>
-                                                                            {
-                                                                                if (args.PropertyName == attribute.Source)
-                                                                                    NotifyPropertyChanged(member.Name);
-                                                                            })
-                                       // - Without optional property
-                                       : (PropertyChangedEventHandler) ((sender, args) => NotifyPropertyChanged(member.Name)));
-
-                    AddWeakEventListener(property_source, handler);
-                    return;
-                }
+                map = property_dependency_map;
+                collection_handler = (sender, args) => NotifyPropertyChanged(member.Name);
+                property_handler = (attribute.HasObject
+                                      // - With optional property
+                                      ? (PropertyChangedEventHandler)((sender, args) =>
+                                      {
+                                          if (args.PropertyName == attribute.Source)
+                                              NotifyPropertyChanged(member.Name);
+                                      })
+                                      // - Without optional property
+                                      : (PropertyChangedEventHandler)((sender, args) => NotifyPropertyChanged(member.Name)));
             }
-            // Method dependencies
             else if (IsMethod(member))
             {
-                // Property to method dependency (method_dependency_map)
-                if (IsProperty(attribute.Source) && !attribute.HasObject)
-                {
-                    AddDependency(method_dependency_map, member.Name, attribute.Source);
-                    return;
-                }
-
-                // INotifyCollectionChanged field to method dependency (collection_changed_event_listeners)
-                var collection_source = GetField<INotifyCollectionChanged>(attribute.Source);
-                if (collection_source != null && !attribute.HasObject)
-                {
-                    AddWeakEventListener(collection_source, (sender, args) => ExecuteMethod(member.Name));
-                    return;
-                }
-
-                // INotifyPropertyChanged field to method dependency (property_changed_listeners)
-                var property_source = (attribute.HasObject
-                                          ? GetField<INotifyPropertyChanged>(attribute.Object)   // - With optional property
-                                          : GetField<INotifyPropertyChanged>(attribute.Source)); // - Without optional property
-                if (property_source != null)
-                {
-                    var handler = (attribute.HasObject
+                map = method_dependency_map;
+                collection_handler = (sender, args) => ExecuteMethod(member.Name);
+                property_handler = (attribute.HasObject
                                        // - With optional property
-                                       ? (PropertyChangedEventHandler) ((sender, args) =>
-                                                                            {
-                                                                                if (args.PropertyName == attribute.Source)
-                                                                                    ExecuteMethod(member.Name);
-                                                                            })
+                                       ? (PropertyChangedEventHandler)((sender, args) =>
+                                       {
+                                           if (args.PropertyName == attribute.Source)
+                                               ExecuteMethod(member.Name);
+                                       })
                                        // - Without optional property
-                                       : (PropertyChangedEventHandler) ((sender, args) => ExecuteMethod(member.Name)));
+                                       : (PropertyChangedEventHandler)((sender, args) => ExecuteMethod(member.Name)));
+            }
+            else
+                throw new ArgumentException(string.Format("Dependency target {0} must be either a Property or Method", member.Name));
 
-                    AddWeakEventListener(property_source, handler);
-                    return;
-                }
+            // Add dependency based on source type
+            var collection_source = GetValue<INotifyCollectionChanged>(attribute.Source);
+            if (collection_source != null)
+            {
+                // INotifyCollectionChanged property/field to property/method dependency
+                AddWeakEventListener(collection_source, collection_handler);
+                return;
+            }
+
+            var property_source = (attribute.HasObject
+                ? GetValue<INotifyPropertyChanged>(attribute.Object)   // - With optional property 
+                : GetValue<INotifyPropertyChanged>(attribute.Source)); // - Without optional property
+            if (property_source != null)
+            {
+                // INotifyPropertyChanged property/field to property/method dependency
+                AddWeakEventListener(property_source, property_handler);
+                return;
+            }
+
+            if (IsProperty(attribute.Source) && !attribute.HasObject)
+            {
+                // Property to property/method dependency
+                AddDependency(map, member.Name, attribute.Source);
+                return;
             }
 
             throw new ArgumentException(string.Format("Dependency {0} is not supported on member {1}", attribute, member.Name));
         }
 
-        private T GetField<T>(string name) where T : class
+        private T GetValue<T>(string name) where T : class
         {
             var field_info = GetType().GetField(name, MemberFlags);
             if (field_info != null)
@@ -167,6 +145,14 @@ namespace ObservableObjectLibrary
                 var field = field_info.GetValue(this) as T;
                 if (field != null)
                     return field;
+            }
+            var property_info = GetType().GetProperty(name, MemberFlags);
+            if (property_info != null)
+            {
+                // Does the source implement T
+                var property = property_info.GetValue(this, null) as T;
+                if (property != null)
+                    return property;
             }
             return null;
         }

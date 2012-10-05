@@ -202,21 +202,17 @@ namespace ObservableObjectTest
         [TestMethod]
         public void DrilldownTest()
         {
-            var obj = new ReflectionDrillDownTestObject(1);
-            Assert.AreEqual(1, obj.inner.InnerProp1);
-            Assert.AreEqual(1, obj.Prop1);
+            var obj = new CompositeTestObject();
 
-            int prop_call_count = 0;
-            int inner_prop_call_count = 0;
-            obj.Register("Prop1", () => prop_call_count++);
-            obj.inner.Register("InnerProp1", () => inner_prop_call_count++);
-            obj.inner.InnerProp1 = 42;
+            int count = 0;
+            obj.Register("Count", () => count = obj.Items.Count);
 
+            obj.Items.Add("Item 1");
+            obj.Items.Add("Item 2");
+            obj.Items.Add("Item 3");
 
-            Assert.AreEqual(1, prop_call_count);
-            Assert.AreEqual(1, inner_prop_call_count);
-            Assert.AreEqual(42, obj.inner.InnerProp1);
-            Assert.AreEqual(42, obj.Prop1);
+            Assert.AreEqual(3, obj.Items.Count);
+            Assert.AreEqual(3, count);
         }
     }
 }

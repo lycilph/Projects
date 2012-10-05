@@ -13,6 +13,9 @@ namespace ObservableObjectLibrary
         private const BindingFlags MemberFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance;
 
         private readonly Dictionary<string, object> values = new Dictionary<string, object>();
+        // Weak events for dependencies to child objects
+        private readonly List<PropertyChangedEventListener> property_changed_listeners = new List<PropertyChangedEventListener>();
+        private readonly List<CollectionChangedEventListener> collection_changed_event_listeners = new List<CollectionChangedEventListener>(); 
 
         public ObservableObjectV2()
         {
@@ -36,8 +39,6 @@ namespace ObservableObjectLibrary
         private void ParseAttribute(DependsUponV2Attribute attribute)
         {
             var elements = attribute.Source.Split(new char[] {'.'});
-
-            var member = 
         }
 
         #region Get and Set
