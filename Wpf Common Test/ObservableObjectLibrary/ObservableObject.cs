@@ -10,7 +10,13 @@ namespace ObservableObjectLibrary
 {
     public class ObservableObject : INotifyPropertyChanged
     {
-        private const BindingFlags MemberFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance;
+        #region Constants
+
+        private const BindingFlags MemberFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance; 
+
+        #endregion
+
+        #region Values and dependencies
 
         private readonly Dictionary<string, object> values = new Dictionary<string, object>();
         // Source to targets dependencies map
@@ -18,7 +24,9 @@ namespace ObservableObjectLibrary
         private readonly Dictionary<string, List<string>> method_dependency_map = new Dictionary<string, List<string>>();
         // Weak events for dependencies to child objects
         private readonly List<PropertyChangedEventListener> property_changed_listeners = new List<PropertyChangedEventListener>();
-        private readonly List<CollectionChangedEventListener> collection_changed_event_listeners = new List<CollectionChangedEventListener>(); 
+        private readonly List<CollectionChangedEventListener> collection_changed_event_listeners = new List<CollectionChangedEventListener>();  
+
+        #endregion
 
         public ObservableObject(bool map_dependencies = true)
         {
@@ -26,28 +34,19 @@ namespace ObservableObjectLibrary
                 MapDependencies();
         }
 
-        public void Reset()
-        {
-            ClearDependencies();
-        }
-
-        public void UpdateDependencies()
-        {
-            ClearDependencies();
-            MapDependencies();
-        }
-
         #region Dependency mapping
 
-        private void ClearDependencies()
+        public void ClearDependencies()
         {
             property_dependency_map.Clear();
             method_dependency_map.Clear();
             RemoveAllWeakEventListeners();
         }
 
-        protected void MapDependencies()
+        public void MapDependencies()
         {
+            ClearDependencies();
+
             var members = GetType().GetMembers(MemberFlags);
             foreach (var member in members)
             {

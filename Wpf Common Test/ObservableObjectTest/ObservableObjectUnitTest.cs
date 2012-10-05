@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
@@ -213,6 +214,19 @@ namespace ObservableObjectTest
 
             Assert.AreEqual(3, obj.Items.Count);
             Assert.AreEqual(3, count);
+        }
+
+        [TestMethod]
+        public void UpdateDependenciesTest()
+        {
+            var obj = new UpdateDependenciesTestObject();
+            Assert.AreEqual(obj.Items.Count, obj.Count);
+
+            obj.Items.Add("Item 1");
+            obj.Items.Add("Item 2");
+            obj.Items.Add("Item 3");
+
+            Assert.AreEqual(obj.Items.Count, obj.Count);
         }
     }
 }
