@@ -222,11 +222,16 @@ namespace ObservableObjectTest
             var obj = new UpdateDependenciesTestObject();
             Assert.AreEqual(obj.Items.Count, obj.Count);
 
+            int count = 0;
+            obj.Register("Count", () => count++);
+
             obj.Items.Add("Item 1");
             obj.Items.Add("Item 2");
             obj.Items.Add("Item 3");
 
             Assert.AreEqual(obj.Items.Count, obj.Count);
+            Assert.AreEqual(3, count);
+
         }
     }
 }

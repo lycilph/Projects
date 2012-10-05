@@ -5,13 +5,8 @@ namespace ObservableObjectTest
 {
     public class UpdateDependenciesTestObject : ObservableObject
     {
-        //public ObservableCollection<string> Items { get; set; }
-        public ObservableCollection<string> Items
-        {
-            get { return Get(() => Items, () => new ObservableCollection<string>()); }
-            set { Set(() => Items, value); }
-        }
-
+        public ObservableCollection<string> Items { get; set; }
+        
         public int Count
         {
             get { return Get(() => Count); }
@@ -24,11 +19,11 @@ namespace ObservableObjectTest
             Count = Items.Count;
         }
 
-        //public UpdateDependenciesTestObject() : base(false)
-        //{
-        //    Items = new ObservableCollection<string>();
-        //    Update();
-        //    MapDependencies();
-        //}
+        public UpdateDependenciesTestObject() : base(false)
+        {
+            Items = new ObservableCollection<string>();
+            Update();
+            MapDependencies();
+        }
     }
 }
