@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf Common Test", "Wpf Common Test\Wpf Common Test.csproj", "{B157257F-4F09-4040-8125-E8744365C443}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListView test", "ListView test\ListView test.csproj", "{EB1C64A2-DDF9-4C71-AFAE-27CFC3134AA8}"
