@@ -12,7 +12,6 @@ namespace MonoCecilRewriter
 {
     public class Rewriter
     {
-        // TODO: Find notifypropertychanged method in a smarter way
         // TODO: Add input arguments to program
         // TODO: Add a log
         // TODO: Add a post build event to library
@@ -32,7 +31,7 @@ namespace MonoCecilRewriter
         {
             Console.WriteLine(string.Format("   Rewriting {0} to call NotifyPropertyChanged", property_definition.Name));
             FieldDefinition backing_field = notify_property_class.Fields.Single(f => f.Name == string.Format("<{0}>k__BackingField", property_definition.Name));
-            MethodDefinition notify_method = notify_property_class.Methods.Single(m => m.Name == "NotifyPropertyChanged");
+            MethodDefinition notify_method = notify_property_class.GetNotifyPropertyChangedMethod();
 
             // Add local variable
             var bool_type = property_definition.Module.Import(typeof(bool));
@@ -87,7 +86,7 @@ namespace MonoCecilRewriter
         {
             Console.WriteLine(string.Format("   Rewriting {0} to raise collection notification method", property_definition.Name));
             FieldDefinition backing_field = notify_property_class.Fields.Single(f => f.Name == string.Format("<{0}>k__BackingField", property_definition.Name));
-            MethodDefinition notify_method = notify_property_class.Methods.Single(m => m.Name == "NotifyPropertyChanged");
+            MethodDefinition notify_method = notify_property_class.GetNotifyPropertyChangedMethod();
             MethodDefinition collection_changed_method = notify_property_class.Methods.Single(m => m.Name == property_definition.Name + "CollectionNotification");
             MethodReference event_constructor = assembly.MainModule.Import(typeof(NotifyCollectionChangedEventHandler).GetConstructors()[0]);
 

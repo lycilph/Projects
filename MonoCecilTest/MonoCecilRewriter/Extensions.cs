@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Mono.Cecil;
 using System.Reflection;
+using Mono.Cecil.Cil;
 
 namespace MonoCecilRewriter
 {
@@ -31,7 +32,6 @@ namespace MonoCecilRewriter
         {
             return property.PropertyType.Resolve().Interfaces.Any(i => i.Name == "INotifyCollectionChanged");
         }
-
 
         private static string GetAssemblyName(string type_name)
         {
@@ -66,6 +66,24 @@ namespace MonoCecilRewriter
             }
 
             return Type.GetType(assembly_qualified_name);
+        }
+
+        public static MethodDefinition GetNotifyPropertyChangedMethod(this TypeDefinition notify_property_class)
+        {
+            foreach (var method in notify_property_class.Methods)
+            {
+                foreach (var instruction in method.Body.Instructions)
+                {
+                    if (instruction.OpCode == OpCodes.Callvirt)
+                    {
+                        MethodReference method_ref = instruction.Operand as MethodReference;
+                        if (method_ref != null && method_ref.DeclaringType.FullName == "System.ComponentModel.PropertyChangedEventHandler" && method_ref.Name == "Invoke")
+                            return method;
+                    }
+                }
+            }
+
+            return null;
         }
     }
 }
