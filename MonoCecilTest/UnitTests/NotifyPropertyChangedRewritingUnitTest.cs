@@ -8,10 +8,10 @@ using TestObjects;
 namespace UnitTests
 {
     [TestClass]
-    public class InDirectPropertyDependencyTest
+    public class NotifyPropertyChangedRewritingUnitTest
     {
         [TestMethod]
-        public void InDirectPropertyDependency()
+        public void InDirectPropertyDependencyTest()
         {
             var changed_properties = new List<string>();
             var obj = new InDirectPropertyDependency();
@@ -25,6 +25,17 @@ namespace UnitTests
             obj.Prop2 = 42;
             Assert.IsTrue(changed_properties.Contains("Prop2"));
             Assert.IsTrue(changed_properties.Contains("Prop3"));
+        }
+
+        [TestMethod]
+        public void DependsOnCollectionTest()
+        {
+            var changed_properties = new List<string>();
+            var obj = new DependsOnCollection();
+            obj.PropertyChanged += (sender, args) => changed_properties.Add(args.PropertyName);
+
+            obj.Items.Add("Item 1");
+            Assert.IsTrue(changed_properties.Contains("Count"));
         }
     }
 }

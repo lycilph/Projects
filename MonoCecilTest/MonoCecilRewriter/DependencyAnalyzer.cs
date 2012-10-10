@@ -11,6 +11,20 @@ namespace MonoCecilRewriter
     {
         private readonly DependencyMap dependencies = new DependencyMap();
 
+        private void AnalyseDependency(PropertyDefinition source, PropertyDefinition target)
+        {
+            if (source.IsNotifyCollectionChangedProperty())
+            {
+                Console.WriteLine("         Dependency is a INotifyCollectionChanged");
+                dependencies.AddCollectionDependency(source.Name, target.Name);
+            }
+            else
+            {
+                Console.WriteLine("         Dependency is a \"normal\" property");
+                dependencies.AddPropertyDependency(source.Name, target.Name);
+            }
+        }
+
         private void AnalyseMethod(PropertyDefinition target, MethodDefinition method)
         {
             foreach (var instruction in method.Body.Instructions)
@@ -35,8 +49,8 @@ namespace MonoCecilRewriter
                             var source = operand.GetPropertyFromGetter();
                             if (source.SetMethod != null)
                             {
-                                Console.WriteLine("      Found method call to " + operand.Name + " (new dependency)");
-                                dependencies.Add(source.Name, target.Name);
+                                Console.WriteLine("      Found method call to " + source.Name + " (new dependency)");
+                                AnalyseDependency(source, target);
                             }
                             // Else analyse the property getter
                             else

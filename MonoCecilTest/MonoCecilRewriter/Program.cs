@@ -4,29 +4,50 @@ using System.Linq;
 using System.Text;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
+using System.IO;
+using System.Diagnostics;
+
+// Supported cases
+// - Autoproperty calls NotifyPropertyChanged on itself
+// - Autoproperty calls NotifyPropertyChanged for dependent properties
+// - Collection properties calls NotifyPropertyChanged for dependent properties
+
+// TODO:
+// - Normal properties should call NotifyPropertyChanged for dependent properties
 
 namespace MonoCecilRewriter
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Reading the assembly");
-            AssemblyDefinition assembly = AssemblyDefinition.ReadAssembly(@"C:\Private\GitHub\Projects\MonoCecilTest\TestObjects\bin\Debug\TestObjects.dll");
+            //if (args.Length == 0)
+            //{
+            //    Console.WriteLine("One input found");
+            //    return;
+            //}
+
+            //string path = args[0];
+            string path = @"C:\Private\GitHub\Projects\MonoCecilTest\TestObjects\bin\Debug\TestObjects.dll";
+            string filename = Path.GetFileName(path);
+            string folder = Path.GetDirectoryName(path);
+
+            Console.WriteLine("Reading the assembly " + path);
+            AssemblyDefinition assembly = AssemblyDefinition.ReadAssembly(path);
 
             var notify_property_classes = assembly.GetNotifyPropertyChangedClasses();
             foreach (var notify_property_class in notify_property_classes)
             {
                 var map = DependencyAnalyzer.Execute(notify_property_class);
-                Console.WriteLine("Dependency map for " + notify_property_class.Name);
                 map.Dump();
-                Rewriter.Execute(notify_property_class, map);
+                Rewriter.Execute(assembly, notify_property_class, map);
             }
 
-            Console.WriteLine("Writing the modified assembly");
-            assembly.Name.Name = assembly.Name.Name.Replace("TestObjects", "TestObjectsModified");
-            assembly.Write(@"C:\Private\GitHub\Projects\MonoCecilTest\TestObjects\bin\Debug\TestObjectsModified.dll");
+            string modified_path = path.Replace(".dll", "Modified.dll");
+            assembly.Name.Name = assembly.Name.Name + "Modified";
+
+            Console.WriteLine("Writing the modified assembly " + modified_path);
+            assembly.Write(modified_path);
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();

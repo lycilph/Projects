@@ -4,25 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Collections.Specialized;
 
 namespace TestObjects
 {
     public class DependsOnCollection : INotifyPropertyChanged
     {
-        private ObservableCollection<string> Items = new ObservableCollection<string>();
-        public ObservableCollection<string> PropItems
-        {
-            get { return Items; }
-            set
-            {
-                Items = value;
-                Items.CollectionChanged += (sender, args) => NotifyPropertyChanged("Count");
-            }
-        }
+        public ObservableCollection<string> Items { get; set; }
 
         public int Count
         {
             get { return Items.Count; }
+        }
+
+        public DependsOnCollection()
+        {
+            Items = new ObservableCollection<string>();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

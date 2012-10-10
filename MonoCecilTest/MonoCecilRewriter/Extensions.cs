@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Mono.Cecil;
+using System.Reflection;
 
 namespace MonoCecilRewriter
 {
@@ -24,6 +25,47 @@ namespace MonoCecilRewriter
         public static PropertyDefinition GetPropertyFromGetter(this MethodDefinition method)
         {
             return method.DeclaringType.Properties.Single(p => p.GetMethod.Name == method.Name);
+        }
+
+        public static bool IsNotifyCollectionChangedProperty(this PropertyDefinition property)
+        {
+            return property.PropertyType.Resolve().Interfaces.Any(i => i.Name == "INotifyCollectionChanged");
+        }
+
+
+        private static string GetAssemblyName(string type_name)
+        {
+            foreach (Assembly current_assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                Type t = current_assembly.GetType(type_name, false, true);
+                if (t != null)
+                    return current_assembly.FullName;
+            }
+            return string.Empty;
+        }
+
+        public static Type GetAssemblyQualifiedName(this FieldDefinition field)
+        {
+            string fullname = field.FieldType.Namespace + "." + field.FieldType.Name;
+            string assembly_name = GetAssemblyName(fullname);
+            string assembly_qualified_name;
+
+            var generic_instance = field.FieldType as GenericInstanceType;
+            if (generic_instance != null)
+            {
+                if (generic_instance.GenericArguments.Count > 1)
+                    throw new ArgumentException("Only 1 generic argument is supported");
+                string parameter = generic_instance.GenericArguments[0].FullName;
+                string assembly_qualified_parameter = Type.GetType(parameter).AssemblyQualifiedName;
+
+                assembly_qualified_name = string.Format("{0}[[{1}]],{2}", fullname, assembly_qualified_parameter, assembly_name);
+            }
+            else
+            {
+                assembly_qualified_name = string.Format("{0},{1}", fullname, assembly_name);
+            }
+
+            return Type.GetType(assembly_qualified_name);
         }
     }
 }
