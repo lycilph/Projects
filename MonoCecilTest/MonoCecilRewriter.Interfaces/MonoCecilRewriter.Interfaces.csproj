@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6A486132-F3F5-4C51-8BCC-D20E63AD888F}</ProjectGuid>
+    <ProjectGuid>{9D3F049D-76D6-46AC-93BB-4F25A057E41B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestObjects</RootNamespace>
-    <AssemblyName>TestObjects</AssemblyName>
+    <RootNamespace>MonoCecilRewriter.Interfaces</RootNamespace>
+    <AssemblyName>MonoCecilRewriter.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,23 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DependsOnCollection.cs" />
-    <Compile Include="DerivedClass.cs" />
-    <Compile Include="InDirectPropertyDependency.cs" />
+    <Compile Include="NotifyPropertyChangedAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WrapField.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MonoCecilRewriter.Interfaces\MonoCecilRewriter.Interfaces.csproj">
-      <Project>{9D3F049D-76D6-46AC-93BB-4F25A057E41B}</Project>
-      <Name>MonoCecilRewriter.Interfaces</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

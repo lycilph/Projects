@@ -1,24 +1,11 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using MonoCecilRewriter.Interfaces;
 
 namespace TestObjects
 {
     [NotifyPropertyChanged(true)]
-    public class DependsOnCollection : INotifyPropertyChanged
+    public class BaseClass : INotifyPropertyChanged
     {
-        public ObservableCollection<string> Items { get; set; }
-
-        public int Count
-        {
-            get { return Items.Count; }
-        }
-
-        public DependsOnCollection()
-        {
-            Items = new ObservableCollection<string>();
-        }
-
         public event PropertyChangedEventHandler PropertyChanged;
         protected void NotifyPropertyChanged(string property_name)
         {
@@ -27,4 +14,6 @@ namespace TestObjects
                 handler(this, new PropertyChangedEventArgs(property_name));
         }
     }
+
+    public class DerivedClass : BaseClass {}
 }
