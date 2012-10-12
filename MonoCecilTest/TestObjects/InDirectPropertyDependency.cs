@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.ComponentModel;
+﻿using System.ComponentModel;
+using MonoCecilRewriter.Interfaces;
 
 namespace TestObjects
 {
+    [NotifyPropertyChanged]
     public class InDirectPropertyDependency : INotifyPropertyChanged
     {
         public int Prop1 { get; set; }

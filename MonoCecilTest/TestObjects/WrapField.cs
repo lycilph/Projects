@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.ComponentModel;
-using System.Collections.ObjectModel;
+﻿using System.ComponentModel;
+using MonoCecilRewriter.Interfaces;
 
 namespace TestObjects
 {
+    [NotifyPropertyChanged]
     public class WrapField : INotifyPropertyChanged
     {
         public int Field = 23;

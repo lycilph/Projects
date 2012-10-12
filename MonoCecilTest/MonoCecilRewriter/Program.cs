@@ -6,6 +6,9 @@ using Mono.Cecil;
 using Mono.Cecil.Cil;
 using System.IO;
 using System.Diagnostics;
+using NLog.Config;
+using NLog.Targets;
+using NLog;
 
 // Supported cases
 // - Autoproperty calls NotifyPropertyChanged on itself
@@ -20,7 +23,6 @@ using System.Diagnostics;
 // TODO: Normal properties should call NotifyPropertyChanged for dependent properties
 // TODO: Add a log
 // TODO: Add a post build event to library
-// TODO: What about classes derived from INotifyPropertyChanged classes???
 
 namespace MonoCecilRewriter
 {
@@ -28,6 +30,10 @@ namespace MonoCecilRewriter
     {
         static void Main(string[] args)
         {
+            SetupLogging();
+            Logger log = LogManager.GetCurrentClassLogger();
+            log.Trace("Starting program");
+
             //if (args.Length == 0)
             //{
             //    Console.WriteLine("One input found");
@@ -36,8 +42,6 @@ namespace MonoCecilRewriter
 
             //string path = args[0];
             const string path = @"C:\Private\GitHub\Projects\MonoCecilTest\TestObjects\bin\Debug\TestObjects.dll";
-            string filename = Path.GetFileName(path);
-            string folder = Path.GetDirectoryName(path);
 
             Console.WriteLine("Reading the assembly " + path);
             AssemblyDefinition assembly = AssemblyDefinition.ReadAssembly(path);
@@ -62,6 +66,29 @@ namespace MonoCecilRewriter
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
+
+            log.Trace("Exiting program");
+        }
+
+        private static void SetupLogging()
+        {
+            // Step 1. Create configuration object 
+            LoggingConfiguration configuration = new LoggingConfiguration();
+
+            // Step 2. Create targets and add them to the configuration 
+            NLogViewerTarget log_viewer_target = new NLogViewerTarget();
+            configuration.AddTarget("viewer", log_viewer_target);
+
+            // Step 3. Set target properties 
+            log_viewer_target.Name = "viewer";
+            log_viewer_target.Address = "udp://127.0.0.1:9999";
+
+            // Step 4. Define rules
+            LoggingRule log_viewer_rule = new LoggingRule("*", LogLevel.Trace, log_viewer_target);
+            configuration.LoggingRules.Add(log_viewer_rule);
+
+            // Step 5. Activate the configuration
+            LogManager.Configuration = configuration;
         }
     }
 }

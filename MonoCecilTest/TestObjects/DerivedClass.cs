@@ -3,7 +3,7 @@ using MonoCecilRewriter.Interfaces;
 
 namespace TestObjects
 {
-    [NotifyPropertyChanged(true)]
+    [NotifyPropertyChanged]
     public class BaseClass : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;

@@ -4,7 +4,7 @@ using MonoCecilRewriter.Interfaces;
 
 namespace TestObjects
 {
-    [NotifyPropertyChanged(true)]
+    [NotifyPropertyChanged]
     public class DependsOnCollection : INotifyPropertyChanged
     {
         public ObservableCollection<string> Items { get; set; }

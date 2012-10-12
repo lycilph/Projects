@@ -43,6 +43,7 @@
     <Compile Include="DependsOnCollection.cs" />
     <Compile Include="DerivedClass.cs" />
     <Compile Include="InDirectPropertyDependency.cs" />
+    <Compile Include="NoNotifyPropertyChangedMethodClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WrapField.cs" />
   </ItemGroup>

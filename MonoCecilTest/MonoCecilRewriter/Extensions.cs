@@ -10,40 +10,72 @@ namespace MonoCecilRewriter
 {
     public static class Extensions
     {
-        public static bool ImplementsINotifyPropertyChanged(this TypeDefinition type_definition)
+        public static bool ImplementsInterface(this PropertyDefinition property, string interface_name)
         {
-            if (type_definition.Interfaces.Any(i => i.Name == "INotifyPropertyChanged"))
+            return property.PropertyType.Resolve().Interfaces.Any(i => i.Name == interface_name);
+        }
+
+        public static bool ImplementsInterface(this TypeDefinition type_definition, string interface_name)
+        {
+            if (type_definition.Interfaces.Any(i => i.Name == interface_name))
                 return true;
-            if (type_definition.BaseType != null && type_definition.BaseType.Resolve().ImplementsINotifyPropertyChanged())
+            if (type_definition.BaseType != null && type_definition.BaseType.Resolve().ImplementsInterface(interface_name))
                 return true;
             return false;
         }
 
-        public static bool HasNotifyPropertyChangedAttribute(this TypeDefinition type_definition)
+        public static bool HasAttribute(this TypeDefinition type_definition, string attribute_name)
         {
-            if (type_definition.HasCustomAttributes && type_definition.CustomAttributes.Any(a => a.AttributeType.Name == "NotifyPropertyChangedAttribute"))
+            if (type_definition.HasCustomAttributes && type_definition.CustomAttributes.Any(a => a.AttributeType.Name == attribute_name))
                 return true;
-            if (type_definition.BaseType != null && type_definition.BaseType.Resolve().HasNotifyPropertyChangedAttribute())
+            if (type_definition.BaseType != null && type_definition.BaseType.Resolve().HasAttribute(attribute_name))
                 return true;
             return false;
         }
 
         public static IEnumerable<TypeDefinition> GetNotifyPropertyChangedClasses(this AssemblyDefinition assembly)
         {
-            return assembly.MainModule.Types.Where(t => t.ImplementsINotifyPropertyChanged() && t.HasNotifyPropertyChangedAttribute());
+            return assembly.MainModule.Types.Where(t => t.ImplementsInterface("INotifyPropertyChanged") && t.HasAttribute("NotifyPropertyChangedAttribute"));
         }
 
-        //public static IEnumerable<FieldDefinition> GetPublicNonBackingFields(this TypeDefinition notify_property_class)
-        //{
-        //    return notify_property_class.Fields.Where(f => f.IsPublic && !f.Name.Contains("k__BackingField"));
-        //}
+        public static IEnumerable<FieldDefinition> GetPublicNonBackingFields(this TypeDefinition type_definition)
+        {
+            return type_definition.Fields.Where(f => f.IsPublic && !f.Name.Contains("k__BackingField"));
+        }
+
+        public static MethodDefinition FindNotifyPropertyChangedMethod(this TypeDefinition type_definition)
+        {
+            foreach (var method in type_definition.Methods)
+            {
+                if (method.HasBody)
+                {
+                    foreach (var instruction in method.Body.Instructions)
+                    {
+                        if (instruction.OpCode == OpCodes.Callvirt)
+                        {
+                            MethodReference method_ref = instruction.Operand as MethodReference;
+                            if (method_ref != null &&
+                                method_ref.DeclaringType.FullName == "System.ComponentModel.PropertyChangedEventHandler" &&
+                                method_ref.Name == "Invoke")
+                                return method;
+                        }
+                    }
+                }
+            }
+
+            // No method found try base class
+            if (type_definition.BaseType != null)
+                return type_definition.BaseType.Resolve().FindNotifyPropertyChangedMethod();
+            
+            return null;
+        }
+
+        public static PropertyDefinition FindPropertyFromGetterMethod(this MethodDefinition method)
+        {
+            return method.DeclaringType.Properties.Single(p => p.GetMethod.Name == method.Name);
+        }
 
 
-
-        //public static IEnumerable<TypeDefinition> GetNotifyPropertyChangedClasses(this AssemblyDefinition assembly)
-        //{
-        //    return assembly.MainModule.Types.Where(t => t.Interfaces.Any(it => it.Name == "INotifyPropertyChanged"));
-        //}
 
         //public static IEnumerable<PropertyDefinition> GetAutoProperties(this TypeDefinition notify_property_class)
         //{
@@ -51,21 +83,6 @@ namespace MonoCecilRewriter
         //                                       .Select(f => f.Name.Substring(1, f.Name.IndexOf("k__BackingField", StringComparison.InvariantCulture) - 2))
         //                                       .Select(f => notify_property_class.Properties.Single(p => p.Name == f))
         //                                       .ToList();
-        //}
-
-        //public static IEnumerable<FieldDefinition> GetPublicNonBackingFields(this TypeDefinition notify_property_class)
-        //{
-        //    return notify_property_class.Fields.Where(f => f.IsPublic && !f.Name.Contains("k__BackingField"));
-        //}
-
-        //public static PropertyDefinition GetPropertyFromGetter(this MethodDefinition method)
-        //{
-        //    return method.DeclaringType.Properties.Single(p => p.GetMethod.Name == method.Name);
-        //}
-
-        //public static bool IsNotifyCollectionChangedProperty(this PropertyDefinition property)
-        //{
-        //    return property.PropertyType.Resolve().Interfaces.Any(i => i.Name == "INotifyCollectionChanged");
         //}
 
         //private static string GetAssemblyName(string type_name)
@@ -101,24 +118,6 @@ namespace MonoCecilRewriter
         //    }
 
         //    return Type.GetType(assembly_qualified_name);
-        //}
-
-        //public static MethodDefinition GetNotifyPropertyChangedMethod(this TypeDefinition notify_property_class)
-        //{
-        //    foreach (var method in notify_property_class.Methods)
-        //    {
-        //        foreach (var instruction in method.Body.Instructions)
-        //        {
-        //            if (instruction.OpCode == OpCodes.Callvirt)
-        //            {
-        //                MethodReference method_ref = instruction.Operand as MethodReference;
-        //                if (method_ref != null && method_ref.DeclaringType.FullName == "System.ComponentModel.PropertyChangedEventHandler" && method_ref.Name == "Invoke")
-        //                    return method;
-        //            }
-        //        }
-        //    }
-
-        //    return null;
         //}
     }
 }
