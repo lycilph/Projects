@@ -77,6 +77,7 @@ namespace NotifyPropertyWeaver
                 configuration.AddTarget("file", file_target);
 
                 file_target.FileName = LogFile;
+                file_target.DeleteOldFileOnStartup = true;
 
                 LoggingRule log_file_rule = new LoggingRule("*", LogLevel.Trace, file_target);
                 configuration.LoggingRules.Add(log_file_rule);
