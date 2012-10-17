@@ -1,17 +1,17 @@
 ﻿using System.Collections.Specialized;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-//using NLog;
+using NLog;
 
 namespace NotifyPropertyWeaver.Tasks
 {
     public class AddCollectionNotificationMethodTask
     {
-        //private static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         public static MethodDefinition Execute(PropertyDefinition property_definition, MethodDefinition notify_method, DependencyMap map)
         {
-            //log.Trace("\t\t\t\t\tAdding collection notification method for " + property_definition.Name);
+            log.Trace("\t\t\t\t\tAdding collection notification method for " + property_definition.Name);
 
             // Create method
             TypeReference return_type = property_definition.Module.Import(typeof (void));
@@ -31,7 +31,7 @@ namespace NotifyPropertyWeaver.Tasks
             ILProcessor processor = collection_notification.Body.GetILProcessor();
             foreach (var target in map.GetDependenciesFor(property_definition.Name))
             {
-                //log.Trace("\t\t\t\t\t\tAdding dependency " + target);
+                log.Trace("\t\t\t\t\t\tAdding dependency " + target);
                 processor.Emit(OpCodes.Ldarg_0);
                 processor.Emit(OpCodes.Ldstr, target);
                 processor.Emit(OpCodes.Call, notify_method);

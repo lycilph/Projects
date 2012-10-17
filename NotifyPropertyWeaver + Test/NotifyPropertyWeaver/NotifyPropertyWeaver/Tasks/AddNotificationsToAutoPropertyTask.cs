@@ -1,12 +1,12 @@
 ﻿using Mono.Cecil;
 using Mono.Cecil.Cil;
-//using NLog;
+using NLog;
 
 namespace NotifyPropertyWeaver.Tasks
 {
     public static class AddNotificationsToAutoPropertyTask
     {
-        //private static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         public static void Execute(PropertyDefinition property_definition, MethodDefinition notify_method, DependencyMap map)
         {
@@ -43,7 +43,7 @@ namespace NotifyPropertyWeaver.Tasks
             // Add notifications for dependent properties
             foreach (var target in map.GetDependenciesFor(property_definition.Name))
             {
-                //log.Trace("\t\t\t\t\tAdding dependency " + target);
+                log.Trace("\t\t\t\t\tAdding dependency " + target);
                 processor.Emit(OpCodes.Ldarg_0);
                 processor.Emit(OpCodes.Ldstr, target);
                 processor.Emit(OpCodes.Call, notify_method);

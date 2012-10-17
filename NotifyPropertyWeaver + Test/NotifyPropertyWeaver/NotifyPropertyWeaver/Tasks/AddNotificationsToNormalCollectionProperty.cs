@@ -3,13 +3,13 @@ using System.Collections.Specialized;
 using System.Linq;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-//using NLog;
+using NLog;
 
 namespace NotifyPropertyWeaver.Tasks
 {
     public class AddNotificationsToNormalCollectionProperty
     {
-        //private static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         public static void Execute(PropertyDefinition property_definition, MethodDefinition notify_method, MethodDefinition collection_notification_method)
         {
@@ -21,7 +21,7 @@ namespace NotifyPropertyWeaver.Tasks
                     var method = instruction.Operand as MethodDefinition;
                     if (method != null && method == notify_method)
                     {
-                        //log.Trace("\t\t\t\t\tBailing out, notification found in property");
+                        log.Trace("\t\t\t\t\tBailing out, notification found in property");
                         return;
                     }
                 }

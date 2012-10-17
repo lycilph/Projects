@@ -1,12 +1,12 @@
 ﻿using Mono.Cecil;
 using Mono.Cecil.Cil;
-//using NLog;
+using NLog;
 
 namespace NotifyPropertyWeaver
 {
     public class DependencyAnalyzer
     {
-        //private static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         private DependencyMap map;
 
@@ -31,9 +31,9 @@ namespace NotifyPropertyWeaver
                     if (operand == null)
                     {
                         var operand_reference = instruction.Operand as MethodReference;
-                        //log.Trace(operand_reference != null
-                        //                      ? "\t\t\t\tFound reference to " + operand_reference.Name + " (stopping search)"
-                        //                      : "\t\t\t\tUnknown operand (stopping search)");
+                        log.Trace(operand_reference != null
+                                              ? "\t\t\t\tFound reference to " + operand_reference.Name + " (stopping search)"
+                                              : "\t\t\t\tUnknown operand (stopping search)");
                     }
                     else
                     {
@@ -44,20 +44,20 @@ namespace NotifyPropertyWeaver
                             var source = operand.FindPropertyFromGetterMethod();
                             if (source.SetMethod != null)
                             {
-                                //log.Trace(string.Format("\t\t\t\tFound call to {0} (new dependency)", source.Name));
+                                log.Trace(string.Format("\t\t\t\tFound call to {0} (new dependency)", source.Name));
                                 map.Add(source.Name, target.Name);
                             }
                             // Else analyse the property getter
                             else
                             {
-                                //log.Trace("\t\t\t\tFound call to " + operand.Name + " (continuing search)");
+                                log.Trace("\t\t\t\tFound call to " + operand.Name + " (continuing search)");
                                 AnalyseMethod(target, operand);
                             }
                         }
                         // Else analyse the method
                         else
                         {
-                            //log.Trace("\t\t\t\tFound call to " + operand.Name + " (continuing search)");
+                            log.Trace("\t\t\t\tFound call to " + operand.Name + " (continuing search)");
                             AnalyseMethod(target, operand);
                         }
                     }

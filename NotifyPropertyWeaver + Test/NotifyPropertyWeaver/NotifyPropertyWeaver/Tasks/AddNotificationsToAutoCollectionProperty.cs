@@ -2,17 +2,17 @@
 using System.Collections.Specialized;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-//using NLog;
+using NLog;
 
 namespace NotifyPropertyWeaver.Tasks
 {
     public class AddNotificationsToAutoCollectionProperty
     {
-        //private static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         public static void Execute(PropertyDefinition property_definition, MethodDefinition notify_method, MethodDefinition collection_notification_method)
         {
-            //log.Trace(string.Format("\t\t\t\t\tRewriting {0} to raise collection notification method", property_definition.Name));
+            log.Trace(string.Format("\t\t\t\t\tRewriting {0} to raise collection notification method", property_definition.Name));
 
             // Find backing field
             FieldDefinition backing_field = property_definition.GetAutoPropertyBackingField();

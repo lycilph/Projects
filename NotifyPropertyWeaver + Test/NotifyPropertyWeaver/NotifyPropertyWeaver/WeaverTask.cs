@@ -6,8 +6,6 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 
-// TODO: add logging
-
 namespace NotifyPropertyWeaver
 {
     public class WeaverTask : Task
