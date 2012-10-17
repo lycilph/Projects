@@ -1,17 +1,22 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using MonoCecilRewriter.Interfaces;
 
 namespace TestObjects
 {
     [NotifyPropertyChanged]
-    public class WrapField : INotifyPropertyChanged
+    public class DependsOnAutoCollectionProperty : INotifyPropertyChanged
     {
-        public int Field = 23;
-        public int Property { get; set; }
+        public ObservableCollection<string> Items { get; set; }
 
-        public WrapField()
+        public int Count
         {
-            Property = 42;
+            get { return Items.Count; }
+        }
+
+        public DependsOnAutoCollectionProperty()
+        {
+            Items = new ObservableCollection<string>();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -1,24 +1,29 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Mono.Cecil;
-using System.Collections.Generic;
-using Mono.Cecil.Cil;
+using MonoCecilRewriter.Tasks;
+using NLog;
 
 namespace MonoCecilRewriter
 {
     // Analysis steps
-    // - Find classes to process (ProcessClassTask)
-    // - - Find NotifyPropertyChanged method (FindOrAddNotifyPropertyChangedMethodTask)
-    // - - Find fields to wrap (WrapFieldTask)
+    // - Find classes to process
+    // - - Find NotifyPropertyChanged method
     // - - Find dependencies
-    // - - Find auto properties to instrument (InstrumentAutoPropertyTask)
-    // - - Find collection properties to instrument (InstrumentCollectionPropertyTask)
-    // - - Find collection properties to generate notification methods for (AddCollectionNotificationMethodTask)
+    // - - Find auto properties to instrument
+    // - - Find collection auto properties to instrument
+    // - - Find collection properties to generate notification methods for
+    // - - Find "normal" properties to instrument
+    // - - Find "normal" collection properties to instrument
 
     public class Analyzer
     {
+        public static readonly Logger log = LogManager.GetCurrentClassLogger();
+
         private readonly AssemblyDefinition assembly;
-        private List<TypeDefinition> notify_property_classes;
+
+        // Working data
+        private MethodDefinition notify_property_changed_method;
+        private readonly DependencyMap dependency_map = new DependencyMap();
 
         public Analyzer(AssemblyDefinition assembly)
         {
@@ -27,53 +32,76 @@ namespace MonoCecilRewriter
 
         public void Execute()
         {
-            Console.WriteLine("Finding classes to process");
-            notify_property_classes = assembly.GetNotifyPropertyChangedClasses().ToList();
-            foreach (var notify_property_class in notify_property_classes)
-                Console.WriteLine("   Found " + notify_property_class.Name);
-
-            FindNotifyPropertyChangedMethod();
-            FindFieldsToWrap();
-            FindDependencies();
-            // Create notification methods for AutoCollectionProperties
-        }
-
-        private void FindNotifyPropertyChangedMethod()
-        {
-            Console.WriteLine("Finding notify property changed method");
+            log.Trace("Finding classes to process");
+            var notify_property_classes = assembly.GetNotifyPropertyChangedClasses().ToList();
             foreach (var notify_property_class in notify_property_classes)
             {
-                Console.WriteLine("   Processing " + notify_property_class.Name);
-                MethodDefinition notify_property_changed_method = notify_property_class.FindNotifyPropertyChangedMethod();
-                if (notify_property_changed_method == null)
-                    Console.WriteLine("      Adding NotifyPropertyChanged method");
-                else
-                    Console.WriteLine("      Found " + notify_property_changed_method.Name);
+                log.Trace("\tFound " + notify_property_class.Name);
+
+                FindOrAddNotifyPropertyChangedMethod(notify_property_class);
+                FindDependencies(notify_property_class);
+                FindProperties(notify_property_class);
             }
         }
 
-        private void FindFieldsToWrap()
+        private void FindOrAddNotifyPropertyChangedMethod(TypeDefinition notify_property_class)
         {
-            Console.WriteLine("Finding fields to wrap");
-            foreach (var notify_property_class in notify_property_classes)
+            log.Trace("\t\tFinding notify property changed method");
+
+            notify_property_changed_method = notify_property_class.FindNotifyPropertyChangedMethod();
+            if (notify_property_changed_method == null)
             {
-                Console.WriteLine("   Processing " + notify_property_class.Name);
-                var fields_to_wrap = notify_property_class.GetPublicNonBackingFields();
-                foreach (var field in fields_to_wrap)
-                    Console.WriteLine("      Found " + field.Name);
+                log.Trace("\t\t\tAdding NotifyPropertyChanged method");
+                notify_property_changed_method = AddNotifyPropertyChangedMethodTask.Execute(notify_property_class);
             }
+            else
+                log.Trace("\t\t\tFound " + notify_property_changed_method.Name);
         }
 
-        private void FindDependencies()
+        private void FindDependencies(TypeDefinition notify_property_class)
         {
+            log.Trace("\t\tFinding property dependencies");
+
+            dependency_map.Clear();
+
             DependencyAnalyzer dependency_analyzer = new DependencyAnalyzer();
+            dependency_analyzer.Execute(notify_property_class, dependency_map);
+        }
 
-            Console.WriteLine("Finding property dependencies");
-            foreach (var notify_property_class in notify_property_classes)
+        private void FindProperties(TypeDefinition notify_property_class)
+        {
+            log.Trace("\t\tFinding properties");
+            foreach (var property in notify_property_class.Properties)
             {
-                Console.WriteLine("   Processing " + notify_property_class.Name);
-                DependencyMap map = new DependencyMap();
-                dependency_analyzer.Execute(notify_property_class, map);
+                log.Trace("\t\t\tProcessing " + property.Name);
+                if (property.IsAutoProperty())
+                {
+                    if (property.IsCollectionAutoProperty() && dependency_map.HasDependencies(property.Name))
+                    {
+                        log.Trace("\t\t\t\tFound collection auto property");
+                        MethodDefinition collection_notification_method = AddCollectionNotificationMethodTask.Execute(property, notify_property_changed_method, dependency_map);
+                        AddNotificationsToAutoCollectionProperty.Execute(property, notify_property_changed_method, collection_notification_method);
+                    }
+                    else
+                    {
+                        log.Trace("\t\t\t\tFound auto property");
+                        AddNotificationsToAutoPropertyTask.Execute(property, notify_property_changed_method, dependency_map);
+                    }
+                }
+                else if (property.SetMethod != null)
+                {
+                    if (property.IsCollectionProperty() && dependency_map.HasDependencies(property.Name))
+                    {
+                        log.Trace("\t\t\t\tFound collection property");
+                        MethodDefinition collection_notification_method = AddCollectionNotificationMethodTask.Execute(property, notify_property_changed_method, dependency_map);
+                        AddNotificationsToNormalCollectionProperty.Execute(property, notify_property_changed_method, collection_notification_method);
+                    }
+                    else
+                    {
+                        log.Trace("\t\t\t\tFound property");
+                        AddNotificationsToNormalPropertyTask.Execute(property, notify_property_changed_method, dependency_map);
+                    }
+                }
             }
         }
     }

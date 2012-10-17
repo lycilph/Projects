@@ -10,11 +10,6 @@ namespace MonoCecilRewriter
 {
     public static class Extensions
     {
-        public static bool ImplementsInterface(this PropertyDefinition property, string interface_name)
-        {
-            return property.PropertyType.Resolve().Interfaces.Any(i => i.Name == interface_name);
-        }
-
         public static bool ImplementsInterface(this TypeDefinition type_definition, string interface_name)
         {
             if (type_definition.Interfaces.Any(i => i.Name == interface_name))
@@ -36,11 +31,6 @@ namespace MonoCecilRewriter
         public static IEnumerable<TypeDefinition> GetNotifyPropertyChangedClasses(this AssemblyDefinition assembly)
         {
             return assembly.MainModule.Types.Where(t => t.ImplementsInterface("INotifyPropertyChanged") && t.HasAttribute("NotifyPropertyChangedAttribute"));
-        }
-
-        public static IEnumerable<FieldDefinition> GetPublicNonBackingFields(this TypeDefinition type_definition)
-        {
-            return type_definition.Fields.Where(f => f.IsPublic && !f.Name.Contains("k__BackingField"));
         }
 
         public static MethodDefinition FindNotifyPropertyChangedMethod(this TypeDefinition type_definition)
@@ -75,49 +65,89 @@ namespace MonoCecilRewriter
             return method.DeclaringType.Properties.Single(p => p.GetMethod.Name == method.Name);
         }
 
+        public static FieldReference GetEventHandler(this TypeDefinition type_definition, string event_type)
+        {
+            return type_definition.Fields.Single(e => e.FieldType.Name == event_type);
+        }
 
+        public static MethodDefinition GetConstructor(this TypeDefinition type_definition)
+        {
+            return type_definition.Methods.Single(m => m.Name == ".ctor");
+        }
 
-        //public static IEnumerable<PropertyDefinition> GetAutoProperties(this TypeDefinition notify_property_class)
-        //{
-        //    return notify_property_class.Fields.Where(f => f.Name.Contains("k__BackingField"))
-        //                                       .Select(f => f.Name.Substring(1, f.Name.IndexOf("k__BackingField", StringComparison.InvariantCulture) - 2))
-        //                                       .Select(f => notify_property_class.Properties.Single(p => p.Name == f))
-        //                                       .ToList();
-        //}
+        public static FieldDefinition GetAutoPropertyBackingField(this PropertyDefinition property_definition)
+        {
+            return property_definition.DeclaringType.Fields.Single(f => f.Name == string.Format("<{0}>k__BackingField", property_definition.Name));
+        }
 
-        //private static string GetAssemblyName(string type_name)
-        //{
-        //    foreach (Assembly current_assembly in AppDomain.CurrentDomain.GetAssemblies())
-        //    {
-        //        Type t = current_assembly.GetType(type_name, false, true);
-        //        if (t != null)
-        //            return current_assembly.FullName;
-        //    }
-        //    return string.Empty;
-        //}
+        public static bool IsAutoProperty(this PropertyDefinition property_definition)
+        {
+            string backing_field_name = string.Format("<{0}>k__BackingField", property_definition.Name);
+            return property_definition.DeclaringType.Fields.Any(f => f.Name == backing_field_name);
+        }
 
-        //public static Type GetAssemblyQualifiedName(this FieldDefinition field)
-        //{
-        //    string fullname = field.FieldType.Namespace + "." + field.FieldType.Name;
-        //    string assembly_name = GetAssemblyName(fullname);
-        //    string assembly_qualified_name;
+        public static bool IsCollectionProperty(this PropertyDefinition property_definition)
+        {
+            return property_definition.PropertyType.Resolve().ImplementsInterface("INotifyCollectionChanged");
+        }
 
-        //    var generic_instance = field.FieldType as GenericInstanceType;
-        //    if (generic_instance != null)
-        //    {
-        //        if (generic_instance.GenericArguments.Count > 1)
-        //            throw new ArgumentException("Only 1 generic argument is supported");
-        //        string parameter = generic_instance.GenericArguments[0].FullName;
-        //        string assembly_qualified_parameter = Type.GetType(parameter).AssemblyQualifiedName;
+        public static bool IsCollectionAutoProperty(this PropertyDefinition property_definition)
+        {
+            return property_definition.IsAutoProperty() && property_definition.IsCollectionProperty();
+        }
 
-        //        assembly_qualified_name = string.Format("{0}[[{1}]],{2}", fullname, assembly_qualified_parameter, assembly_name);
-        //    }
-        //    else
-        //    {
-        //        assembly_qualified_name = string.Format("{0},{1}", fullname, assembly_name);
-        //    }
+        private static string GetAssemblyName(string type_name)
+        {
+            foreach (Assembly current_assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                Type t = current_assembly.GetType(type_name, false, true);
+                if (t != null)
+                    return current_assembly.FullName;
+            }
+            return string.Empty;
+        }
 
-        //    return Type.GetType(assembly_qualified_name);
-        //}
+        public static Type GetAssemblyQualifiedName(this FieldDefinition field)
+        {
+            string fullname = field.FieldType.Namespace + "." + field.FieldType.Name;
+            string assembly_name = GetAssemblyName(fullname);
+            string assembly_qualified_name;
+
+            var generic_instance = field.FieldType as GenericInstanceType;
+            if (generic_instance != null)
+            {
+                if (generic_instance.GenericArguments.Count > 1)
+                    throw new ArgumentException("Only 1 generic argument is supported");
+                string parameter = generic_instance.GenericArguments[0].FullName;
+                string assembly_qualified_parameter = Type.GetType(parameter).AssemblyQualifiedName;
+
+                assembly_qualified_name = string.Format("{0}[[{1}]],{2}", fullname, assembly_qualified_parameter, assembly_name);
+            }
+            else
+            {
+                assembly_qualified_name = string.Format("{0},{1}", fullname, assembly_name);
+            }
+
+            return Type.GetType(assembly_qualified_name);
+        }
+
+        public static FieldReference GetNormalPropertyBackingField(this PropertyDefinition property_definition)
+        {
+            if (property_definition.GetMethod == null)
+                return null;
+
+            // Find first field of the same type as the property in the get method, assume this is the backing field
+            foreach (var instruction in property_definition.GetMethod.Body.Instructions)
+            {
+                if (instruction.OpCode == OpCodes.Ldfld)
+                {
+                    var field_reference = instruction.Operand as FieldReference;
+                    if (field_reference != null && field_reference.FieldType.FullName == property_definition.PropertyType.FullName)
+                        return field_reference;
+                }
+            }
+
+            return null;
+        }
     }
 }

@@ -1,20 +1,21 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.ComponentModel;
 using MonoCecilRewriter.Interfaces;
+using System.Collections.ObjectModel;
 
 namespace TestObjects
 {
     [NotifyPropertyChanged]
-    public class DependsOnCollection : INotifyPropertyChanged
+    public class NoCollectionDependencies : INotifyPropertyChanged
     {
         public ObservableCollection<string> Items { get; set; }
 
-        public int Count
-        {
-            get { return Items.Count; }
-        }
+        public int Prop { get; set; }
 
-        public DependsOnCollection()
+        public NoCollectionDependencies()
         {
             Items = new ObservableCollection<string>();
         }

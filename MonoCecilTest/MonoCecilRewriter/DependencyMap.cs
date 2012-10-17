@@ -1,37 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace MonoCecilRewriter
 {
     public class DependencyMap
     {
-        private readonly Dictionary<string, Dependency> map = new Dictionary<string, Dependency>();
+        private readonly Dictionary<string, List<string>> map = new Dictionary<string, List<string>>();
         
-        public void Add(string source, string target, PropertyType property_type)
+        public void Add(string source, string target)
         {
             if (!map.ContainsKey(source))
-                map.Add(source, new Dependency(source, target, property_type));
+                map.Add(source, new List<string>());
 
-            map[source].targets.Add(target);
+            if (!map[source].Contains(target))
+                map[source].Add(target);
+        }
+
+        public void Clear()
+        {
+            map.Clear();
         }
 
         public IEnumerable<string> GetDependenciesFor(string source)
         {
-            return (map.ContainsKey(source) ? map[source].targets : new List<string>());
+            return (map.ContainsKey(source) ? map[source] : new List<string>());
         }
 
-        public void Dump()
+        public bool HasDependencies(string source)
         {
-            Console.WriteLine("Dependency map");
-            foreach (var source in map.Keys)
-            {
-                Dependency dependency = map[source];
-                Console.WriteLine(string.Format("   Property {0} (type={1}) will update", dependency.source, dependency.source_type));
-                foreach (var target in map[source].targets)
-                    Console.WriteLine("      Property " + target);
-            }
+            return (map.ContainsKey(source) && map[source].Count > 0);
         }
     }
 }

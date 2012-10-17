@@ -60,14 +60,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analyzer.cs" />
-    <Compile Include="Dependency.cs" />
     <Compile Include="DependencyAnalyzer.cs" />
     <Compile Include="DependencyMap.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="old\Rewriter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropertyType.cs" />
+    <Compile Include="Tasks\AddCollectionNotificationMethodTask.cs" />
+    <Compile Include="Tasks\AddNotificationsToAutoPropertyTask.cs" />
+    <Compile Include="Tasks\AddNotificationsToAutoCollectionProperty.cs" />
+    <Compile Include="Tasks\AddNotificationsToNormalCollectionProperty.cs" />
+    <Compile Include="Tasks\AddNotificationsToNormalPropertyTask.cs" />
+    <Compile Include="Tasks\AddNotifyPropertyChangedMethodTask.cs" />
+    <Compile Include="Tasks\WrapFieldsTask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
