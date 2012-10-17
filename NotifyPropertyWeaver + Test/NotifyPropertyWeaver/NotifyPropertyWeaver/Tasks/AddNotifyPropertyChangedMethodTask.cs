@@ -2,7 +2,7 @@
 using Mono.Cecil;
 using Mono.Cecil.Cil;
 
-namespace MonoCecilRewriter.Tasks
+namespace NotifyPropertyWeaver.Tasks
 {
     public static class AddNotifyPropertyChangedMethodTask
     {

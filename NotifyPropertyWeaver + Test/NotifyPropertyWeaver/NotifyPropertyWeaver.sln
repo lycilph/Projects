@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyPropertyWeaver", "NotifyPropertyWeaver\NotifyPropertyWeaver.csproj", "{ACAB3932-18EF-40C1-BC35-18399F2149DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotifyPropertyWeaver.Interfaces", "NotifyPropertyWeaver.Interfaces\NotifyPropertyWeaver.Interfaces.csproj", "{A75C1AD3-729C-484A-A217-AC9D1ABC68A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACAB3932-18EF-40C1-BC35-18399F2149DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAB3932-18EF-40C1-BC35-18399F2149DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAB3932-18EF-40C1-BC35-18399F2149DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAB3932-18EF-40C1-BC35-18399F2149DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A75C1AD3-729C-484A-A217-AC9D1ABC68A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75C1AD3-729C-484A-A217-AC9D1ABC68A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75C1AD3-729C-484A-A217-AC9D1ABC68A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75C1AD3-729C-484A-A217-AC9D1ABC68A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

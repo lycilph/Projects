@@ -4,8 +4,9 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 
-// TODO: Make field wrapping optional
+// TODO: add a msbuild task instead of an executable
 // TODO: Make Mono.Cecil write debug file (.pdb) (see symbolwriter/reader i think)
+// TODO: Make field wrapping optional
 
 // Post build event for library
 // - $(SolutionDir)MonoCecilRewriter\$(OutDir)MonoCecilRewriter.exe $(TargetPath)
