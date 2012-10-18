@@ -6,6 +6,11 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 
+// TODO: Handle child objects (of type INotifyPropertyChanged)
+
+// KNOWN ISSUES:
+// - If setter has more than 1 return, only the last will call notification method
+
 namespace NotifyPropertyWeaver
 {
     public class WeaverTask : Task
@@ -27,6 +32,7 @@ namespace NotifyPropertyWeaver
                 foreach (var file in Files)
                 {
                     var file_stopwatch = Stopwatch.StartNew();
+                    WriteMessage(string.Format("Processing {0}", file.ItemSpec));
 
                     ReaderParameters reader_parameters = new ReaderParameters() {ReadSymbols = true};
                     AssemblyDefinition assembly = AssemblyDefinition.ReadAssembly(file.ItemSpec, reader_parameters);
@@ -38,7 +44,7 @@ namespace NotifyPropertyWeaver
                     assembly.Write(file.ItemSpec, writer_parameters);
                     
                     file_stopwatch.Stop();
-                    WriteMessage(string.Format("Processing {0} took {1} ms", file.ItemSpec, file_stopwatch.ElapsedMilliseconds));
+                    WriteMessage(string.Format("Processing took {0} ms", file_stopwatch.ElapsedMilliseconds));
                 }
             }
             finally
@@ -77,6 +83,7 @@ namespace NotifyPropertyWeaver
                 configuration.AddTarget("file", file_target);
 
                 file_target.FileName = LogFile;
+                file_target.Layout = "${message}";
                 file_target.DeleteOldFileOnStartup = true;
 
                 LoggingRule log_file_rule = new LoggingRule("*", LogLevel.Trace, file_target);

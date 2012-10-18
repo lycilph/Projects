@@ -16,7 +16,7 @@ namespace NotifyPropertyWeaver
 
             foreach (var property in type_definition.Properties)
             {
-                //log.Trace(string.Format("\t\t\tChecking {0} for dependencies", property.Name));
+                log.Trace(string.Format("\t\t\tChecking {0} for dependencies", property.Name));
                 AnalyseMethod(property, property.GetMethod);
             }
         }

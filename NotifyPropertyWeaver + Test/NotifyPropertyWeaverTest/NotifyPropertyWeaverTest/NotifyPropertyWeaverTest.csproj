@@ -104,6 +104,6 @@
   -->
   <UsingTask AssemblyFile="C:\Private\GitHub\Projects\NotifyPropertyWeaver + Test\Library\NotifyPropertyWeaver.dll" TaskName="WeaverTask" />
   <Target Name="AfterBuild">
-    <WeaverTask Files="$(TargetPath)" LogFile="$(TargetDir)weaving.log"/>
+    <WeaverTask Files="$(TargetPath)" LogFile="$(TargetDir)weaving.log" />
   </Target>
 </Project>
