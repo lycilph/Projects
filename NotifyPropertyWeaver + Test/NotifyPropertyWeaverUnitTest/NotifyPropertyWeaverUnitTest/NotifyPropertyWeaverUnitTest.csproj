@@ -41,6 +41,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
@@ -48,18 +49,19 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoPropertyDirectDependencyTest.cs" />
-    <Compile Include="CollectionAutoPropertyDirectDependencyTest.cs" />
-    <Compile Include="CollectionAutoPropertyIndirectDependencyTest.cs" />
-    <Compile Include="CollectionNormalPropertyDirectDependencyTest.cs" />
-    <Compile Include="CollectionNormalPropertyIndirectDependencyTest.cs" />
-    <Compile Include="DerivedClassDirectDependencyTest.cs" />
-    <Compile Include="NoNotifyPropertyMethodTest.cs" />
-    <Compile Include="NormalPropertyDirectDependencyTest.cs" />
-    <Compile Include="AutoPropertyIndirectDependencyTest.cs" />
-    <Compile Include="NormalPropertyIndirectDependencyTest.cs" />
+    <Compile Include="Old tests\AutoPropertyDirectDependencyTest.cs" />
+    <Compile Include="Old tests\CollectionAutoPropertyDirectDependencyTest.cs" />
+    <Compile Include="Old tests\CollectionAutoPropertyIndirectDependencyTest.cs" />
+    <Compile Include="Old tests\CollectionNormalPropertyDirectDependencyTest.cs" />
+    <Compile Include="Old tests\CollectionNormalPropertyIndirectDependencyTest.cs" />
+    <Compile Include="Old tests\DerivedClassDirectDependencyTest.cs" />
+    <Compile Include="Old tests\NoNotifyPropertyMethodTest.cs" />
+    <Compile Include="Old tests\NormalPropertyDirectDependencyTest.cs" />
+    <Compile Include="Old tests\AutoPropertyIndirectDependencyTest.cs" />
+    <Compile Include="Old tests\NormalPropertyIndirectDependencyTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WrapFieldTest.cs" />
+    <Compile Include="Old tests\ChildPropertyDependencyTest.cs" />
+    <Compile Include="DebugObject.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

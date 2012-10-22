@@ -6,10 +6,18 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 
+// TODO: Make child objects (ie. INotifyPropertyChanged) and INotifyCollectionChanged use weak events
+//       - Implement IWeakEventListener on objects
+// TODO: Use new LogExtension in all classes
+// TODO: Rename analyser to weaver
+// TODO: Merge handling of "normal" and "auto" properties
+//       - Add Try... finally for all properties
+//       - Always trigger notifications
 // TODO: Handle child objects (of type INotifyPropertyChanged)
 
 // KNOWN ISSUES:
 // - If setter has more than 1 return, only the last will call notification method
+// - - Add Try... finally for all "normal" properties
 
 namespace NotifyPropertyWeaver
 {
@@ -37,11 +45,14 @@ namespace NotifyPropertyWeaver
                     ReaderParameters reader_parameters = new ReaderParameters() {ReadSymbols = true};
                     AssemblyDefinition assembly = AssemblyDefinition.ReadAssembly(file.ItemSpec, reader_parameters);
 
-                    var analyzer = new Analyzer(assembly);
-                    analyzer.Execute();
+                    var analyzer = new DependencyAnalyzerV2();
+                    analyzer.Run(assembly);
 
-                    WriterParameters writer_parameters = new WriterParameters() {WriteSymbols = true};
-                    assembly.Write(file.ItemSpec, writer_parameters);
+                    //var analyzer = new Analyzer(assembly);
+                    //analyzer.Execute();
+
+                    //WriterParameters writer_parameters = new WriterParameters() {WriteSymbols = true};
+                    //assembly.Write(file.ItemSpec, writer_parameters);
                     
                     file_stopwatch.Stop();
                     WriteMessage(string.Format("Processing took {0} ms", file_stopwatch.ElapsedMilliseconds));

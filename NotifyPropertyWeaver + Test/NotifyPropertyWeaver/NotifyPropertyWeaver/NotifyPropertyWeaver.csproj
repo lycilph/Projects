@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analyzer.cs" />
+    <Compile Include="DependencyAnalyzerV2.cs" />
     <Compile Include="DependencyAnalyzer.cs" />
     <Compile Include="DependencyMap.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="LogExtension.cs" />
     <Compile Include="Tasks\AddCollectionNotificationMethodTask.cs" />
     <Compile Include="Tasks\AddNotificationsToAutoCollectionProperty.cs" />
     <Compile Include="Tasks\AddNotificationsToAutoPropertyTask.cs" />

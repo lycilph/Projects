@@ -17,7 +17,7 @@ namespace NotifyPropertyWeaver
 
     public class Analyzer
     {
-        public static readonly Logger log = LogManager.GetCurrentClassLogger();
+        private static readonly Logger log = LogManager.GetCurrentClassLogger();
 
         private readonly AssemblyDefinition assembly;
 
