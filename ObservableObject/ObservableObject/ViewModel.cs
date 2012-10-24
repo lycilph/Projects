@@ -7,16 +7,26 @@ namespace ObservableObject
 {
     public class ViewModel : ObservableObject
     {
-        private readonly Model model;
+        private Model _model;
+        private Model WrappedModel
+        {
+            get { return _model; }
+            set
+            {
+                NotifyPropertyChanging("WrappedModel");
+                _model = value;
+                NotifyPropertyChanged("WrappedModel");
+            }
+        }
 
         public int ViewModelProp1
         {
-            get { return model.ModelProp1*2; }
+            get { return WrappedModel.ModelProp1*2; }
         }
 
         public int ViewModelProp2
         {
-            get { return model.ModelProp2.Count; }
+            get { return WrappedModel.ModelProp2.Count; }
         }
 
         public int ViewModelProp3
@@ -26,11 +36,11 @@ namespace ObservableObject
 
         public ViewModel(Model model)
         {
-            this.model = model;
+            this.WrappedModel = model;
 
-            AddDependency(() => model.ModelProp1, () => ViewModelProp1);
-            AddDependency(() => model.ModelProp2, () => ViewModelProp2);
-            AddDependency(() => model, () => ViewModelProp3);
+            AddDependency(() => WrappedModel.ModelProp1, () => ViewModelProp1);
+            AddDependency(() => WrappedModel.ModelProp2, () => ViewModelProp2);
+            AddDependency(() => WrappedModel, () => ViewModelProp3);
         }
     }
 }

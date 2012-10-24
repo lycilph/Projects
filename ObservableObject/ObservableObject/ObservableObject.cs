@@ -10,6 +10,8 @@ namespace ObservableObject
 {
     public class ObservableObject : INotifyPropertyChanging, INotifyPropertyChanged
     {
+        private List<DependencyBase> dependencies = new List<DependencyBase>();
+
         private bool UpdateDependenciesNeeded;
         private string UpdatingProperty;
 
@@ -33,8 +35,6 @@ namespace ObservableObject
                 Console.WriteLine(string.Format("Property {0} is changing, update dependencies needed", args.PropertyName));
                 UpdateDependenciesNeeded = true;
                 UpdatingProperty = property.Name;
-
-                // Remove all dependencies for that property
             }
         }
 
@@ -43,10 +43,15 @@ namespace ObservableObject
             if (UpdateDependenciesNeeded && args.PropertyName == UpdatingProperty)
             {
                 Console.WriteLine(string.Format("Property {0} has changed, updating dependencies", args.PropertyName));
+
+                // Find all dependencies for that property
+                var dependencies_to_update = dependencies.Where(d => d.property_name == UpdatingProperty);
+
+                // Remove all dependencies for that property
+                // Add all dependencies for that property
+
                 UpdateDependenciesNeeded = false;
                 UpdatingProperty = string.Empty;
-
-                // Add all dependencies for that property
             }
         }
 
@@ -60,45 +65,53 @@ namespace ObservableObject
             if (is_notifycollectionchanged)
             {
                 INotifyCollectionChanged source_object = FindSourceObject(source) as INotifyCollectionChanged;
-                string target_property_name = FindPropertyName(target);
+                string target_property_name = ExpressionHelper.FindPropertyName(target);
 
                 // Check that the source object is an INotifyCollectionChanged
                 if (source_object == null)
                     throw new ArgumentException("Source object not of type " + typeof(INotifyCollectionChanged).ToString());
 
                 // Check that the source property is actually is a property
-                CheckPropertyName(source);
+                ExpressionHelper.CheckPropertyName(source);
 
                 // Create dependency event handler
                 NotifyCollectionChangedEventHandler handler = (sender, args) => NotifyPropertyChanged(target_property_name);
 
                 // Add dependency to the object itself
                 source_object.CollectionChanged += handler;
+
+                // Cache the dependency
+                var dependency = DependencyHelper.CreateCollectionDependency(source, target, source_object, handler);
+                dependencies.Add(dependency);
             }
             else if (is_observableobject)
             {
                 ObservableObject source_object = FindSourceObject(source) as ObservableObject;
-                string target_property_name = FindPropertyName(target);
+                string target_property_name = ExpressionHelper.FindPropertyName(target);
 
                 // Check that the source object is an ObservableObject
                 if (source_object == null)
                     throw new ArgumentException("Source object not of type " + typeof(ObservableObject).ToString());
 
                 // Check that the source property is actually is a property
-                CheckPropertyName(source);
+                ExpressionHelper.CheckPropertyName(source);
 
                 // Create dependency event handler
                 PropertyChangedEventHandler handler = (sender, args) => NotifyPropertyChanged(target_property_name);
 
                 // Add dependency to the object itself
                 source_object.PropertyChanged += handler;
+
+                // Cache the dependency
+                var dependency = DependencyHelper.CreatePropertyDependency(source, target, source_object, handler);
+                dependencies.Add(dependency);
             }
             else
             {
                 // Parse input
                 ObservableObject source_object = FindSourceObject(source, 1) as ObservableObject; // stop_level = 1, as the source property will be the last of the stack
-                string source_property_name = FindPropertyName(source);
-                string target_property_name = FindPropertyName(target);
+                string source_property_name = ExpressionHelper.FindPropertyName(source);
+                string target_property_name = ExpressionHelper.FindPropertyName(target);
 
                 // Check that the source object is an ObservableObject
                 if (source_object == null)
@@ -113,6 +126,10 @@ namespace ObservableObject
 
                 // Add dependency to the object itself
                 source_object.PropertyChanged += handler;
+
+                // Cache the dependency
+                var dependency = DependencyHelper.CreatePropertyDependency(source, target, source_object, handler);
+                dependencies.Add(dependency);
             }
         }
 
@@ -147,24 +164,6 @@ namespace ObservableObject
             }
 
             return root_object;
-        }
-
-        private string FindPropertyName<T>(Expression<Func<T>> expression)
-        {
-            var member_expression = expression.Body as MemberExpression;
-            if (member_expression == null)
-                throw new ArgumentException(string.Format("Expression ({0}) must be a MemberExpression", expression));
-
-            if (member_expression.Member.MemberType != MemberTypes.Property)
-                throw new ArgumentException(string.Format("Expression ({0}) must be a property", expression));
-
-            return member_expression.Member.Name;
-        }
-
-        private void CheckPropertyName<T>(Expression<Func<T>> expression)
-        {
-            if (string.IsNullOrEmpty(FindPropertyName(expression)))
-                throw new ArgumentException(string.Format("Expression ({0}) must be a property", expression));
         }
 
         #endregion
