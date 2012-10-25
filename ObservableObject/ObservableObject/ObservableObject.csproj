@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{166D0459-F28F-43A1-9F63-10E64767D6A8}</ProjectGuid>
+    <ProjectGuid>{B1662D06-412E-4897-BFC5-EBBD639689F3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ObservableObject</RootNamespace>
@@ -43,17 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CollectionDependency.cs" />
-    <Compile Include="Dependency.cs" />
-    <Compile Include="DependencyBase.cs" />
-    <Compile Include="DependencyHelper.cs" />
-    <Compile Include="ExpressionHelper.cs" />
-    <Compile Include="Model.cs" />
-    <Compile Include="ObservableObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropertyDependency.cs" />
-    <Compile Include="ViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

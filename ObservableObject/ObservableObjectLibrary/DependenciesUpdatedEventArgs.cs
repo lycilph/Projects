@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ObservableObjectLibrary
 {
-  public class DependenciesUpdatedEventArgs : EventArgs
-  {
-    public string SourceName { get; set; }
-
-    public DependenciesUpdatedEventArgs(string source_name)
+    public class DependenciesUpdatedEventArgs : EventArgs
     {
-      SourceName = source_name;
+        public string SourceName { get; set; }
+
+        public DependenciesUpdatedEventArgs(string source_name)
+        {
+            SourceName = source_name;
+        }
     }
-  }
 }

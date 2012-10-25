@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Linq.Expressions;
 
-namespace ObservableObject
+namespace ObservableObjectLibrary
 {
     public class Dependency<T1, T2> : DependencyBase
     {
@@ -15,6 +15,16 @@ namespace ObservableObject
         {
             this.source = source;
             this.target = target;
+        }
+
+        protected override void Add(ObservableObject obj)
+        {
+            obj.AddDependency(source, target);
+        }
+
+        public override bool DependensOn(string property)
+        {
+            return ExpressionHelper.DependensOn(source, property);
         }
     }
 }

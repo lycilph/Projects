@@ -5,7 +5,7 @@ using System.Text;
 using System.Linq.Expressions;
 using System.ComponentModel;
 
-namespace ObservableObject
+namespace ObservableObjectLibrary
 {
     public class PropertyDependency<T1, T2> : Dependency<T1, T2>
     {
@@ -19,7 +19,7 @@ namespace ObservableObject
             this.handler = handler;
         }
 
-        public override void Remove()
+        protected override void Remove()
         {
             obj.PropertyChanged -= handler;
         }

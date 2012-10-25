@@ -3,7 +3,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq.Expressions;
 
-namespace ObservableObject
+namespace ObservableObjectLibrary
 {
     public static class DependencyHelper
     {

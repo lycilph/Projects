@@ -5,7 +5,7 @@ using System.Text;
 using System.Collections.Specialized;
 using System.Linq.Expressions;
 
-namespace ObservableObject
+namespace ObservableObjectLibrary
 {
     public class CollectionDependency<T1, T2> : Dependency<T1, T2>
     {
@@ -19,7 +19,7 @@ namespace ObservableObject
             this.handler = handler;
         }
 
-        public override void Remove()
+        protected override void Remove()
         {
             obj.CollectionChanged -= handler;
         }
