@@ -19,7 +19,7 @@ namespace ObservableObjectLibrary
             this.handler = handler;
         }
 
-        protected override void Remove()
+        public override void Remove()
         {
             obj.CollectionChanged -= handler;
         }
