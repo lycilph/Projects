@@ -18,7 +18,7 @@ namespace ObservableObjectLibrary
             PropertyChanged += PropertyChangedHandler;
         }
 
-        public void Cleanup()
+        public void CleanupDependencies()
         {
             // Remove all dependencies
             foreach (var dependency in dependencies)

@@ -34,9 +34,9 @@ namespace ObservableObject
             get { return all_categories.Count; }
         }
 
-        public ViewModel()
+        public ViewModel(Model model)
         {
-            WrappedModel = new Model();
+            WrappedModel = model;
 
             AddDependency(() => WrappedModel.Categories, () => AllCategories);
             AddDependency(() => AllCategories, () => AllCategoriesCount);
