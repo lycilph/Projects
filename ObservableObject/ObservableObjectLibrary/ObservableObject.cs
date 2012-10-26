@@ -4,9 +4,6 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ObservableObjectLibrary
 {
@@ -19,6 +16,34 @@ namespace ObservableObjectLibrary
 
             PropertyChanging += PropertyChangingHandler;
             PropertyChanged += PropertyChangedHandler;
+        }
+
+        public void Cleanup()
+        {
+            // Remove all dependencies
+            foreach (var dependency in dependencies)
+                dependency.Remove();
+            dependencies.Clear();
+
+            // Remove all DependenciesUpdated events
+            var properties = GetType().GetProperties(ExpressionHelper.Flags);
+            foreach (var property in properties)
+            {
+                if (property.PropertyType.IsSubclassOf(typeof(ObservableObject)))
+                {
+                    var property_value = property.GetValue(this, null);
+                    if (property_value != null)
+                    {
+                        var property_object = property_value as ObservableObject;
+                        if (property_object != null)
+                            property_object.DependenciesUpdated -= UpdateDependencies;
+                    }
+                }
+            }
+
+            // Remove object level property handlers
+            PropertyChanging -= PropertyChangingHandler;
+            PropertyChanged -= PropertyChangedHandler;
         }
 
         #region Dependencies tracking
@@ -34,6 +59,7 @@ namespace ObservableObjectLibrary
             var is_notifycollectionchanged = property_info.PropertyType.GetInterfaces().Contains(typeof(INotifyCollectionChanged));
             var is_observableobject = property_info.PropertyType.IsSubclassOf(typeof(ObservableObject));
 
+            // Remove DependenciesUpdated event if needed
             if (is_observableobject)
             {
                 var property_value = property_info.GetValue(this, null);
@@ -54,22 +80,22 @@ namespace ObservableObjectLibrary
 
         private void PropertyChangedHandler(object sender, PropertyChangedEventArgs args)
         {
-            var property_info = GetType().GetProperty(args.PropertyName, ExpressionHelper.Flags);
-
-            var is_observableobject = property_info.PropertyType.IsSubclassOf(typeof(ObservableObject));
-            if (is_observableobject)
-            {
-                var property_value = property_info.GetValue(this, null);
-                if (property_value != null)
-                {
-                    var property_object = property_value as ObservableObject;
-                    if (property_object != null)
-                        property_object.DependenciesUpdated += UpdateDependencies;
-                }
-            }
-
             if (UpdateDependenciesNeeded && args.PropertyName == UpdatingProperty)
             {
+                // Add DependenciesUpdated event if needed
+                var property_info = GetType().GetProperty(args.PropertyName, ExpressionHelper.Flags);
+                var is_observableobject = property_info.PropertyType.IsSubclassOf(typeof(ObservableObject));
+                if (is_observableobject)
+                {
+                    var property_value = property_info.GetValue(this, null);
+                    if (property_value != null)
+                    {
+                        var property_object = property_value as ObservableObject;
+                        if (property_object != null)
+                            property_object.DependenciesUpdated += UpdateDependencies;
+                    }
+                }
+
                 UpdateDependencies(UpdatingProperty);
 
                 // Notify others that a dependency has changed
@@ -107,6 +133,7 @@ namespace ObservableObjectLibrary
 
             if (is_notifycollectionchanged)
             {
+                // Parse input
                 INotifyCollectionChanged source_object = ExpressionHelper.FindSourceObject(source) as INotifyCollectionChanged;
                 string target_property_name = ExpressionHelper.FindPropertyName(target);
 
@@ -129,6 +156,7 @@ namespace ObservableObjectLibrary
             }
             else if (is_observableobject)
             {
+                // Parse input
                 ObservableObject source_object = ExpressionHelper.FindSourceObject(source) as ObservableObject;
                 string target_property_name = ExpressionHelper.FindPropertyName(target);
 

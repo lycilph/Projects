@@ -17,7 +17,7 @@ namespace ObservableObjectLibrary
             this.target = target;
         }
 
-        protected override void Add(ObservableObject obj)
+        public override void Add(ObservableObject obj)
         {
             obj.AddDependency(source, target);
         }

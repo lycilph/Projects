@@ -16,8 +16,8 @@ namespace ObservableObjectLibrary
             property_name = name;
         }
 
-        protected virtual void Remove() { }
-        protected virtual void Add(ObservableObject obj) { }
+        public virtual void Remove() { }
+        public virtual void Add(ObservableObject obj) { }
 
         public void Update(ObservableObject obj)
         {
