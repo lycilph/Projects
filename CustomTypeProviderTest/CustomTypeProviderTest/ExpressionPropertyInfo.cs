@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 
 namespace CustomTypeProviderTest
 {
-  class ExpressionPropertyInfo<TIn, TOut> : PropertyInfo
+  class ExpressionPropertyInfo<T> : PropertyInfo
   {
     private string internal_name;
 
-    public TIn internal_object { get; set; }
-    public Func<TIn, TOut> GetFunc { get; set; }
+    //public TIn internal_object { get; set; }
+    //public Func<TIn, TOut> GetFunc { get; set; }
+    public Func<T> GetFunc { get; set; }
 
     public ExpressionPropertyInfo(string name)
     {
@@ -59,12 +60,12 @@ namespace CustomTypeProviderTest
 
     public override object GetValue(object obj, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture)
     {
-      return GetFunc(internal_object);
+      return GetFunc(/*internal_object*/);
     }
 
     public override Type PropertyType
     {
-      get { return typeof(TOut); }
+      get { return typeof(T); }
     }
 
     public override void SetValue(object obj, object value, BindingFlags invokeAttr, Binder binder, object[] index, CultureInfo culture)

@@ -33,9 +33,13 @@ namespace CustomTypeProviderTest
       };
 
       // Create and add a new property
-      var expr_property = new ExpressionPropertyInfo<Post, string>("ModifiedText");
-      expr_property.internal_object = internal_post;
-      Expression<Func<Post, string>> expr = (p) => p.Text + " modified";
+      //var expr_property = new ExpressionPropertyInfo<Post, string>("ModifiedText");
+      //expr_property.internal_object = internal_post;
+      //Expression<Func<Post, string>> expr = (p) => p.Text + " modified";
+      //expr_property.GetFunc = expr.Compile();
+      //custom_type.AddProperty(expr_property);
+      var expr_property = new ExpressionPropertyInfo<string>("ModifiedText");
+      Expression<Func<string>> expr = () => internal_post.Text + " modified";
       expr_property.GetFunc = expr.Compile();
       custom_type.AddProperty(expr_property);
     }

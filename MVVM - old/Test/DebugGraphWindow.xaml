@@ -1,0 +1,23 @@
+﻿<Window x:Class="Test.DebugGraphWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:graphsharp="clr-namespace:GraphSharp.Controls;assembly=GraphSharp.Controls"
+        Title="DebugGraphWindow" Height="300" Width="300">
+    <DockPanel>
+        <ListBox DockPanel.Dock="Left"
+                 ItemsSource="{Binding PropertyAccessTrees}"
+                 SelectionChanged="ListBoxSelectionChanged"
+                 SelectionMode="Single"
+                 IsSynchronizedWithCurrentItem="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="Property access tree "/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <graphsharp:GraphLayout x:Name="graph_layout"
+                                LayoutAlgorithmType="EfficientSugiyama"
+                                OverlapRemovalAlgorithmType="FSA"
+                                HighlightAlgorithmType="Simple"/>
+    </DockPanel>
+</Window>

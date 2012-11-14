@@ -1,0 +1,25 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel Margin="10">
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type TextBlock}">
+                <Setter Property="Margin" Value="0,5"/>
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Margin" Value="0,5"/>
+            </Style>
+        </StackPanel.Resources>
+        
+        <TextBlock Text="{Binding Path=WrappedModel.Prop1, StringFormat=Prop1 {0}}"/>
+        <TextBlock Text="{Binding Path=WrappedModel.Prop2, StringFormat=Prop2 {0}}"/>
+        <TextBlock Text="{Binding Path=Total, StringFormat=Total {0}}"/>
+        <TextBlock Text="{Binding Path=ItemsCount, StringFormat=Items count {0}}"/>
+        <Button Content="Add to Prop1" Click="AddProp1ButtonClick"/>
+        <Button Content="Change model" Click="ChangeModelButtonClick"/>
+        <Button Content="Add to items" Click="AddToItemsClick"/>
+        <Button Content="Unsubscribe from model" Click="UnsubscribeFromChangesClick"/>
+        <Button Content="Show graphs" Click="ShowGraphsButtonClick"/>
+    </StackPanel>
+</Window>

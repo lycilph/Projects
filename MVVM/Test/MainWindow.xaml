@@ -1,0 +1,14 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <TextBlock Text="{Binding Prop1}"/>
+        <TextBlock Text="{Binding Prop2}"/>
+        <TextBlock Text="{Binding Total}"/>
+        <TextBlock Text="{Binding Total2}"/>
+        <TextBlock Text="{Binding TotalVM}"/>
+        <Button Content="Do" Click="DoButtonClick"/>
+        <Button Content="New model" Click="NewModelClick"/>
+    </StackPanel>
+</Window>
