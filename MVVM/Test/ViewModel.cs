@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using MVVM.Observable;
 using System.ComponentModel;
+using System.Windows;
 
 namespace Test
 {
@@ -34,6 +35,14 @@ namespace Test
 
             // Add dependency for "native" view model property
             Dependency(() => TotalVM, () => WrappedModel.Model.Prop1 + WrappedModel.Model.Prop2);
+
+            // Add Command
+            Command("MessageCommand", ShowMessage, (o) => m.Prop1 > 5);
+        }
+
+        private void ShowMessage(object o)
+        {
+            MessageBox.Show("Command");
         }
     }
 }

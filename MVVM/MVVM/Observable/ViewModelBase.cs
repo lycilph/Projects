@@ -6,6 +6,8 @@ using System.ComponentModel;
 using NLog;
 using MVVM.Expressions;
 using System.Linq.Expressions;
+using System.Windows.Input;
+using MVVM.Commands;
 
 namespace MVVM.Observable
 {
@@ -80,20 +82,45 @@ namespace MVVM.Observable
                 AddProperty(property);
             }
         }
-
+        
         public void Dependency<T>(Expression<Func<T>> native_property, Expression<Func<T>> dependencies)
         {
             string property_name = FindPropertyName(native_property);
-            var property_info = GetType().GetProperty(property_name);
+            Dependency(property_name, dependencies);
+        }
+        
+        public void Dependency<T>(string native_property, Expression<Func<T>> dependencies)
+        {
+            var property_info = GetType().GetProperty(native_property);
 
-            var property = new DelegatePropertyDescriptor(property_name, this, typeof(T));
+            var property = new DelegatePropertyDescriptor(native_property, this, typeof(T));
             property.Getter = x => property_info.GetValue(this, null);
             if (property_info.CanWrite)
                 property.Setter = (x, v) => property_info.SetValue(this, v, null);
 
             // Analyse getter for dependencies
             var tree = ExpressionAnalyzer.Analyze(dependencies);
-            property.AddDependencies(tree, () => NotifyPropertyChanged(property_name));
+            property.AddDependencies(tree, () => NotifyPropertyChanged(native_property));
+
+            AddProperty(property);
+        }
+
+        public void Command(string command_name, Action<object> execute)
+        {
+            var command = new RelayCommand(execute);
+            Command(command_name, command);
+        }
+
+        public void Command(string command_name, Action<object> execute, Predicate<object> can_execute)
+        {
+            var command = new RelayCommand(execute, can_execute);
+            Command(command_name, command);
+        }
+
+        private void Command(string command_name, RelayCommand command)
+        {
+            var property = new DelegatePropertyDescriptor(command_name, this, typeof(ICommand));
+            property.Getter = x => command;
 
             AddProperty(property);
         }

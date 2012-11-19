@@ -38,5 +38,21 @@ namespace MVVM.Expressions
             foreach (var child in Children)
                 child.DumpToLog();
         }
+
+        #region Subscription
+
+        public override void Subscribe(INotifyPropertyChanged subject, Action callback)
+        {
+            foreach (var child in Children)
+                child.Subscribe(Value, callback);
+        }
+
+        public override void Unsubscribe(INotifyPropertyChanged subject)
+        {
+            foreach (var child in Children)
+                child.Unsubscribe(Value);
+        } 
+
+        #endregion
     }
 }

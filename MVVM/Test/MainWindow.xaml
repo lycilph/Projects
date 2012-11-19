@@ -10,5 +10,6 @@
         <TextBlock Text="{Binding TotalVM}"/>
         <Button Content="Do" Click="DoButtonClick"/>
         <Button Content="New model" Click="NewModelClick"/>
+        <Button Content="Command" Command="{Binding MessageCommand}"/>
     </StackPanel>
 </Window>

@@ -28,21 +28,16 @@ namespace MVVM.Expressions
 
             log.Trace("Building property access tree");
             analyzer.Visit(expression);
-            analyzer.tree.DumpToLog();
 
             if (analyzer.current_branch_nodes.Count > 0)
                 throw new Exception("Nodes left after analysis");
 
-            log.Trace("Cleaning up tree");
             analyzer.CleanupTree(analyzer.tree.Children);
-            analyzer.tree.DumpToLog();
-
-            log.Trace("Filtering tree");
             analyzer.FilterTree(analyzer.tree.Children, TypeHelper.DoesTypeImplementINotifyPropertyChangedAndChanging);
-            analyzer.tree.DumpToLog();
 
             log.Trace("Analysis done");
 
+            analyzer.tree.DumpToLog();
             return analyzer.tree;
         }
 
@@ -71,13 +66,13 @@ namespace MVVM.Expressions
             FieldInfo field = node.Member as FieldInfo;
             if (property != null)
             {
-                log.Trace(" - Found property " + property.Name);
+                log.Trace("Found property " + property.Name);
                 current_branch_nodes.Push(new PropertyNode(property));
                 return base.VisitMember(node);
             }
             else if (field != null)
             {
-                log.Trace(" - Found field " + field.Name);
+                log.Trace("Found field " + field.Name);
 
                 if (TypeHelper.DoesTypeImplementINotifyPropertyChangedAndChanging(field.FieldType))
                 {

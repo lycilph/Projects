@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 using MVVM.Expressions;
-using MVVM.Subscribers;
 
 namespace MVVM.Observable
 {
@@ -16,7 +15,6 @@ namespace MVVM.Observable
         private readonly ViewModelBase view_model_base;
 
         private PropertyAccessTree property_access_tree;
-        private PropertyAccessTreeSubscriber property_access_tree_subscriber;
 
         public Func<object, object> Getter { get; set; }
         public Action<object, object> Setter { get; set; }
@@ -84,16 +82,13 @@ namespace MVVM.Observable
         public void AddDependencies(PropertyAccessTree tree, Action notification_callback)
         {
             property_access_tree = tree;
-            property_access_tree_subscriber = new PropertyAccessTreeSubscriber(property_access_tree, notification_callback);
-            property_access_tree_subscriber.DumpToLog();
-
-            property_access_tree_subscriber.Subscribe();
+            property_access_tree.Subscribe(notification_callback);
         }
 
         public void Unsubscribe()
         {
-            if (property_access_tree_subscriber != null)
-                property_access_tree_subscriber.Unsubscribe();
+            if (property_access_tree != null)
+                property_access_tree.Unsubscribe();
         }
 
         #endregion
