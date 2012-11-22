@@ -42,6 +42,10 @@ namespace UnitTest
         [TestMethod]
         public void CollectionPropertyDependencyTest()
         {
+            List<string> property_notifications = new List<string>();
+            Model m = new Model();
+            ViewModel vm = new ViewModel(m);
+
             Assert.Fail();
         }
     }

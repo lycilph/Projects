@@ -53,6 +53,7 @@
     <Compile Include="Expressions\PropertyAccessTree.cs" />
     <Compile Include="Expressions\PropertyAccessTreeFactory.cs" />
     <Compile Include="Expressions\PropertyNode.cs" />
+    <Compile Include="Expressions\ReactiveCollection.cs" />
     <Compile Include="Expressions\TypeHelper.cs" />
     <Compile Include="Observable\DelegatePropertyDescriptor.cs" />
     <Compile Include="Observable\ObservableObject.cs" />

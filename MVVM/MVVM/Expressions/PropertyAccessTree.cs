@@ -17,6 +17,33 @@ namespace MVVM.Expressions
             Children = new List<Node>();
         }
 
+        public PropertyNode GetPropertyNode(string property_name)
+        {
+            return GetPropertyNode(property_name, Children);
+        }
+
+        private PropertyNode GetPropertyNode(string property_name, List<Node> nodes)
+        {
+            if (nodes == null || nodes.Count == 0)
+                return null;
+
+            PropertyNode property_node;
+            foreach (var node in nodes)
+            {
+                if (node is PropertyNode)
+                {
+                    property_node = node as PropertyNode;
+                    if (property_node.PropertyName == property_name)
+                        return property_node;
+                }
+
+                property_node = GetPropertyNode(property_name, node.Children);
+                if (property_node != null)
+                    return property_node;
+            }
+            return null;
+        }
+
         public void Subscribe(Action callback)
         {
             foreach (var child in Children)
