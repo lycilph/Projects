@@ -45,8 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="Expressions\CollectionNode.cs" />
     <Compile Include="Expressions\ConstantNode.cs" />
     <Compile Include="Expressions\ExpressionAnalyzer.cs" />
+    <Compile Include="Expressions\IReactiveCollection.cs" />
     <Compile Include="Expressions\Node.cs" />
     <Compile Include="Expressions\PropertyAccessTree.cs" />
     <Compile Include="Expressions\PropertyAccessTreeFactory.cs" />

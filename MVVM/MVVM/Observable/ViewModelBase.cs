@@ -8,6 +8,7 @@ using MVVM.Expressions;
 using System.Linq.Expressions;
 using System.Windows.Input;
 using MVVM.Commands;
+using System.Collections.ObjectModel;
 
 namespace MVVM.Observable
 {
@@ -57,6 +58,17 @@ namespace MVVM.Observable
             property.AddDependencies(tree, () => NotifyPropertyChanged(property_name));
 
             AddProperty(property);
+        }
+
+        public IReactiveCollection<T> Collection<T>(string property_name, Expression<Func<IEnumerable<T>>> items)
+        {
+            log.Trace(string.Format("Adding collection property {0} of element type {1}", property_name, typeof(T)));
+
+            var property = new DelegatePropertyDescriptor(property_name, this, typeof(ObservableCollection<T>));
+
+            AddProperty(property);
+
+            return new ReactiveCollection<T>();
         }
 
         public void AllProperties(object source)

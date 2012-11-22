@@ -45,8 +45,19 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollectionPropertyDependency.cs" />
+    <Compile Include="GarbageCollection.cs" />
+    <Compile Include="ModelPropertyDependency.cs" />
+    <Compile Include="MultipleModelsDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="PropertyForwarding.cs" />
+    <Compile Include="ViewModelPropertyDependency.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVVM\MVVM.csproj">
+      <Project>{CA65782C-3154-4AE4-9049-3ACD57D3AE2B}</Project>
+      <Name>MVVM</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

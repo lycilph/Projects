@@ -7,11 +7,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class MultipleModelsDependencies
     {
+        // VM with a Total property depending on several model classes
+
         [TestMethod]
-        public void TestMethod1()
+        public void MultipleModelsDependenciesTest()
         {
+            Assert.Fail();
         }
     }
 }
