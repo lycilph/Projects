@@ -56,6 +56,7 @@
     <Compile Include="Expressions\ReactiveCollection.cs" />
     <Compile Include="Expressions\TypeHelper.cs" />
     <Compile Include="Observable\DelegatePropertyDescriptor.cs" />
+    <Compile Include="Observable\ItemViewModel.cs" />
     <Compile Include="Observable\ObservableObject.cs" />
     <Compile Include="Observable\ViewModelBase.cs" />
     <Compile Include="Observable\ViewModelBaseTypeDescriptionProvider.cs" />

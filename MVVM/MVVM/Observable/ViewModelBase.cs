@@ -64,23 +64,23 @@ namespace MVVM.Observable
         {
             log.Trace(string.Format("Adding collection property {0} of element type {1}", property_name, typeof(T)));
 
-            // Analyse items for dependencies
-            var tree = ExpressionAnalyzer.Analyze(items);
-
-            // Create and attach a collection node to the tree
-            var property_node = tree.GetPropertyNode(property_name);
-            var collection_node = new CollectionNode<T>(property_node);
-            property_node.Children.Add(collection_node);
-
+            // Create reactive collection
+            var reactive_collection = new ReactiveCollection<T>();
             // Create property
             var property = new DelegatePropertyDescriptor(property_name, this, typeof(ObservableCollection<ViewModelBase>));
-            property.Getter = x => collection_node.collection.WrappedCollection;
+            property.Getter = x => reactive_collection.WrappedCollection;
 
+            // Analyse items for dependencies
+            var tree = ExpressionAnalyzer.Analyze(items);
+            // Create and attach a collection node to the tree
+            var property_node = tree.GetPropertyNode(property_name);
+            var collection_node = new CollectionNode<T>(property_node, reactive_collection);
+            property_node.Children.Add(collection_node);
+            // Subscribe to events
             property.AddDependencies(tree, () => NotifyPropertyChanged(property_name));
 
             AddProperty(property);
-
-            return new ReactiveCollection<T>();
+            return reactive_collection;
         }
 
         public void AllProperties(object source)

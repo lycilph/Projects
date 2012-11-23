@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using NLog;
 using System.ComponentModel;
 using System.Collections.Specialized;
+using System.Collections.Generic;
 
 namespace MVVM.Expressions
 {
@@ -12,16 +13,17 @@ namespace MVVM.Expressions
 
         private Action notification_callback;
         private PropertyNode property_node;
-        public readonly ReactiveCollection<T> collection = new ReactiveCollection<T>();
+        private ReactiveCollection<T> reactive_collection;
 
         public override Type Type
         {
             get { return typeof(ObservableCollection<T>); }
         }
 
-        public CollectionNode(PropertyNode node)
+        public CollectionNode(PropertyNode node, ReactiveCollection<T> collection)
         {
             property_node = node;
+            reactive_collection = collection;
         }
 
         public override bool IsDuplicate(Node other)
@@ -30,7 +32,7 @@ namespace MVVM.Expressions
 
             return other_as_property_node != null &&
                    other_as_property_node != this &&
-                   other_as_property_node.collection == collection;
+                   other_as_property_node.reactive_collection == reactive_collection;
         }
 
         public override void DumpToLog()
@@ -42,14 +44,6 @@ namespace MVVM.Expressions
 
         #region Subscription
 
-        private void OnCollectionChanged(object subject, NotifyCollectionChangedEventArgs args)
-        {
-            log.Trace("OnCollectionChanged " + property_node.PropertyName + " - " + args.Action);
-
-            // Invoke notification callback
-            notification_callback();
-        }
-
         public override void Subscribe(INotifyPropertyChanged subject, Action callback)
         {
             log.Trace("Subscribe " + property_node.PropertyName + " (collection)");
@@ -60,13 +54,9 @@ namespace MVVM.Expressions
             var subject_as_notify_collection = subject as INotifyCollectionChanged;
             if (subject_as_notify_collection == null)
                 throw new Exception("Subject must implement INotifyCollectionChanged");
-            subject_as_notify_collection.CollectionChanged += OnCollectionChanged;
 
-            // Check that subject is INotifyCollectionChanged
-            // - Generate wrappers for each element
-            // - Subscribe to children
-
-            throw new NotImplementedException();
+            // Subscribe to subject collection
+            reactive_collection.Subscribe(subject_as_notify_collection, callback);
         }
 
         public override void Unsubscribe(INotifyPropertyChanged subject)
@@ -75,17 +65,7 @@ namespace MVVM.Expressions
 
             notification_callback = null;
 
-            // Check that subject is INotifyCollectionChanged
-            var subject_as_notify_collection = subject as INotifyCollectionChanged;
-            if (subject_as_notify_collection == null)
-                throw new Exception("Subject must implement INotifyCollectionChanged");
-            subject_as_notify_collection.CollectionChanged -= OnCollectionChanged;
-
-            // Check that subject is INotifyCollectionChanged
-            // - Unsubscribe to children
-            // - Clear collection
-
-            throw new NotImplementedException();
+            reactive_collection.Unsubscribe();
         }
 
         #endregion

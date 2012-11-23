@@ -8,6 +8,6 @@ namespace MVVM.Expressions
 {
     public interface IReactiveCollection<T>
     {
-        IReactiveCollection<T> Each(Action<T, ViewModelBase> transformation);
+        IReactiveCollection<T> Each(Action<T, ItemViewModel> transformation);
     }
 }
