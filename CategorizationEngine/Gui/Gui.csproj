@@ -35,12 +35,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
@@ -53,6 +49,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DragAndDrop\DefaultDragHandler.cs" />
+    <Compile Include="DragAndDrop\DefaultDropHandler.cs" />
+    <Compile Include="DragAndDrop\DragAdorner.cs" />
+    <Compile Include="DragAndDrop\DragAndDrop.cs" />
+    <Compile Include="DragAndDrop\DragInfo.cs" />
+    <Compile Include="DragAndDrop\DropInfo.cs" />
+    <Compile Include="DragAndDrop\DropTargetAdorner.cs" />
+    <Compile Include="DragAndDrop\DropTargetAdorners.cs" />
+    <Compile Include="DragAndDrop\DropTargetHighlightAdorner.cs" />
+    <Compile Include="DragAndDrop\DropTargetInsertionAdorner.cs" />
+    <Compile Include="DragAndDrop\IDragSource.cs" />
+    <Compile Include="DragAndDrop\IDropTarget.cs" />
+    <Compile Include="DragAndDrop\Utilities\ItemsControlExtensions.cs" />
+    <Compile Include="DragAndDrop\Utilities\TypeUtilities.cs" />
+    <Compile Include="DragAndDrop\Utilities\VisualTreeExtensions.cs" />
     <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="RelayCommand.cs" />
     <Page Include="MainWindow.xaml">
@@ -102,6 +113,7 @@
       <Name>CategorizationEngine</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

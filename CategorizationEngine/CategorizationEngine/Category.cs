@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace CategorizationEngine
@@ -6,14 +7,14 @@ namespace CategorizationEngine
     public class Category
     {
         public string Name { get; set; }
-        public List<Category> Categories { get; private set; }
+        public ObservableCollection<Category> Categories { get; private set; }
         public List<IPattern> Patterns { get; private set; }
         public List<Post> Posts { get; private set; }
 
         public Category(string name = "")
         {
             Name = name;
-            Categories = new List<Category>();
+            Categories = new ObservableCollection<Category>();
             Patterns = new List<IPattern>();
             Posts = new List<Post>();
         }
