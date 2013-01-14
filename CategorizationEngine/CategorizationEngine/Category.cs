@@ -1,45 +1,64 @@
 ﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
+using CategorizationEngine.Filters;
 
 namespace CategorizationEngine
 {
     public class Category
     {
+        public Category Parent { get; private set; }
+
         public string Name { get; set; }
-        public ObservableCollection<Category> Categories { get; private set; }
-        public List<IPattern> Patterns { get; private set; }
+        public List<Category> Categories { get; private set; }
+        public List<IFilter> Filters { get; private set; }
         public List<Post> Posts { get; private set; }
 
         public Category(string name = "")
         {
+            Parent = null;
+
             Name = name;
-            Categories = new ObservableCollection<Category>();
-            Patterns = new List<IPattern>();
+            Categories = new List<Category>();
+            Filters = new List<IFilter>();
             Posts = new List<Post>();
         }
 
-        public override string ToString()
+        public void Add(Category category)
         {
-            return string.Format("{0}, categories {1}, patterns {2}", Name, Categories.Count, Patterns.Count);
+            category.Parent = this;
+            Categories.Add(category);
+        }
+
+        public void Remove(Category category)
+        {
+            category.Parent = null;
+            Categories.Remove(category);
+        }
+
+        public void ClearPosts()
+        {
+            Posts.Clear();
+            foreach (var category in Categories)
+                category.ClearPosts();
         }
 
         public bool IsMatch(Post post)
         {
-            return Patterns.Any(pattern => pattern.IsMatch(post));
+            return Filters.All(pattern => pattern.IsMatch(post));
         }
-        
+
+        public IEnumerable<Post> AggregatePosts()
+        {
+            IEnumerable<Post> result = new List<Post>(Posts);
+            return Categories.Aggregate(result, (current, category) => current.Concat(category.AggregatePosts()));
+        }
+
         public static List<Category> Flatten(Category root)
         {
             var flattened = new List<Category> {root};
             foreach (var category in root.Categories)
                 flattened.AddRange(Flatten(category));
             return flattened; 
-        }
-
-        public static Category Random()
-        {
-            return new Category(Wordlist.Instance.Random());
         }
     }
 }

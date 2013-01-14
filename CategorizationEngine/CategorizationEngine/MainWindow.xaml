@@ -1,0 +1,87 @@
+﻿<Window x:Class="CategorizationEngine.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:CategorizationEngine="clr-namespace:CategorizationEngine"
+        xmlns:Charting="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+        Title="{Binding Title}"
+        Height="500"
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        FocusManager.FocusedElement="{Binding ElementName=input}">
+    <Window.Resources>
+        <CategorizationEngine:CategoriesToStringConverter x:Key="categories_converter"/>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ListView Grid.Row="0" Grid.RowSpan="2" ItemsSource="{Binding Posts}" SelectedItem="{Binding SelectedPost}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Account" DisplayMemberBinding="{Binding Account.Name}"/>
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat=d}"/>
+                    <GridViewColumn Header="Text" DisplayMemberBinding="{Binding Text}"/>
+                    <GridViewColumn Header="Value" DisplayMemberBinding="{Binding Value, StringFormat={}{0:0.##}}"/>
+                    <GridViewColumn Header="Categories" DisplayMemberBinding="{Binding Categories, Converter={StaticResource categories_converter}}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <TreeView Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Root.Categories}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Categories}">
+                    <StackPanel>
+                        <TextBlock x:Name="category_textblock" Text="{Binding Name}"/>
+                        <CheckBox x:Name="category_checkbox" Content="{Binding Name}" IsChecked="{Binding IsMatch}" Visibility="Collapsed"/>
+                    </StackPanel>
+                    <HierarchicalDataTemplate.Triggers>
+                        <DataTrigger Binding="{Binding HasFilters}" Value="True">
+                            <Setter TargetName="category_textblock" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="category_checkbox" Property="Visibility" Value="Visible"/>
+                        </DataTrigger>
+                    </HierarchicalDataTemplate.Triggers>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+        
+        <ListBox Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Accounts}" DisplayMemberPath="Name"/>
+        
+        <Charting:Chart Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Title="Trend">
+            <Charting:Chart.LegendStyle>
+                <Style TargetType="Control">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                    <Setter Property="Width" Value="0"/>
+                    <Setter Property="Height" Value="0"/>
+                </Style>
+            </Charting:Chart.LegendStyle>
+            <Charting:Chart.PlotAreaStyle>
+                <Style TargetType="Grid">
+                    <Setter Property="Background" Value="Transparent"/>
+                </Style>
+            </Charting:Chart.PlotAreaStyle>
+            <Charting:LineSeries ItemsSource="{Binding GraphData}" IndependentValuePath="Key" DependentValuePath="Value" IsSelectionEnabled="True">
+                <Charting:LineSeries.DependentRangeAxis>
+                    <Charting:LinearAxis Minimum="0" Orientation="Y"/>
+                </Charting:LineSeries.DependentRangeAxis>
+            </Charting:LineSeries>
+        </Charting:Chart>
+
+        <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="input" Text="{Binding Command, UpdateSourceTrigger=PropertyChanged}">
+            <TextBox.InputBindings>
+                <KeyBinding Key="Enter" Command="{Binding ExecuteCommand}"/>
+            </TextBox.InputBindings>
+        </TextBox>
+        
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="{Binding Status}"/>
+    </Grid>
+</Window>
