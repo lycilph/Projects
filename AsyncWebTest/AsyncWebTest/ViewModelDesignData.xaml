@@ -1,0 +1,15 @@
+﻿<asyncWebTest:ViewModel xmlns:asyncWebTest="clr-namespace:AsyncWebTest"
+                        Date="Fredag 22. Februar 2013 (uge 8)">
+    <asyncWebTest:ViewModel.WeekMenus>
+        <asyncWebTest:WeekMenu Text="Menu uge 8" Link="abc"/>
+        <asyncWebTest:WeekMenu Text="Menu uge 9" Link="abc"/>
+        <asyncWebTest:WeekMenu Text="Menu uge 10" Link="abc"/>
+    </asyncWebTest:ViewModel.WeekMenus>
+    <asyncWebTest:ViewModel.Menus>
+        <asyncWebTest:Menu Day="Mandag" Text="Mad"/>
+        <asyncWebTest:Menu Day="Tirsdag" Text="Mad"/>
+        <asyncWebTest:Menu Day="Onsdag" Text="Mad"/>
+        <asyncWebTest:Menu Day="Torsdag" Text="Mad"/>
+        <asyncWebTest:Menu Day="Fredag" Text="Mad"/>
+    </asyncWebTest:ViewModel.Menus>
+</asyncWebTest:ViewModel>

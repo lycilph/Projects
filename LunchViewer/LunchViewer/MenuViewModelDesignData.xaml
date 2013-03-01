@@ -1,0 +1,13 @@
+﻿<lunchViewer:MenuViewModel xmlns:lunchViewer="clr-namespace:LunchViewer"
+                           Date="Fredag 29. Februar 2013 (uge 9)">
+    <lunchViewer:MenuViewModel.WeekMenus>
+        <lunchViewer:WeekMenu Header="Menu uge 9">
+            <lunchViewer:WeekMenu.Menus>
+                <lunchViewer:DayMenu Day="Mandag" Text="Mad"/>
+                <lunchViewer:DayMenu Day="Tirsdag" Text="Mad"/>
+            </lunchViewer:WeekMenu.Menus>
+        </lunchViewer:WeekMenu>
+        <lunchViewer:WeekMenu Header="Menu uge 10"/>
+        <lunchViewer:WeekMenu Header="Menu uge 11"/>
+    </lunchViewer:MenuViewModel.WeekMenus>
+</lunchViewer:MenuViewModel>
