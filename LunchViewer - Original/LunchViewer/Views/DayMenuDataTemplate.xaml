@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:data="clr-namespace:LunchViewer.Data">
+    <DataTemplate DataType="{x:Type data:DayMenu}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" SharedSizeGroup="day_size_group"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Text="{Binding Day}" FontSize="12" FontWeight="DemiBold"/>
+            <TextBlock Grid.Column="1" Text="{Binding Text}" FontSize="12" Margin="10,0,0,0" TextWrapping="Wrap"/>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

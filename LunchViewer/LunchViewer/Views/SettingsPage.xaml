@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="LunchViewer.Views.SettingsPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             lex:LocalizeDictionary.DesignCulture="en-US"
+             lex:ResxLocalizationProvider.DefaultAssembly="LunchViewer"
+             lex:ResxLocalizationProvider.DefaultDictionary="Strings"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <mui:ModernTab Layout="List"
+                       ContentLoader="{StaticResource composition_content_loader}"
+                       SelectedSource="/Views/SettingsAppearance.xaml">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="{lex:Loc LunchViewer:Strings:Appearance}" Source="/Views/SettingsAppearance.xaml"/>
+                <mui:Link DisplayName="{lex:Loc LunchViewer:Strings:Options}" Source="/Views/SettingsOptions.xaml"/>
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</UserControl>

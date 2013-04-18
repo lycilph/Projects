@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="LunchViewer.Views.OverviewPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:m="clr-namespace:LunchViewer.Model"
+             xmlns:vm="clr-namespace:LunchViewer.ViewModels"
+             xmlns:r="clr-namespace:LunchViewer.Resources"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             xmlns:cm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+             lex:LocalizeDictionary.DesignCulture="en-US"
+             lex:ResxLocalizationProvider.DefaultAssembly="LunchViewer"
+             lex:ResxLocalizationProvider.DefaultDictionary="Strings"
+             mc:Ignorable="d" 
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance vm:OverviewViewModel}">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="..\Resources\DayMenuDataTemplate.xaml"/>
+                <ResourceDictionary Source="..\Resources\StretchingTreeViewItem.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <HierarchicalDataTemplate DataType="{x:Type m:WeeklyMenu}" ItemsSource="{Binding Menus}">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Right" VerticalAlignment="Center" Margin="0,0,8,0">
+                            <Hyperlink NavigateUri="{Binding Link}"
+                                       Command="{Binding Path=DataContext.LinkCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                       CommandParameter="{Binding Link}">
+                                <Run Text="{lex:Loc LunchViewer:Strings:WeeklyMenuLink}"/>
+                            </Hyperlink>
+                    </TextBlock>
+                    <TextBlock Text="{Binding Header}" FontSize="18"/>
+                </DockPanel>
+            </HierarchicalDataTemplate>
+            
+            <CollectionViewSource x:Key="menu_view_source" Source="{Binding MenuRepository.WeeklyMenus}">
+                <CollectionViewSource.SortDescriptions>
+                    <cm:SortDescription PropertyName="Year" Direction="Descending"/>
+                    <cm:SortDescription PropertyName="Week" Direction="Descending"/>
+                </CollectionViewSource.SortDescriptions>
+            </CollectionViewSource>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    
+    <Grid Margin="{StaticResource ContentMargin}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="{Binding Date}" Style="{StaticResource Heading1}" HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="1" Text="{Binding Week}" Style="{StaticResource Heading2}" HorizontalAlignment="Right" Margin="0,0,0,16"/>
+
+        <TreeView Grid.Row="2"
+                  x:Name="menu_treeview"
+                  ItemsSource="{Binding Source={StaticResource menu_view_source}}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                  Grid.IsSharedSizeScope="True"
+                  Margin="0,0,0,16">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectedItemChanged">
+                    <i:InvokeCommandAction Command="{Binding ItemSelectionChangedCommand}"
+                                           CommandParameter="{Binding ElementName=menu_treeview, Path=SelectedItem}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="TreeViewItem" BasedOn="{StaticResource stretching_tree_view_item}">
+                    <Setter Property="Margin" Value="0,4"/>
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Setter Property="r:TreeViewItemBehavior.IsBroughtIntoViewWhenSelected" Value="True"/>
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+
+        <DockPanel Grid.Row="3" LastChildFill="False">
+            <Button DockPanel.Dock="Left" Command="{Binding TodayCommand}" Content="{lex:Loc Today}"/>
+            <Button DockPanel.Dock="Right" Margin="8,0,0,0" Command="{Binding CollapseAllCommand}" Content="{lex:Loc CollapseAll}"/>
+            <Button DockPanel.Dock="Right" Command="{Binding ExpandAllCommand}" Content="{lex:Loc ExpandAll}"/>
+        </DockPanel>
+
+        <mui:TransitioningContentControl Grid.Row="4" MinHeight="100" Content="{Binding CurrentMenu}">
+            <mui:TransitioningContentControl.Resources>
+                <DataTemplate DataType="{x:Type m:DailyMenu}">
+                    <StackPanel>
+                        <TextBlock Text="{Binding Day}" Style="{StaticResource Title}"/>
+                        <TextBlock Text="{Binding Text}" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </mui:TransitioningContentControl.Resources>
+        </mui:TransitioningContentControl>
+    </Grid>
+</UserControl>
