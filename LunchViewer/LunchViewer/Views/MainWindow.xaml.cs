@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.Composition;
 using System.Windows;
 using LunchViewer.Interfaces;
@@ -27,7 +28,6 @@ namespace LunchViewer.Views
             {
                 if (WindowState == WindowState.Minimized)
                     WindowState = WindowState.Normal;
-
                 Activate();
             }
             else
@@ -37,12 +37,14 @@ namespace LunchViewer.Views
         public void Open(WeeklyMenu week_menu)
         {
             ViewModel.Show(week_menu);
+            ContentSource = new Uri("/Views/OverviewPage.xaml", UriKind.Relative);
             Open();
         }
 
         public void Open(DailyMenu day_menu)
         {
             ViewModel.Show(day_menu);
+            ContentSource = new Uri("/Views/OverviewPage.xaml", UriKind.Relative);
             Open();
         }
 
@@ -50,7 +52,10 @@ namespace LunchViewer.Views
         {
             var todays_menu = MenuRepository.GetTodaysMenu();
             if (todays_menu != null)
+            {
+                ContentSource = new Uri("/Views/OverviewPage.xaml", UriKind.Relative);
                 Open(todays_menu);
+            }
         }
 
         protected override void OnClosing(CancelEventArgs e)

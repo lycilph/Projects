@@ -4,12 +4,18 @@ using System.ComponentModel.Composition;
 using System.Windows;
 using LunchViewer.Interfaces;
 using LunchViewer.Model;
+using NLog;
 
 namespace LunchViewer.Views
 {
     [Export(typeof(INotificationService))]
     public partial class NotificationWindow : INotificationService
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
+        [Import]
+        public ISettings Settings { get; set; }
+
         public ObservableCollection<Notification> Notifications
         {
             get { return (ObservableCollection<Notification>)GetValue(NotificationsProperty); }
@@ -36,11 +42,13 @@ namespace LunchViewer.Views
 
         public void Start()
         {
+            logger.Debug("Notification service started");
             Show();
         }
 
         public void Stop()
         {
+            logger.Debug("Notification service stopped");
             Close();
         }
 
@@ -57,7 +65,7 @@ namespace LunchViewer.Views
         private void Notify(object data, Action click_action)
         {
             var fade_out_duration = ((Duration)Resources["fade_out_duration"]).TimeSpan;
-            var message_duration = ((Duration)Resources["message_duration"]).TimeSpan;
+            var message_duration = TimeSpan.FromSeconds(Settings.NotificationDuration);
 
             var notification = new Notification(data, Notifications.Remove, click_action, message_duration, fade_out_duration);
             Notifications.Insert(0, notification);

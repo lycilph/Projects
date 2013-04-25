@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel.Composition;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using LunchViewer.Interfaces;
 using LunchViewer.Utils;
+using NLog;
 using Newtonsoft.Json;
 
 namespace LunchViewer.Model
@@ -13,6 +13,8 @@ namespace LunchViewer.Model
     [Export(typeof(IMenuRepository))]
     public class MenuRepository : IMenuRepository
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         [Import]
         public ISettings Settings { get; set; }
 
@@ -45,17 +47,25 @@ namespace LunchViewer.Model
 
         public void Add(WeeklyMenu menu)
         {
+            logger.Debug(string.Format("Adding weekly menu - week {0}, {1}", menu.Week, menu.Year));
+
             WeeklyMenus.Add(menu);
         }
 
         public void ClearAll()
         {
+            logger.Debug("Clearing menus");
+
             WeeklyMenus.Clear();
         }
 
         public void Load()
         {
+            logger.Debug("Trying to load repository");
+
             if (!File.Exists(Settings.RepositoryPath)) return;
+
+            logger.Debug("Found repository file: " + Settings.RepositoryPath);
 
             using (var fs = File.Open(Settings.RepositoryPath, FileMode.Open))
             using (var sw = new StreamReader(fs))
@@ -67,6 +77,8 @@ namespace LunchViewer.Model
 
         public void Save()
         {
+            logger.Debug("Saving repository to: " + Settings.RepositoryPath);
+
             using (var fs = File.Open(Settings.RepositoryPath, FileMode.Create))
             using (var sw = new StreamWriter(fs))
             {

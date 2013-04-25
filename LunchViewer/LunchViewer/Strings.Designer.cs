@@ -79,6 +79,15 @@ namespace LunchViewer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @AutomaticUpdate.
+        /// </summary>
+        public static string AutomaticUpdate {
+            get {
+                return ResourceManager.GetString("AutomaticUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @BrowseForFile.
         /// </summary>
         public static string BrowseForFile {
@@ -160,11 +169,38 @@ namespace LunchViewer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @DailyReminder.
+        /// </summary>
+        public static string DailyReminder {
+            get {
+                return ResourceManager.GetString("DailyReminder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @Data.
         /// </summary>
         public static string Data {
             get {
                 return ResourceManager.GetString("Data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @EnableDailyReminder.
+        /// </summary>
+        public static string EnableDailyReminder {
+            get {
+                return ResourceManager.GetString("EnableDailyReminder", resourceCulture);
             }
         }
         
@@ -223,6 +259,15 @@ namespace LunchViewer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @MadeBy.
+        /// </summary>
+        public static string MadeBy {
+            get {
+                return ResourceManager.GetString("MadeBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @Minutes.
         /// </summary>
         public static string Minutes {
@@ -246,6 +291,24 @@ namespace LunchViewer {
         public static string No {
             get {
                 return ResourceManager.GetString("No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @NotificationDuration.
+        /// </summary>
+        public static string NotificationDuration {
+            get {
+                return ResourceManager.GetString("NotificationDuration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @Notifications.
+        /// </summary>
+        public static string Notifications {
+            get {
+                return ResourceManager.GetString("Notifications", resourceCulture);
             }
         }
         
@@ -286,11 +349,29 @@ namespace LunchViewer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @Reminder.
+        /// </summary>
+        public static string Reminder {
+            get {
+                return ResourceManager.GetString("Reminder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @RepositoryPath.
         /// </summary>
         public static string RepositoryPath {
             get {
                 return ResourceManager.GetString("RepositoryPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @Seconds.
+        /// </summary>
+        public static string Seconds {
+            get {
+                return ResourceManager.GetString("Seconds", resourceCulture);
             }
         }
         
@@ -304,11 +385,11 @@ namespace LunchViewer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @ShowNotificationsOnUpdate.
+        ///   Looks up a localized string similar to @ShowNotifications.
         /// </summary>
-        public static string ShowNotificationsOnUpdate {
+        public static string ShowNotifications {
             get {
-                return ResourceManager.GetString("ShowNotificationsOnUpdate", resourceCulture);
+                return ResourceManager.GetString("ShowNotifications", resourceCulture);
             }
         }
         
@@ -372,6 +453,15 @@ namespace LunchViewer {
         public static string Updates {
             get {
                 return ResourceManager.GetString("Updates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @Version.
+        /// </summary>
+        public static string Version {
+            get {
+                return ResourceManager.GetString("Version", resourceCulture);
             }
         }
         

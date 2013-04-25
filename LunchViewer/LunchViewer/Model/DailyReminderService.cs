@@ -2,12 +2,14 @@
 using System.ComponentModel.Composition;
 using System.Windows.Threading;
 using LunchViewer.Interfaces;
+using NLog;
 
 namespace LunchViewer.Model
 {
     [Export(typeof(IDailyReminderService))]
-    public class DailyReminderService : IDailyReminderService
+    public class DailyReminderService : IDailyReminderService, IPartImportsSatisfiedNotification
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         private readonly DispatcherTimer timer;
 
         [Import]
@@ -17,6 +19,8 @@ namespace LunchViewer.Model
         [Import]
         public INotificationService NotificationService { get; set; }
         [Import]
+        public IEmailService EmailService { get; set; }
+        [Import]
         public IMainWindow MainWindow { get; set; }
 
         public DailyReminderService()
@@ -25,15 +29,35 @@ namespace LunchViewer.Model
             timer.Tick += ReminderTick;
         }
 
+        public void OnImportsSatisfied()
+        {
+            Settings.PropertyChanged += (sender, args) =>
+                {
+                    if (args.PropertyName == "EnableDailyReminder")
+                        UpdateStatus();
+                    if (args.PropertyName == "DailyReminder")
+                        SetTimeToNextReminder();
+                };
+        }
+
         public void Start()
         {
-            SetTimeToNextReminder();
+            logger.Debug("Enabling daily reminder");
             timer.Start();
         }
 
         public void Stop()
         {
+            logger.Debug("Disabling daily reminder");
             timer.Stop();
+        }
+
+        private void UpdateStatus()
+        {
+            if (Settings.EnableDailyReminder)
+                Start();
+            else
+                Stop();
         }
 
         private void ReminderTick(object sender, EventArgs e)
@@ -41,7 +65,10 @@ namespace LunchViewer.Model
             var todays_menu = MenuRepository.GetTodaysMenu();
             NotificationService.ShowNotification(todays_menu, () => MainWindow.Open(todays_menu));
 
-            Start();
+            if (!string.IsNullOrWhiteSpace(Settings.ReminderEmail))
+                EmailService.Send(todays_menu);
+
+            SetTimeToNextReminder();
         }
 
         private void SetTimeToNextReminder()
@@ -53,6 +80,7 @@ namespace LunchViewer.Model
             if (reminder_time < now)
                 reminder_time = reminder_time.AddDays(1);
 
+            logger.Debug("Setting daily reminder time to: " + reminder_time.ToLongTimeString());
             timer.Interval = reminder_time - now;
         }
     }

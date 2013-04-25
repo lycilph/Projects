@@ -1,13 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
-using System.IO;
-using System.Windows;
-using System.Windows.Input;
-using FirstFloor.ModernUI.Windows.Controls;
 using LunchViewer.Infrastructure;
 using LunchViewer.Interfaces;
-using Microsoft.Expression.Interactivity.Core;
-using Microsoft.Win32;
 
 namespace LunchViewer.ViewModels
 {
@@ -17,13 +12,7 @@ namespace LunchViewer.ViewModels
         [Import]
         public ISettings Settings { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
-        [Import]
-        public IMenuUpdateService MenuUpdateService { get; set; }
-        [Import]
         public ILocalizationService LocalizationService { get; set; }
-        [Import]
-        public IDialogService DialogService { get; set; }
 
         public string CurrentCulture
         {
@@ -71,62 +60,68 @@ namespace LunchViewer.ViewModels
             }
         }
 
-        public string RepositoryPath
+        public bool AutomaticUpdate
         {
-            get { return Settings.RepositoryPath; }
+            get { return Settings.AutomaticMenuUpdate; }
             set
             {
-                if (value == Settings.RepositoryPath) return;
-                Settings.RepositoryPath = value;
+                if (value == Settings.AutomaticMenuUpdate) return;
+                Settings.AutomaticMenuUpdate = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public bool EnableDailyReminder
+        {
+            get { return Settings.EnableDailyReminder; }
+            set
+            {
+                if (value == Settings.EnableDailyReminder) return;
+                Settings.EnableDailyReminder = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public TimeSpan DailyReminder
+        {
+            get { return Settings.DailyReminder; }
+            set
+            {
+                if (value == Settings.DailyReminder) return;
+                Settings.DailyReminder = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public string ReminderEmail
+        {
+            get { return Settings.ReminderEmail; }
+            set
+            {
+                if (value == Settings.ReminderEmail) return;
+                Settings.ReminderEmail = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public int NotificationDuration
+        {
+            get { return Settings.NotificationDuration; }
+            set
+            {
+                if (value == Settings.NotificationDuration) return;
+                Settings.NotificationDuration = value;
                 NotifyPropertyChanged();
             }
         }
 
         public IEnumerable<string> Cultures { get; private set; }
 
-        public ICommand OpenFileDialogCommand { get; private set; }
-        public ICommand CheckNowCommand { get; private set; }
-        public ICommand ClearAllCommand { get; private set; }
-
-        public SettingsOptionsViewModel()
-        {
-            OpenFileDialogCommand = new ActionCommand(ShowFileDialog);
-            ClearAllCommand = new ActionCommand(ClearAll);
-        }
-
         public void OnImportsSatisfied()
         {
             Cultures = LocalizationService.GetAvailableCultures();
-            CheckNowCommand = new ActionCommand(MenuUpdateService.CheckNow);
-        }
 
-        private void ShowFileDialog()
-        {
-            SaveFileDialog sdf = new SaveFileDialog()
-                {
-                    InitialDirectory = Path.GetDirectoryName(RepositoryPath),
-                    FileName = Path.GetFileName(RepositoryPath),
-                    DefaultExt = ".json",
-                    Filter = "Repository files (.json)|*json",
-                    AddExtension = true
-                };
-
-            // Show open file dialog box
-            var result = sdf.ShowDialog();
-
-            // Process open file dialog box results 
-            if (result == true)
-                RepositoryPath = sdf.FileName;
-        }
-
-        private void ClearAll()
-        {
-            var title = LocalizationService.Localize("Warning");
-            var message = LocalizationService.Localize("ClearAllWarning");
-            var result = DialogService.ShowYesNoMessage(message, title);
-
-            if (result == true)
-                MenuRepository.ClearAll();
+            Settings.PropertyChanged += (sender, args) => NotifyPropertyChanged(string.Empty);
         }
     }
 }

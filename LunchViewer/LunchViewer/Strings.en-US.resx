@@ -166,7 +166,7 @@
     <value>Language</value>
   </data>
   <data name="Minutes" xml:space="preserve">
-    <value>Minutes</value>
+    <value>Min</value>
   </data>
   <data name="NewMenusNotification" xml:space="preserve">
     <value>Found new menu - </value>
@@ -189,8 +189,8 @@
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="ShowNotificationsOnUpdate" xml:space="preserve">
-    <value>Show Notifications On Update</value>
+  <data name="ShowNotifications" xml:space="preserve">
+    <value>Show Notifications</value>
   </data>
   <data name="ShowTodaysMenu" xml:space="preserve">
     <value>Show Todays Menu</value>
@@ -236,5 +236,35 @@
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="DailyReminder" xml:space="preserve">
+    <value>Daily Reminder</value>
+  </data>
+  <data name="NotificationDuration" xml:space="preserve">
+    <value>Notification Duration</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>Sec</value>
+  </data>
+  <data name="MadeBy" xml:space="preserve">
+    <value>Made By:</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="AutomaticUpdate" xml:space="preserve">
+    <value>Automatic Update</value>
+  </data>
+  <data name="EnableDailyReminder" xml:space="preserve">
+    <value>Enable Daily Reminder</value>
+  </data>
+  <data name="Reminder" xml:space="preserve">
+    <value>Reminder</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
   </data>
 </root>

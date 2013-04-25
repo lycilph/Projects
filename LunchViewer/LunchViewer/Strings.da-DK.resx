@@ -166,7 +166,7 @@
     <value>Sprog</value>
   </data>
   <data name="Minutes" xml:space="preserve">
-    <value>Minutter</value>
+    <value>Min</value>
   </data>
   <data name="NewMenusNotification" xml:space="preserve">
     <value>Fandt ny menu - </value>
@@ -189,8 +189,8 @@
   <data name="Settings" xml:space="preserve">
     <value>Indstillinger</value>
   </data>
-  <data name="ShowNotificationsOnUpdate" xml:space="preserve">
-    <value>Vis beskeder ved opdatering</value>
+  <data name="ShowNotifications" xml:space="preserve">
+    <value>Vis beskeder</value>
   </data>
   <data name="ShowTodaysMenu" xml:space="preserve">
     <value>Vis dagens menu</value>
@@ -236,5 +236,35 @@
   </data>
   <data name="Yes" xml:space="preserve">
     <value>Ja</value>
+  </data>
+  <data name="Notifications" xml:space="preserve">
+    <value>Beskeder</value>
+  </data>
+  <data name="DailyReminder" xml:space="preserve">
+    <value>Daglig påmindelse</value>
+  </data>
+  <data name="NotificationDuration" xml:space="preserve">
+    <value>Besked varighed</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value>Sek</value>
+  </data>
+  <data name="MadeBy" xml:space="preserve">
+    <value>Lavet af:</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="AutomaticUpdate" xml:space="preserve">
+    <value>Automatisk opdatering</value>
+  </data>
+  <data name="EnableDailyReminder" xml:space="preserve">
+    <value>Aktiver daglig påmindelse</value>
+  </data>
+  <data name="Reminder" xml:space="preserve">
+    <value>Påmindelser</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
   </data>
 </root>

@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.Composition;
+﻿using System;
+using System.ComponentModel.Composition;
 using System.Diagnostics;
 using System.Windows.Input;
+using System.Windows.Threading;
 using LunchViewer.Infrastructure;
 using LunchViewer.Interfaces;
 using LunchViewer.Model;
@@ -12,6 +14,9 @@ namespace LunchViewer.ViewModels
     [Export(typeof(OverviewViewModel))]
     public class OverviewViewModel : ObservableObject
     {
+        private readonly DispatcherTimer timer;
+        private DateTime today;
+
         [Import]
         public ISettings Settings { get; set; }
         [Import]
@@ -64,6 +69,19 @@ namespace LunchViewer.ViewModels
 
         public OverviewViewModel()
         {
+            today = DateTime.Today;
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromMinutes(1);
+            timer.Tick += (sender, args) =>
+                {
+                    if (DateTime.Today <= today) return;
+
+                    today = DateTime.Today;
+                    UpdateHeaders();
+                };
+            timer.Start();
+
             ItemSelectionChangedCommand = new ActionCommand(ItemSelectionChanged);
             LinkCommand = new ActionCommand(ShowLink);
             LoadedCommand = new ActionCommand(Loaded);

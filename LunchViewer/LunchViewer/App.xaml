@@ -10,6 +10,7 @@
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml"/>
                 <ResourceDictionary Source="/Resources/AccentLightResource.xaml"/>
+                <ResourceDictionary Source="/Resources/LogoData.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <infrastructure:CompositionContentLoader x:Key="composition_content_loader"/>
         </ResourceDictionary>

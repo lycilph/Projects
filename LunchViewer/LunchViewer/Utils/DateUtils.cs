@@ -81,7 +81,23 @@ namespace LunchViewer.Utils
 
         public static string GetCurrentDateFormatted(CultureInfo culture_info)
         {
-            return DateTime.Today.ToString("dddd, dd. MMMM yyyy", culture_info);
+            return GetDateFormatted(culture_info, DateTime.Today);
+        }
+
+        public static string GetDateFormatted(DateTime date)
+        {
+            return GetDateFormatted(dk_culture, date);
+        }
+
+        public static string GetDateFormatted(string culture, DateTime date)
+        {
+            var culture_info = CultureInfo.CreateSpecificCulture(culture);
+            return GetDateFormatted(culture_info, date);
+        }
+
+        public static string GetDateFormatted(CultureInfo culture_info, DateTime date)
+        {
+            return date.ToString("dddd, dd. MMMM yyyy", culture_info);
         }
 
         public static int GetCurrentWeekNumber()

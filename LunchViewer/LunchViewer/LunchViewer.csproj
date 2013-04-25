@@ -98,10 +98,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\TimePicker.cs" />
     <Compile Include="Infrastructure\AccessToken.cs" />
     <Compile Include="Infrastructure\AuthenticationProvider.cs" />
+    <Compile Include="Model\EmailService.cs" />
     <Compile Include="Interfaces\IDailyReminderService.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />
+    <Compile Include="Interfaces\IEmailService.cs" />
     <Compile Include="Interfaces\ILocalizationService.cs" />
     <Compile Include="Interfaces\IMainWindow.cs" />
     <Compile Include="Interfaces\IMenuUpdateService.cs" />
@@ -128,12 +131,17 @@
     <Compile Include="Utils\ColorUtils.cs" />
     <Compile Include="Utils\DateUtils.cs" />
     <Compile Include="Utils\FontSizeItem.cs" />
+    <Compile Include="Utils\MathUtils.cs" />
+    <Compile Include="ViewModels\SettingsDataViewModel.cs" />
     <Compile Include="ViewModels\SettingsOptionsViewModel.cs" />
     <Compile Include="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NotificationWindow.xaml.cs">
       <DependentUpon>NotificationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsData.xaml.cs">
+      <DependentUpon>SettingsData.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SettingsOptions.xaml.cs">
       <DependentUpon>SettingsOptions.xaml</DependentUpon>
@@ -149,6 +157,18 @@
     <Page Include="Resources\DayMenuDataTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\LogoData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\TimePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AboutPage.xaml">
       <SubType>Designer</SubType>
@@ -185,6 +205,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\OverviewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SettingsData.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

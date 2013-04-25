@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="LunchViewer.Views.SettingsData"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:lex="http://wpflocalizeextension.codeplex.com"
+             xmlns:vm="clr-namespace:LunchViewer.ViewModels"
+             lex:LocalizeDictionary.DesignCulture="en-US"
+             lex:ResxLocalizationProvider.DefaultAssembly="LunchViewer"
+             lex:ResxLocalizationProvider.DefaultDictionary="Strings"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance vm:SettingsDataViewModel}">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Grid.IsSharedSizeScope="True">
+                <TextBlock Text="{lex:Loc Data, Converter={StaticResource ToUpperConverter}}" Style="{StaticResource Heading2}" HorizontalAlignment="Right" Margin="0,0,0,8" />
+
+                <Grid HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Data options -->
+                    <Separator Grid.Row="0" Grid.ColumnSpan="3"/>
+                    <TextBlock Grid.Row="1" Text="{lex:Loc Data}" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
+
+                    <TextBlock Grid.Row="2" Margin="0,0,0,4" Text="{lex:Loc RepositoryPath}"/>
+                    <DockPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="0,0,0,4">
+                        <Button DockPanel.Dock="Right" Margin="4,0,0,0" Content="..." Command="{Binding OpenFileDialogCommand}" ToolTip="{lex:Loc BrowseForFile}"/>
+                        <TextBox Text="{Binding RepositoryPath, UpdateSourceTrigger=PropertyChanged}"/>
+                    </DockPanel>
+
+                    <Button Grid.Row="4" Grid.Column="1" Margin="0,0,0,4" Content="{lex:Loc CheckNow}" Command="{Binding CheckNowCommand}" MinWidth="120"/>
+                    <Button Grid.Row="5" Grid.Column="1" Content="{lex:Loc ClearAll}" Command="{Binding ClearAllCommand}" MinWidth="120"/>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

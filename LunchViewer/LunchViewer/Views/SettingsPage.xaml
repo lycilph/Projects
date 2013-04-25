@@ -17,6 +17,7 @@
             <mui:ModernTab.Links>
                 <mui:Link DisplayName="{lex:Loc LunchViewer:Strings:Appearance}" Source="/Views/SettingsAppearance.xaml"/>
                 <mui:Link DisplayName="{lex:Loc LunchViewer:Strings:Options}" Source="/Views/SettingsOptions.xaml"/>
+                <mui:Link DisplayName="{lex:Loc LunchViewer:Strings:Data}" Source="/Views/SettingsData.xaml"/>
             </mui:ModernTab.Links>
         </mui:ModernTab>
     </Grid>

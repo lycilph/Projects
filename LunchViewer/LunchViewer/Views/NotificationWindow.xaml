@@ -24,9 +24,6 @@
                 <ResourceDictionary Source="..\Resources\DayMenuDataTemplate.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
-            <!-- ReSharper disable Xaml.RedundantResource - this is used in the code-behind -->
-            <Duration x:Key="message_duration">0:0:6</Duration>
-            <!-- ReSharper restore Xaml.RedundantResource -->
             <Duration x:Key="fade_in_duration">0:0:1</Duration>
             <Duration x:Key="fade_out_duration">0:0:0.5</Duration>
             <Duration x:Key="item_move_duration">0:0:0.5</Duration>

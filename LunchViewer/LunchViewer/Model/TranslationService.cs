@@ -4,26 +4,30 @@ using System.ServiceModel.Channels;
 using System.Threading.Tasks;
 using LunchViewer.Infrastructure;
 using LunchViewer.Interfaces;
+using NLog;
 
 namespace LunchViewer.Model
 {
     [Export(typeof(ITranslationService))]
     public class TranslationService : ITranslationService, IPartImportsSatisfiedNotification
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         private readonly BingTranslatorService.LanguageServiceClient translation_service_client;
         private readonly AuthenticationProvider authentication_provider;
 
         [Import]
         public ISettings Settings { get; set; }
         [Import]
+        public IMenuRepository MenuRepository { get; set; }
+        [Import]
         public ILocalizationService LocalizationService { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        public IMenuUpdateService MenuUpdateService { get; set; }
 
         public TranslationService()
         {
             translation_service_client = new BingTranslatorService.LanguageServiceClient();
-            authentication_provider = new AuthenticationProvider("LunchViewerID", "5uv19IyTKaEGCvB10Lq3xGInfyf1M2+UTeDVCHLUWDA=");
+            authentication_provider = new AuthenticationProvider("LunchViewerID", "9J9NlGfKUUU4j4UFNmbDUHz/oV2bQXBATevKDix8f/8=");
         }
 
         public void OnImportsSatisfied()
@@ -33,11 +37,14 @@ namespace LunchViewer.Model
                     if (args.PropertyName == "Culture" || args.PropertyName == "TranslateMenus")
                         Translate();
                 };
+            MenuUpdateService.MenusUpdated += (sender, args) => Translate();
         }
 
         private async void Translate()
         {
             var culture_info = System.Globalization.CultureInfo.CreateSpecificCulture(Settings.Culture);
+
+            logger.Debug("Translating menus to: " + culture_info.TwoLetterISOLanguageName);
 
             foreach (var weekly_menu in MenuRepository.WeeklyMenus)
             {
@@ -51,6 +58,8 @@ namespace LunchViewer.Model
                     {
                         if (!daily_menu.HasLanguage(culture_info.Name))
                         {
+                            logger.Debug(string.Format("Adding new translation for {0}, week {1} - {2}", daily_menu.Date.ToShortDateString(), weekly_menu.Week, weekly_menu.Year));
+
                             var original_text = daily_menu.GetTranslation(Settings.OriginalCulture);
                             var translated_text = await GetTranslationAsync(culture_info.TwoLetterISOLanguageName, original_text);
                             daily_menu.AddNewTranslation(culture_info.Name, translated_text);
