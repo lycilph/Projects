@@ -14,7 +14,7 @@ namespace LunchViewer.Views
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
 
         public ObservableCollection<Notification> Notifications
         {

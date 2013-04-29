@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Composition;
 using System.Windows;
+using LunchViewer.Annotations;
 using LunchViewer.Infrastructure;
 using LunchViewer.Interfaces;
 using NLog;
@@ -27,26 +28,26 @@ namespace LunchViewer
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public INotificationService NotificationService { get; set; }
+        private INotificationService NotificationService { get; set; }
         [Import]
-        public IMenuUpdateService MenuUpdateService { get; set; }
+        private IMenuUpdateService MenuUpdateService { [UsedImplicitly] get; set; }
         [Import]
-        public IDailyReminderService DailyReminderService { get; set; }
+        private IDailyReminderService DailyReminderService { [UsedImplicitly] get; set; }
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { [UsedImplicitly] get; set; }
         [Import]
-        public ITranslationService TranslationService { get; set; }
+        private ITranslationService TranslationService { [UsedImplicitly] get; set; }
         [Import]
-        public IMainWindow Window { get; set; }
+        private IMainWindow Window { [UsedImplicitly] get; set; }
         [Import]
-        public ITaskbarWindow TaskbarWindow { get; set; }
+        private ITaskbarWindow TaskbarWindow { [UsedImplicitly] get; set; }
 
         [Import]
-        private IEmailService EmailService { get; set; }
+        private IDialogService dialog_service { get; set; }
 
         private void ApplicationStartup(object sender, StartupEventArgs e)
         {
@@ -67,8 +68,6 @@ namespace LunchViewer
             // Initialize language
             logger.Debug("Initializing language");
             Settings.InitializeLanguage();
-
-            EmailService.Send(MenuRepository.GetTodaysMenu());
         }
 
         private void ApplicationExit(object sender, ExitEventArgs e)

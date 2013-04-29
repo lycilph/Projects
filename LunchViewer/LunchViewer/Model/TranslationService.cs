@@ -16,13 +16,13 @@ namespace LunchViewer.Model
         private readonly AuthenticationProvider authentication_provider;
 
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { get; set; }
         [Import]
-        public IMenuUpdateService MenuUpdateService { get; set; }
+        private IMenuUpdateService MenuUpdateService { get; set; }
 
         public TranslationService()
         {

@@ -5,12 +5,34 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:lex="http://wpflocalizeextension.codeplex.com"
              xmlns:vm="clr-namespace:LunchViewer.ViewModels"
+             xmlns:res="clr-namespace:LunchViewer.Resources"
              lex:LocalizeDictionary.DesignCulture="en-US"
              lex:ResxLocalizationProvider.DefaultAssembly="LunchViewer"
              lex:ResxLocalizationProvider.DefaultDictionary="Strings"
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="300"
              d:DataContext="{d:DesignInstance vm:SettingsDataViewModel}">
+    <UserControl.Resources>
+        <Style x:Key="TrimmingStyle" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsKeyboardFocused, RelativeSource={RelativeSource Self}}" Value="false">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Grid>
+                                    <TextBox Text="{TemplateBinding Text}" Visibility="Hidden"/>
+                                    <Border BorderThickness="1" BorderBrush="{DynamicResource Accent}">
+                                        <res:PathTrimmingTextBlock Path="{TemplateBinding Text}" Margin="5,2,2,1"/>
+                                    </Border>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    
     <Grid>
         <ScrollViewer>
             <StackPanel Grid.IsSharedSizeScope="True">
@@ -38,7 +60,7 @@
                     <TextBlock Grid.Row="2" Margin="0,0,0,4" Text="{lex:Loc RepositoryPath}"/>
                     <DockPanel Grid.Row="3" Grid.ColumnSpan="2" Margin="0,0,0,4">
                         <Button DockPanel.Dock="Right" Margin="4,0,0,0" Content="..." Command="{Binding OpenFileDialogCommand}" ToolTip="{lex:Loc BrowseForFile}"/>
-                        <TextBox Text="{Binding RepositoryPath, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Text="{Binding RepositoryPath, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource TrimmingStyle}" res:TextBoxFocusBehavior.ScrollToEndOnFocus="True"/>
                     </DockPanel>
 
                     <Button Grid.Row="4" Grid.Column="1" Margin="0,0,0,4" Content="{lex:Loc CheckNow}" Command="{Binding CheckNowCommand}" MinWidth="120"/>

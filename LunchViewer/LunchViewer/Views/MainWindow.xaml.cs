@@ -12,9 +12,9 @@ namespace LunchViewer.Views
     public partial class MainWindow : IMainWindow
     {
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public OverviewViewModel ViewModel { get; set; }
+        private OverviewViewModel ViewModel { get; set; }
 
         public MainWindow()
         {

@@ -267,4 +267,13 @@
   <data name="Email" xml:space="preserve">
     <value>@Email</value>
   </data>
+  <data name="EmailDisplayName" xml:space="preserve">
+    <value>@EmailDisplayName</value>
+  </data>
+  <data name="EmailSubject" xml:space="preserve">
+    <value>@EmailSubject</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>@Ok</value>
+  </data>
 </root>

@@ -18,11 +18,11 @@ namespace LunchViewer.ViewModels
         private DateTime today;
 
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
         public IMenuRepository MenuRepository { get; set; }
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { get; set; }
 
         private DailyMenu _CurrentMenu;
         public DailyMenu CurrentMenu

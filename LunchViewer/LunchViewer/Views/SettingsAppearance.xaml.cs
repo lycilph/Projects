@@ -6,7 +6,7 @@ namespace LunchViewer.Views
     public partial class SettingsAppearance : IPartImportsSatisfiedNotification
     {
         [Import]
-        public SettingsAppearanceViewModel ViewModel { get; set; }
+        private SettingsAppearanceViewModel ViewModel { get; set; }
 
         public SettingsAppearance()
         {

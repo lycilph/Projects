@@ -10,9 +10,9 @@ namespace LunchViewer.ViewModels
     public class SettingsOptionsViewModel : ObservableObject, IPartImportsSatisfiedNotification
     {
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { get; set; }
 
         public string CurrentCulture
         {

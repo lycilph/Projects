@@ -13,9 +13,14 @@ namespace LunchViewer.Model
     {
         [Import]
         private ISettings Settings { get; set; }
+        [Import]
+        private ILocalizationService LocalizationService { get; set; }
+        [Import]
+        private IDialogService DialogService { get; set; }
 
         public async void Send(DailyMenu daily_menu)
         {
+            // Create smtp (email) client with correct username etc.
             SmtpClient client = new SmtpClient("smtp.live.com", 587)
             {
                 UseDefaultCredentials = false,
@@ -24,26 +29,30 @@ namespace LunchViewer.Model
                 EnableSsl = true
             };
 
+            // Create and localize strings
             var date = DateUtils.GetDateFormatted(Settings.Culture, daily_menu.Date);
-            var Subject = "Daily lunch reminder for " + date;
+            var subject = string.Format(LocalizationService.Localize("EmailSubject"), date);
             var body = daily_menu.Text;
+            var display_name = LocalizationService.Localize("EmailDisplayName");
 
+            // Create email itself
             var message = new MailMessage
             {
-                From = new MailAddress("LunchReminder@outlook.com", "Daily Lunch Reminder"),
-                Subject = "Reminder for wednesday 24-04-2013",
-                Body = "Mad og mad"
+                From = new MailAddress("LunchReminder@outlook.com", display_name),
+                Subject = subject,
+                Body = body
             };
             message.To.Add(new MailAddress(Settings.ReminderEmail));
 
-            //try
-            //{
-            //    await client.SendMailAsync(message);
-            //}
-            //catch (Exception e)
-            //{
-            //    MessageBox.Show(e.Message);
-            //}
+            // Try to send email
+            try
+            {
+                await client.SendMailAsync(message);
+            }
+            catch (Exception e)
+            {
+                DialogService.ShowOkMessage(e.Message, "Error");
+            }
         }
     }
 }

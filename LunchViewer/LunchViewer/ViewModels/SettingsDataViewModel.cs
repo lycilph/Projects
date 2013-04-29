@@ -1,9 +1,9 @@
-﻿using System.ComponentModel.Composition;
+﻿using System;
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Windows.Input;
 using LunchViewer.Infrastructure;
 using LunchViewer.Interfaces;
-using LunchViewer.Model;
 using Microsoft.Expression.Interactivity.Core;
 using Microsoft.Win32;
 
@@ -13,15 +13,15 @@ namespace LunchViewer.ViewModels
     public class SettingsDataViewModel : ObservableObject, IPartImportsSatisfiedNotification
     {
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public IMenuUpdateService MenuUpdateService { get; set; }
+        private IMenuUpdateService MenuUpdateService { get; set; }
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { get; set; }
         [Import]
-        public IDialogService DialogService { get; set; }
+        private IDialogService DialogService { get; set; }
 
         public string RepositoryPath
         {
@@ -51,10 +51,12 @@ namespace LunchViewer.ViewModels
 
         private void ShowFileDialog()
         {
+            var path = (string.IsNullOrWhiteSpace(Settings.RepositoryPath) ? Environment.CurrentDirectory : Settings.RepositoryPath);
+
             SaveFileDialog sdf = new SaveFileDialog()
             {
-                InitialDirectory = Path.GetDirectoryName(RepositoryPath),
-                FileName = Path.GetFileName(RepositoryPath),
+                InitialDirectory = Path.GetDirectoryName(path),
+                FileName = Path.GetFileName(path),
                 DefaultExt = ".json",
                 Filter = "Repository files (.json)|*json",
                 AddExtension = true

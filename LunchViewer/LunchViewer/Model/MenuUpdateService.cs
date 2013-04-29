@@ -25,15 +25,17 @@ namespace LunchViewer.Model
         private bool is_updating;
 
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public INotificationService NotificationService { get; set; }
+        private INotificationService NotificationService { get; set; }
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { get; set; }
         [Import]
-        public IMainWindow MainWindow { get; set; }
+        private IDialogService DialogService { get; set; }
+        [Import]
+        private IMainWindow MainWindow { get; set; }
 
         public event EventHandler MenusUpdated;
 
@@ -141,7 +143,7 @@ namespace LunchViewer.Model
                 sb.Append("Disabling automatic updates (fix and reenable in settings)");
                 // Show and log message
                 logger.Debug(sb.ToString());
-                MessageBox.Show(sb.ToString());
+                DialogService.ShowOkMessage(sb.ToString(), "Error");
             }
             finally
             {

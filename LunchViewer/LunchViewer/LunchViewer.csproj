@@ -118,6 +118,8 @@
     <Compile Include="Model\Notification.cs" />
     <Compile Include="Model\TranslationService.cs" />
     <Compile Include="Resources\NumericTextBoxBehavior.cs" />
+    <Compile Include="Resources\PathTrimmingTextBlock.cs" />
+    <Compile Include="Resources\TextBoxFocusBehavior.cs" />
     <Compile Include="Service References\BingTranslatorService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

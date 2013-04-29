@@ -6,7 +6,7 @@ namespace LunchViewer.Views
     public partial class OverviewPage : IPartImportsSatisfiedNotification
     {
         [Import]
-        public OverviewViewModel ViewModel { get; set; }
+        private OverviewViewModel ViewModel { get; set; }
 
         public OverviewPage()
         {

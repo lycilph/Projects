@@ -13,15 +13,15 @@ namespace LunchViewer.Model
         private readonly DispatcherTimer timer;
 
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public INotificationService NotificationService { get; set; }
+        private INotificationService NotificationService { get; set; }
         [Import]
-        public IEmailService EmailService { get; set; }
+        private IEmailService EmailService { get; set; }
         [Import]
-        public IMainWindow MainWindow { get; set; }
+        private IMainWindow MainWindow { get; set; }
 
         public DailyReminderService()
         {

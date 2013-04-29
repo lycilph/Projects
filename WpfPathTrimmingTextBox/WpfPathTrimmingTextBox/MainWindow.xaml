@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfPathTrimmingTextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WpfPathTrimmingTextBox"
+        Title="MainWindow" Height="350" Width="250">
+    <Window.Resources>
+        <Style x:Key="TrimmingStyle" TargetType="TextBox" BasedOn="{StaticResource {x:Type TextBox}}">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsKeyboardFocused, RelativeSource={RelativeSource Self}}" Value="false">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Grid>
+                                    <TextBox Text="{TemplateBinding Text}" Visibility="Hidden"/>
+                                    <Border BorderThickness="1" BorderBrush="LightBlue">
+                                        <local:PathTrimmingTextBlock Path="{TemplateBinding Text}" Margin="4,2,2,1"/>
+                                    </Border>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
+    <StackPanel Margin="10">
+        <TextBox Text="{Binding Path}"/>
+        <local:PathTrimmingTextBlock Path="{Binding Path}"/>
+        <TextBox Text="{Binding Path}" Style="{StaticResource TrimmingStyle}"/>
+        <local:PathTrimmingTextBlock Path="{Binding Path}"/>
+    </StackPanel>
+</Window>

@@ -18,7 +18,7 @@ namespace LunchViewer.ViewModels
     public class SettingsAppearanceViewModel : ObservableObject
     {
         [Import]
-        public ILocalizationService LocalizationService { get; set; }
+        private ILocalizationService LocalizationService { get; set; }
 
         // 9 accent colors from metro design principles
         private readonly Color[] _AccentColors = new[]{

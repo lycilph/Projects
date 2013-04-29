@@ -196,6 +196,24 @@ namespace LunchViewer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @EmailDisplayName.
+        /// </summary>
+        public static string EmailDisplayName {
+            get {
+                return ResourceManager.GetString("EmailDisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @EmailSubject.
+        /// </summary>
+        public static string EmailSubject {
+            get {
+                return ResourceManager.GetString("EmailSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @EnableDailyReminder.
         /// </summary>
         public static string EnableDailyReminder {
@@ -309,6 +327,15 @@ namespace LunchViewer {
         public static string Notifications {
             get {
                 return ResourceManager.GetString("Notifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @Ok.
+        /// </summary>
+        public static string Ok {
+            get {
+                return ResourceManager.GetString("Ok", resourceCulture);
             }
         }
         

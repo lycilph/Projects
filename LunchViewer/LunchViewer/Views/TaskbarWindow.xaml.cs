@@ -13,13 +13,13 @@ namespace LunchViewer.Views
     public partial class TaskbarWindow : ITaskbarWindow, IPartImportsSatisfiedNotification, INotifyPropertyChanged
     {
         [Import]
-        public IMenuRepository MenuRepository { get; set; }
+        private IMenuRepository MenuRepository { get; set; }
         [Import]
-        public INotificationService NotificationService { get; set; }
+        private INotificationService NotificationService { get; set; }
         [Import]
-        public IMenuUpdateService MenuUpdateService { get; set; }
+        private IMenuUpdateService MenuUpdateService { get; set; }
         [Import]
-        public IMainWindow MainWindow { get; set; }
+        private IMainWindow MainWindow { get; set; }
 
         private ICommand _ShowCommand;
         public ICommand ShowCommand

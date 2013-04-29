@@ -15,7 +15,7 @@ namespace LunchViewer.Model
     public class LocalizationService : ILocalizationService, IPartImportsSatisfiedNotification
     {
         [Import]
-        public ISettings Settings { get; set; }
+        private ISettings Settings { get; set; }
 
         public void Update()
         {
