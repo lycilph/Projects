@@ -115,6 +115,17 @@ namespace LunchViewer.ViewModels
             }
         }
 
+        public bool StartOnWindowsStart
+        {
+            get { return Settings.StartOnWindowsStart; }
+            set
+            {
+                if (value == Settings.StartOnWindowsStart) return;
+                Settings.StartOnWindowsStart = value;
+                NotifyPropertyChanged();
+            }
+        }
+
         public IEnumerable<string> Cultures { get; private set; }
 
         public void OnImportsSatisfied()

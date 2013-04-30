@@ -20,8 +20,22 @@ namespace LunchViewer
      *   Client ID:     LunchViewerID
      *   Name:          LunchViewer
      *   Client secret: 9J9NlGfKUUU4j4UFNmbDUHz/oV2bQXBATevKDix8f/8=
+     *   
+     * 
+     * For future user (if translation + storage is to be online)
+     * AppFog (web server + db)
+     * Email:    FirstLast_LunchViewer@outlook.com
+     * Pasworkd: FirstLast123
+     * Domain:   Lunchviewer.eu01.aws.af.cm
+     * 
+     * MongoHQ (test db)
+     * Email:    FirstLast_LunchViewer@outlook.com
+     * Pasworkd: FirstLast
+     * 
+     * Cloud9 (js ide)
+     * Email:    FirstLast_LunchViewer@outlook.com
+     * Pasworkd: FirstLast
      */
-
 
     public partial class App
     {
@@ -45,9 +59,6 @@ namespace LunchViewer
         private IMainWindow Window { [UsedImplicitly] get; set; }
         [Import]
         private ITaskbarWindow TaskbarWindow { [UsedImplicitly] get; set; }
-
-        [Import]
-        private IDialogService dialog_service { get; set; }
 
         private void ApplicationStartup(object sender, StartupEventArgs e)
         {

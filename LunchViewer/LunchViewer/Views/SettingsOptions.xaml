@@ -44,9 +44,12 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <!-- Language options -->
+                    <!-- Language -->
                     <Separator Grid.Row="0" Grid.ColumnSpan="3"/>
                     <TextBlock Grid.Row="1" Text="{lex:Loc Language}" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
                     
@@ -56,7 +59,7 @@
                     <TextBlock Grid.Row="3" Grid.Column="0" Text="{lex:Loc TranslateMenus}" VerticalAlignment="Center"/>
                     <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding TranslateMenus}"/>
 
-                    <!-- Update options -->
+                    <!-- Update -->
                     <Separator Grid.Row="4" Grid.ColumnSpan="3" Margin="0,16,0,0"/>
                     <TextBlock Grid.Row="5" Text="{lex:Loc Updates}" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
 
@@ -80,16 +83,23 @@
                     <TextBlock Grid.Row="13" Grid.Column="0" Text="{lex:Loc DailyReminder}" VerticalAlignment="Center"/>
                     <c:TimePicker Grid.Row="13" Grid.Column="1" SelectedTime="{Binding DailyReminder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding EnableDailyReminder}"/>
 
-                    <TextBlock Grid.Row="14" Grid.Column="0" Margin="0,0,0,4" Text="{lex:Loc Email}" VerticalAlignment="Center"/>
-                    <TextBox Grid.Row="14" Grid.Column="1" Margin="0,0,0,4" Text="{Binding ReminderEmail, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding EnableDailyReminder}"/>
+                    <TextBlock Grid.Row="14" Grid.Column="0" Text="{lex:Loc Email}" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="14" Grid.Column="1" Text="{Binding ReminderEmail, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding EnableDailyReminder}"/>
                     
                     <!-- Notifications -->
                     <Separator Grid.Row="15" Grid.ColumnSpan="3" Margin="0,16,0,0"/>
                     <TextBlock Grid.Row="16" Text="{lex:Loc Notifications}" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
 
-                    <TextBlock Grid.Row="17" Grid.Column="0" Text="{lex:Loc NotificationDuration}" VerticalAlignment="Center"/>
-                    <TextBox Grid.Row="17" Grid.Column="1" Text="{Binding NotificationDuration, UpdateSourceTrigger=PropertyChanged}" res:NumericTextBoxBehavior.IsNumericOnly="True"/>
-                    <TextBlock Grid.Row="17" Grid.Column="2" Margin="4,0,0,0" Text="{lex:Loc Seconds}" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="17" Grid.Column="0" Margin="0,0,0,4" Text="{lex:Loc NotificationDuration}" VerticalAlignment="Center"/>
+                    <TextBox Grid.Row="17" Grid.Column="1" Margin="0,0,0,4" Text="{Binding NotificationDuration, UpdateSourceTrigger=PropertyChanged}" res:NumericTextBoxBehavior.IsNumericOnly="True"/>
+                    <TextBlock Grid.Row="17" Grid.Column="2" Margin="4,0,0,4" Text="{lex:Loc Seconds}" VerticalAlignment="Center"/>
+
+                    <!-- Startup -->
+                    <Separator Grid.Row="18" Grid.ColumnSpan="3" Margin="0,16,0,0"/>
+                    <TextBlock Grid.Row="19" Text="{lex:Loc Startup}" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
+                    
+                    <TextBlock Grid.Row="20" Grid.Column="0" Text="{lex:Loc StartOnWindowsStart}"/>
+                    <CheckBox Grid.Row="20" Grid.Column="1" IsChecked="{Binding StartOnWindowsStart}"/>
                 </Grid>
             </StackPanel>
         </ScrollViewer>

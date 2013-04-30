@@ -49,8 +49,6 @@ namespace LunchViewer.Model
 
         public void OnImportsSatisfied()
         {
-            timer.Interval = TimeSpan.FromSeconds(Settings.UpdateInterval);
-
             Settings.PropertyChanged += (sender, args) =>
                 {
                     if (args.PropertyName == "UpdateInterval")
@@ -58,6 +56,9 @@ namespace LunchViewer.Model
                     if (args.PropertyName == "AutomaticMenuUpdate")
                         UpdateStatus();
                 };
+
+            timer.Interval = TimeSpan.FromSeconds(Settings.UpdateInterval);
+            UpdateStatus();
         }
 
         public void Start()
@@ -143,6 +144,7 @@ namespace LunchViewer.Model
                 sb.Append("Disabling automatic updates (fix and reenable in settings)");
                 // Show and log message
                 logger.Debug(sb.ToString());
+                MainWindow.Open(); // Ensure that we can see the error message (because it needs an owner window)
                 DialogService.ShowOkMessage(sb.ToString(), "Error");
             }
             finally

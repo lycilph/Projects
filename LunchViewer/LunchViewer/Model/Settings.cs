@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel.Composition;
+using System.Diagnostics;
 using System.IO;
+using System.Reflection;
 using LunchViewer.Infrastructure;
 using LunchViewer.Interfaces;
 using NLog;
@@ -154,6 +156,20 @@ namespace LunchViewer.Model
             }
         }
 
+        private bool _StartOnWindowsStart;
+        public bool StartOnWindowsStart
+        {
+            get { return _StartOnWindowsStart; }
+            set
+            {
+                if (value.Equals(_StartOnWindowsStart)) return;
+                _StartOnWindowsStart = value;
+                NotifyPropertyChanged();
+                // Make sure the startup link is set correctly
+                UpdateStartupLink();
+            }
+        }
+
         public Settings()
         {
             AutomaticMenuUpdate = true;
@@ -166,9 +182,12 @@ namespace LunchViewer.Model
             Culture = default_culture;
             TranslateMenus = true;
             NotificationDuration = 6;
+            StartOnWindowsStart = true;
 
             // Make sure the folder exists - does nothing if folder already exists
             Directory.CreateDirectory(app_data_path);
+            // Set application startup link
+            UpdateStartupLink();
         }
 
         public void Load()
@@ -205,6 +224,24 @@ namespace LunchViewer.Model
         public void InitializeLanguage()
         {
             NotifyPropertyChanged("Culture");
+        }
+
+        private void UpdateStartupLink()
+        {
+            var app_path = Assembly.GetExecutingAssembly().Location;
+            var app_filename = Path.GetFileName(app_path);
+            Debug.Assert(app_filename != null, "app_filename != null");
+            var link_filename = Path.ChangeExtension(app_filename, "lnk");
+
+            var link_path = Path.ChangeExtension(app_path, "lnk");
+            var startup_folder = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
+            var startup_link_path = Path.Combine(startup_folder, link_filename);
+
+            if (StartOnWindowsStart && !File.Exists(startup_link_path))
+                File.Copy(link_path, startup_link_path, true);
+            else if (!StartOnWindowsStart && File.Exists(startup_link_path))
+                File.Delete(startup_link_path);
+            // else nothing to do
         }
     }
 }

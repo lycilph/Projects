@@ -32,7 +32,6 @@ namespace LunchViewer.Model
             // Create and localize strings
             var date = DateUtils.GetDateFormatted(Settings.Culture, daily_menu.Date);
             var subject = string.Format(LocalizationService.Localize("EmailSubject"), date);
-            var body = daily_menu.Text;
             var display_name = LocalizationService.Localize("EmailDisplayName");
 
             // Create email itself
@@ -40,7 +39,7 @@ namespace LunchViewer.Model
             {
                 From = new MailAddress("LunchReminder@outlook.com", display_name),
                 Subject = subject,
-                Body = body
+                Body = daily_menu.Text,
             };
             message.To.Add(new MailAddress(Settings.ReminderEmail));
 

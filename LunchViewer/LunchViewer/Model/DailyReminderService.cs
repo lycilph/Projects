@@ -38,6 +38,9 @@ namespace LunchViewer.Model
                     if (args.PropertyName == "DailyReminder")
                         SetTimeToNextReminder();
                 };
+
+            SetTimeToNextReminder();
+            UpdateStatus();
         }
 
         public void Start()

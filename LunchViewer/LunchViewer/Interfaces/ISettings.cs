@@ -25,5 +25,6 @@ namespace LunchViewer.Interfaces
         string Culture { get; set; }
         bool TranslateMenus { get; set; }
         int NotificationDuration { get; set; }
+        bool StartOnWindowsStart { get; set; }
     }
 }

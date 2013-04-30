@@ -24,6 +24,9 @@
             <StackPanel x:Name="Panel" MinWidth="150">
                 <TextBlock Text="{lex:Loc Appearance, Converter={StaticResource ToUpperConverter}}" Style="{StaticResource Heading2}" HorizontalAlignment="Right" Margin="0,0,0,8" />
 
+                <Separator />
+                <TextBlock Text="{lex:Loc Appearance}" Style="{StaticResource Emphasis}" Margin="0,0,0,8"/>
+
                 <ListBox ItemsSource="{Binding AccentColors}"
                          SelectedItem="{Binding SelectedAccentColor, Mode=TwoWay}"
                          Margin="0,0,0,16">

@@ -430,6 +430,24 @@ namespace LunchViewer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to @StartOnWindowsStart.
+        /// </summary>
+        public static string StartOnWindowsStart {
+            get {
+                return ResourceManager.GetString("StartOnWindowsStart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to @Startup.
+        /// </summary>
+        public static string Startup {
+            get {
+                return ResourceManager.GetString("Startup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @ThemeModernUIDark.
         /// </summary>
         public static string ThemeModernUIDark {
