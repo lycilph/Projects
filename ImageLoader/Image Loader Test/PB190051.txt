@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da">
+<!-- saved from url=(0014)about:internet -->
+<!-- saved from url=(0014)about:internet -->
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+<meta name="Keywords" content="photo,album,gallery,PB190051,PB190051" />
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+<title>Besøg af jæger Bjarne Kleis d. 19. november 2013/PB190051</title>
+<script type="text/javascript" src="../res/embedmovie.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+function preventDefault(e) {
+	if (document.addEventListener) e.preventDefault();
+	else e.returnValue=false;
+	return false;
+}
+function keypress(e) {
+	if(typeof _jaWidgetFocus != 'undefined' && _jaWidgetFocus) return true;
+	if(document.activeElement && document.activeElement.nodeName == 'input') return true;
+	if(!e) var e=window.event;
+	if(e.keyCode) keyCode=e.keyCode; 
+	else if(e.which) keyCode=e.which;
+	switch(keyCode) {
+		case 8: window.location="../index2.html"; return preventDefault(e); break;
+		case 63234: case 37: window.location="PB190048.html"+""; return preventDefault(e); break;
+		case 63273: case 36: window.location="PB190001.html"+""; return preventDefault(e); break;
+		case 63275: case 35: window.location="PB190051.html"+""; return preventDefault(e); break;
+		
+	}
+	return true;
+}
+function setuplisteners() {
+	var isFF = navigator.userAgent.indexOf('Gecko') > -1 && navigator.userAgent.indexOf('KHTML') == -1;
+	if (document.addEventListener) {
+		document.addEventListener('keydown',keypress,false);
+	}
+	else if (document.attachEvent) {
+		document.attachEvent('onkeydown',keypress);
+		
+	}
+}
+idx0 = new Image(31,31); idx0.src = "../res/idx.gif";
+idx1 = new Image(31,31); idx1.src = "../res/idx1.gif";
+next0 = new Image(31,31);next0.src = "../res/next.gif";
+next1 = new Image(31,31);next1.src = "../res/next1.gif";
+prev0 = new Image(31,31);prev0.src = "../res/prev.gif";
+prev1 = new Image(31,31);prev1.src = "../res/prev1.gif";
+window.onload = function() {
+	setuplisteners();
+};
+/* ]]> */
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../res/styles.css" />
+</head>
+
+<body id="body">
+<div style="margin-left:auto; margin-right:auto; padding-bottom:10px; text-align:center;">
+<table style="height:54px;" align="center" cellspacing="0" cellpadding="0" border="0">
+<tr><td>
+<!-- Header of slide pages -->
+<table style="width:642px;" align="center" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td style="width:31px;">
+  <a href="../index2.html"><img style="border:0;" src="../res/idx.gif" onmouseover="this.src=idx1.src" onmouseout="this.src=idx0.src" width="31" height="31" title=" Indeksside " alt="Up" id="idx" /></a></td>
+<td style="width:20px;">
+  <img style="border:0;" src="../res/hdr_left.gif" width="20" height="31" alt="" /></td>
+<td style="text-align:left; background:transparent url(../res/hdr_mid.gif); background-repeat: repeat-x; white-space:nowrap;" class="title"> <a href="../index.html">Besøg af jæger Bjarne Kleis d. 19. november 2013</a> </td>
+<td style="width:20px;">
+  <img style="border:0;" src="../res/hdr_right.gif" width="20" height="31" alt="" /></td>
+<td style="width:31px;">
+  <a href="PB190048.html"><img style="border:0;" src="../res/prev.gif" onmouseover="this.src=prev1.src" onmouseout="this.src=prev0.src" width="31" height="31" title=" Foregående billede " alt="Prev" id="prev" /></a></td>
+<td style="width:31px;">
+  <img style="border:0;" src="../res/next_disabled.gif" width="31" height="31" alt="Next" title=" Dette er sidste side " /></td>
+</tr></table>
+</td></tr></table>
+<br />
+<a name="picttop"></a><map name="imagemap" style="text-decoration:none; border:0;" id="imap"><area coords="0,0,213,480" href="PB190048.html" alt=" Foregående billede " title=" Foregående billede " /><area coords="426,0,640,480" alt=" Dette er sidste side " title=" Dette er sidste side " /><area coords="213,0,426,480" href="../index2.html" alt=" Indeksside " title=" Indeksside " /></map>
+<table align="center" border="0" cellspacing="0" cellpadding="0"><tr>
+<td style="vertical-align:top;"><table style="width:64px;"><tr><td style="text-align:center; padding:4px; height:50px; border:0px;" class="thumb"><a href="PB190042.html"><img src="../thumbs/PB190042.JPG" title=" PB190042.JPG " alt="PB190042" width="48" height="36" class="mthumb" /></a></td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;" class="thumb"><a href="PB190043.html"><img src="../thumbs/PB190043.JPG" title=" PB190043.JPG " alt="PB190043" width="48" height="36" class="mthumb" /></a></td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;" class="thumb"><a href="PB190046.html"><img src="../thumbs/PB190046.JPG" title=" PB190046.JPG " alt="PB190046" width="36" height="48" class="mthumb" /></a></td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;" class="thumb"><a href="PB190047.html"><img src="../thumbs/PB190047.JPG" title=" PB190047.JPG " alt="PB190047" width="48" height="36" class="mthumb" /></a></td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;" class="thumb"><a href="PB190048.html"><img src="../thumbs/PB190048.JPG" title=" PB190048.JPG " alt="PB190048" width="36" height="48" class="mthumb" /></a></td></tr></table></td><td style="width:12px">&nbsp;</td>
+<td style="text-align:center; width:642px;">
+<img id="slide" src="PB190051.JPG" class="slideImage" width="640" height="480" alt="PB190051.JPG" title="" usemap="#imagemap" /></td>
+<td style="width:12px">&nbsp;</td><td style="vertical-align:bottom"><table style="width:64px;"><tr><td style="text-align:center; padding:4px; height:50px; border:0px;">&nbsp;</td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;">&nbsp;</td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;">&nbsp;</td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;">&nbsp;</td></tr><tr><td style="text-align:center; padding:4px; height:50px; border:0px;">&nbsp;</td></tr></table></td></tr></table>
+<br /> <!-- Comment and image data at BOTTOM -->
+<table align="center" style="width:642px;" class="infotable" cellspacing="0" cellpadding="2">
+<tr>
+  <td style="text-align:center;" class="smalltxt"><span class="comment">PB190051</span></td>
+  
+</tr>
+  <tr><td style="text-align:center;" class="smalltxt"><a href="PB190001.html" title=" Første side ">&laquo; </a>|<a href="PB190038.html" title=" Forrige side "> &lt; </a>|<a href="PB190039.html"> 25 </a>|<a href="PB190042.html"> 26 </a>|<a href="PB190043.html"> 27 </a>|<a href="PB190046.html"> 28 </a>|<a href="PB190047.html"> 29 </a>|<a href="PB190048.html"> 30 </a>|<span class="current">&nbsp;31&nbsp;</span>|</td></tr>
+  <tr><td style="text-align:center;" class="xsmalltxt">Billeder i alt: <strong>31</strong> | Sidst opdateret: <strong>2013-11-20</strong></td></tr>
+</table>
+</div>
+<script language="javascript" type="text/javascript">/* <![CDATA[ */
+previous_image=new Image(); previous_image.src="PB190048.JPG";
+/* ]]> */</script>
+<div id="jalbumwidgetcontainer"></div>
+<script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+_jaSkin = "Chameleon";
+_jaStyle = "Black.css";
+_jaVersion = "10.10.8";
+_jaGeneratorType = "desktop";
+_jaLanguage = "en";
+_jaPageType = "slide";
+_jaRootPath = "..";
+_jaUserId = "766585";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+//--><!]]></script>
+
+</body>
+</html>

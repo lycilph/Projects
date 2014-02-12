@@ -1,0 +1,26 @@
+﻿<Window x:Class="FilesystemControlsTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:FilesystemControlsTest"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel Margin="10">
+        <TextBlock DockPanel.Dock="Top" Text="{Binding ElementName=folder_treeview, Path=SelectedItem.Info.FullName, Mode=OneWay}"/>
+        <TreeView x:Name="folder_treeview" ItemsSource="{Binding Drives}" Margin="0,10,0,0">
+            <TreeView.Resources>
+                <HierarchicalDataTemplate DataType="{x:Type l:FileSystemObjectInfo}" ItemsSource="{Binding Path=Children}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding Path=ImageSource, UpdateSourceTrigger=PropertyChanged}" Margin="0,1,8,1"/>
+                        <TextBlock Text="{Binding Path=Info.Name}"/>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.Resources>
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="{x:Type TreeViewItem}">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                    <Setter Property="KeyboardNavigation.AcceptsReturn" Value="True" />
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+    </DockPanel>
+</Window>

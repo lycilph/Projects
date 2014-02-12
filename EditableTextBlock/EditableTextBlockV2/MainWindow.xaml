@@ -1,0 +1,74 @@
+﻿<Window x:Class="EditableTextBlockV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:l="clr-namespace:EditableTextBlockV2"
+        xmlns:dd="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <l:EnumBooleanConverter x:Key="enum_converter"/>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <l:EditableTextControl Text="{Binding CategoryViewModels/Name}" VerticalAlignment="Top"/>
+            <Button Content="Change category 1" Click="ChangeClick"/>
+            <Button Content="Add category" Click="AddCategoryClick"/>
+            <Button Content="Write" Click="WriteClick"/>
+        </StackPanel>
+
+        <ListBox Grid.Column="1"
+                 ItemsSource="{Binding CategoryViewModels}"
+                 SelectionMode="Extended"
+                 SelectionChanged="SelectionChanged"
+                 HorizontalContentAlignment="Stretch"
+                 PreviewKeyUp="CategoriesListBoxPreviewKeyUp"
+                 dd:DragDrop.IsDragSource="True"
+                 dd:DragDrop.IsDropTarget="True"
+                 dd:DragDrop.UseDefaultDragAdorner="True"
+                 dd:DragDrop.DropHandler="{Binding}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                    <Setter Property="IsSelected" Value="{Binding IsSelected}"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <l:EditableTextControl Text="{Binding Name}" IsEditing="{Binding IsEditing}" Margin="2,1"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <ListBox Grid.Column="2"
+                 ItemsSource="{Binding SelectedCategoryViewModel.PatternViewModels}"
+                 SelectionMode="Extended"
+                 SelectionChanged="SelectionChanged"
+                 HorizontalContentAlignment="Stretch"
+                 PreviewKeyUp="PatternsListBoxPreviewKeyUp"
+                 dd:DragDrop.IsDragSource="True"
+                 dd:DragDrop.IsDropTarget="True"
+                 dd:DragDrop.UseDefaultDragAdorner="True"
+                 dd:DragDrop.DropHandler="{Binding}">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="{x:Type ListBoxItem}" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                    <Setter Property="IsSelected" Value="{Binding IsSelected}"/>
+                </Style>
+            </ListBox.ItemContainerStyle>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="2,1">
+                        <l:EditableTextControl Text="{Binding Name}" IsEditing="{Binding EditType, Converter={StaticResource enum_converter}, ConverterParameter={x:Static l:PatterEditType.Name}}"/>
+                        <l:EditableTextControl Text="{Binding Regex}" IsEditing="{Binding EditType, Converter={StaticResource enum_converter}, ConverterParameter={x:Static l:PatterEditType.Regex}}" Margin="5,0,0,0"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

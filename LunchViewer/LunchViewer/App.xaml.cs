@@ -9,7 +9,7 @@ namespace LunchViewer
 {
     /* Live account:
      * EMail:             FirstLast_LunchViewer@outlook.com
-     * Password:          FirstLast
+     * Password:          k4hfjf93JK3
      * Security question: Name of first pet = mypet
      * 
      * Azuremarket:
@@ -25,7 +25,7 @@ namespace LunchViewer
      * For future user (if translation + storage is to be online)
      * AppFog (web server + db)
      * Email:    FirstLast_LunchViewer@outlook.com
-     * Pasworkd: FirstLast123
+     * Pasworkd: k44jkfocosdks
      * Domain:   Lunchviewer.eu01.aws.af.cm
      * 
      * MongoHQ (test db)

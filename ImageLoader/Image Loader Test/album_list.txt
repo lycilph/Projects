@@ -1,0 +1,1651 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="da">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Fotoalbum</title>
+<meta name="Microsoft Theme" content="skov 0011, default">
+<meta name="Microsoft Border" content="tlb">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#000080" alink="#0000FF"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Arial">
+<p align="center"><br>
+<font size="6"><strong><img src="_derived/Foto.htm_cmp_skov010_bnr.gif" width="600" height="60" border="0" alt="Fotoalbum"></strong></font>
+</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table><!--msnavigation--><table dir="ltr" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="top" width="1%"><!--mstheme--><font face="Arial">
+<p>
+<nobr><a href="index.htm" target="">Forside</a></nobr><br> <nobr><a href="OmSkoven.htm" target="">Om&nbsp;Skovbørnehaven</a></nobr><br> <nobr><a href="Virksomhedsplan.htm" target="">Virksomhedsplan</a></nobr><br> <nobr><a href="Bestyrelsen.htm" target="">Bestyrelsen</a></nobr><br> <nobr><a href="Personale.htm" target="">Personale</a></nobr><br> <nobr><a href="Kalender.htm" target="">Kalender</a></nobr><br> <nobr><a href="Vedtagter.htm" target="">Vedtægter</a></nobr><br> <nobr>Fotoalbum</nobr><br> <nobr><a href="Praktisk.htm" target="">Praktisk&nbsp;information</a></nobr><br> <nobr><a href="Referater.htm" target="">Referater</a></nobr><br> <nobr><a href="Links.htm" target="">Nyttige&nbsp;Links</a></nobr><br> <nobr><a href="Kontakt.htm" target="">Kontakt&nbsp;Skovbørnehaven</a></nobr><br> <nobr><a href="Vejviser.htm" target="">Vejviser</a></nobr><br> <nobr><a href="Venteliste.htm" target="">Venteliste</a></nobr><br> <nobr><a href="StotteForening.htm" target="">Støtteforening</a></nobr></p>
+
+<!--mstheme--></font></td><td valign="top" width="24"></td><!--msnavigation--><td valign="top"><!--mstheme--><font face="Arial">
+<p>&nbsp;</p>
+<!--mstheme--></font><table border="0" width="598" height="285">
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. november 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20131119Jager/index.html">Besøg af jæger og 
+	naturformidler Bjarne Kleis</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. oktober 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20131031Eventyr/index.html">Eventyr</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. oktober 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20131011Motorik/index.html">Motorikdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. oktober 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20131007GronneLegeplads/index.html">Den 
+	Grønne Legeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. oktober 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20131004Raadyr/index.html">Rådyr pelses</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. oktober 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20131003FarumNyvang/index.html">Farum Nyvang</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. september 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130926Bedsteforaldredag/index.html">
+	Bedsteforældredag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. september 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130920NodeboSkovskole/index.html">Nødebo 
+	Skovskole</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">September 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130912Septemberbilleder/index.html">
+	Septemberbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. september 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130905Salvadparken/index.html">Salvadparken</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. august 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130822MaleSten/index.html">Male på sten</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. august 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130821Olympiade/index.html">Olympiade</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. juni 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130705Dyrehaven/index.html">I Dyrehaven og 
+	se den genudsatte Eghjort</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. juli 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130701Cykeldag/index.html">Cykeltur</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. - 28. juni 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130624Indianer/index.html">Indianeruge</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. juni 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130613Sommerfest/index.html">Sommerfest i 
+	skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. juni 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130611Marbak/index.html">Ved Marbæk strand</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">30. maj 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130530Guldbjergmose/index.html">Fisketur 
+	ved Guldbjergmose</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. maj 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130523Olympiade/index.html">Olympiade i 
+	Nødebo</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. maj 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130516Fuglesafari/index.html">Fuglesafari 
+	sammen med Ravneholm Skovbørnehave</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. maj 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130505Arbejdsdag/index.html">Arbejdsdag. 
+	Rumle gøres ren</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. maj 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130503ForaarSkoven/index.html">Forår i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. april 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130417Tisvilde/index.html">I Tisvilde med 
+	Brumbassen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. april 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130404Skovbilleder/index.html">I Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130326Nationalmuseet/index.html">
+	Børnemuseet på Nationalmuseet</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130321Afslutning/index.html">Afslutning for 
+	de børn der skal begynde i skole</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130314Japan/index.html">Besøg fra Japan</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130312legIBlade/index.html">Leg i blade</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8.-9. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130308ZoologiskMuseum/index.html">På 
+	Zoologisk Museum og overnatning på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130304Pederstrup/index.html">Lammefødsler 
+	på Pederstrup</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. marts 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130303Fodselsdag/index.html">
+	Skovbørnehavens 2 fødselsdag i privat regi (har nu eksisteret i 43 år)</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. februar 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130208Fastelavn/index.html">Fastelavn på 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. januar 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130118Snebilleder/index.html">
+	Vinterbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. januar 2013</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20130114Skodsborg/index.html">Besøger 
+	skovbørnehave i Skodsborg</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. december 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121220LokesHoj/index.html">På Lokes Høj i 
+	Tokkekøb Hegn sammen med skovbørnehaven Krudthuset</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. december 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121216JuletraISkov/index.html">Juletræsfest 
+	i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. december 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121213Lucia/index.html">Lucia på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. december 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121206Kaelker/index.html">Kælker på Højen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. december 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121205Danseskole/VIDEO0052.mp4">Fru Lotte's 
+	danseskole</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">30. november 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121130Juledekorationer/index.html">
+	Juledekorationer med kalenderlys</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. november 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121123Rumlevask/index.html">Bus og børn 
+	vaskes</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. november 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121121Skoven/index.html">Skovbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. november 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121120Fasan/index.html">Fasaner føres i 
+	stand</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. november 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121109RiddereOgPrinsesser/index.html">
+	Prinsesser og riddere ved Jægerspris Slot</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. november 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121107Sandbjerghallen/index.html">I 
+	Sandbjeghallen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. oktober 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121025Efteraarsbilleder/index.html">Efterår 
+	i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. oktober 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121017EghjortenHillerod/index.html">
+	Eghjorten Hillerød</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. oktober 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20121011DenGronneLegeplads/index.html">Den 
+	Grønne Legeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. september 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120918Dyrehaven/index.html">I Dyrehaven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">10. september 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120910Cykeltur/index.html">Cykeltur</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. september 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120904Liseleje/index.html">Ved Liseleje 
+	sammen med Brumbassen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">30. august 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120830Rytmik/index.html">Rytmik</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. august 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120820IdaFodselsdag/index.html">Idas 
+	fødselsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. juni 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120625Falck/index.html">Hos Falck i 
+	Stenløse</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. juni 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120621Indianer/index.html">Indianere i 
+	skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. juni 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120607Olympiade/index.html">Olympiade på 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. maj 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120531Gadevanggaard/index.html">
+	Gadevanggaard</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. maj 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120523Eremitagen/index.html">Eremitagen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. maj 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120522Salvadparken">Salvadparken</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. maj 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120516DenGronneLegeplads/index.html">Den 
+	Grønne Legeplads i Virum</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. maj 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120503MarbakStrand/index.html">Marbæk 
+	Strand</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. april 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120424Fiskedag/index.html">Fisker i Nældesø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. april 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120419Olympiade/index.html">Olympiade</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. april 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120414SkovdageApril/index.html">Skovdage i 
+	april</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120329EghjortenHillerod/index.html">På 
+	legeplads Eghjorten i Hillerød</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">28. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120328LegepladsOlstykke/index.html">På 
+	legeplads i Ølstykke</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120326Motionsdag/index.html">Motionsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. og 24. marts</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120323OvernatningMaglevad/index.html">På 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120322Cykeltur/index.html">Cykeltur i 
+	skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120321CykelBalance/index.html">Balancegang 
+	og cykeltur</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120319Atletik/index.html">På atletikstadion 
+	med Brumbassen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">15. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120315GaaturTilBureso/index.html">Vandretur 
+	til Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120314Skovdag/index.html">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120312Pederstrup/index.html">Besøger 
+	Pederstrup, hvor vi oplever et Påskelam komme til verden</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120309BornenesBilleder/index.html">Børnene 
+	tager billeder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120304SkovenEtAar/index.html">
+	Skovbørnehavens 1 års fødselsdag i privat regi. (har nu eksisteret i 42 år)</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. og 2. marts 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120302ShelterByggeri/index.html">Shelter 
+	dækkes med gran</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120224EmiliesFodselsdag/index.html">Emilies 
+	fødselsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120220Fastelavn/index.html">Fastelavn på 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120216Vinterdag/index.html">Vinterdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">10. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120210Diskofest/index.html">Diskofest på 
+	Karmsten</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120209MadPaaBaalOgLegPaaIs/index.html">Leg 
+	på is og mad på bål</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120208HyggeMedBrumbassen/index.html">Hygge 
+	med Brumbassen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120207KalkeOlstykke/index.html">Kælketur i 
+	Ølstykke</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120206Kalke/index.html">Kælker</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. februar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120201SandbjergHallen/index.html">
+	Sandbjerghallen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120131FarumNyvang/index.html">Farum Nyvang</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">30. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120130Snehygge/index.html">Leg i sneen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120127Skovdag/index.html">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120125Snobrod/index.html">Snobrødshygge i 
+	skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120123ShelterByggeri/index.html">
+	Shelterbyggeri</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120113Anemone/index.html">Anemone</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. og 6. januar 2012</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20120105UrtepotteMale/index.html">Dekorering 
+	af urtepotter</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. december 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111222Vikingeboplads/index.html">Ved 
+	Roskilde fjord</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. december 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111221Jager/index.html">Jæger på besøg</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. december 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111218Juletra/index.html">Juletræ i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. december 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111213Lucia/index.html">Lucia</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. december 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111202Juleforberedelser/index.html">
+	Juleforberedelser</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. november 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111108EgedalBrandvasen/index.html">Besøg på 
+	Egedal Brandvæsen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111031IndvielseBaalhytte/index.html">
+	Indvielse af bålhytten ved Røde Rose</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111026Dyrehaven/index.html">Bustræf i 
+	Dyrehaven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111025Legetojsdag/index.html">Legetøjsdag i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111018EgedalBrand/index.html">Besøg på 
+	Egedal Brandvæsen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111014FrSund/index.html">Ved vandet ved 
+	Frederikssund</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111013DenGronneLegeplads/index.html">Den 
+	Grønne Legeplads i Virum. Gave til Thomas (bestået køreprøven)</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111009InfoDag/index.html">Informations- og 
+	hyggedag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. oktober 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20111004Bureso/index.html">Lækre sild ved 
+	Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110929Bureso/index.html">Ved Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110927Pederstrup/index.html">Pederstrup</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110923KoreaTV/index.html">Sydkoreansk TV på 
+	besøg</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110920BedsteforaldreDag/index.html">
+	Bedsteforældredag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. - 16. september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110912-16VandTema/index.html">Temauge med 
+	vand</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110907FarumNyvang/index.html">Farum Nyvang</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">August / september 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110901Sensommer/index.html">
+	Sensommerbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. august 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110823LegepladsIOlstykke/index.html">På 
+	legeplads i Ølstykke</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. august 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110817JapanBesog/index.html">Besøg fra 
+	Japan</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. august 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110816TisvildeStrand/index.html">Tisvilde 
+	strand</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110812Salvadparken/index.html">Ved 
+	Salvadparken. Faldskærm og drage</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. juli 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110708SalvadParken/index.html">Ved 
+	Salvadparken i regnvejr</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. juli 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110701Salvadparken/index.html">Ved 
+	Salvadparken</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">30. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110630Bureso/index.html">Ved Buresø og Tina 
+	på besøg</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110629SkovMedTov/index.html">Tovgang i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110629NyChauffor/index.html">Jeanette med 
+	ny kasket</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110623SanktHans/index.html">Sankt Hans i 
+	Skoven sammen med Røde Rose 2</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">Uge 24 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110616Indianere/index.html">Indianere i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110609Sommerfest/index.html">Sommerfest på 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. juni 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110606EmilKruse3aar/index.html">Til 3 års 
+	fødselsdag hos Emil Kruse</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110531Gadevanggaard/index.html">På 
+	Gadevanggaard</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110518Legeplads/index.html">På legeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110517MarbakOgMette/index.html">Ved Marbæk 
+	strand og hos Mette</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110513FarumNyvang/index.html">Farum Nyvang</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110512EnKmLob/index.html">1 km løb</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">Uge 19 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110510Motionsuge/index.html">Motionsuge</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110506Karmsten/index.html">På Karmsten</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110505Olympiade/index.html">Olympiade i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. maj 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110502Skovbilleder/index.html">På skrænten 
+	ved Heksemutters træ</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">28. april 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110428Cykeltur/index.html">Cykeltur til 
+	Buresø og Bastrup</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. april 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110427Mudderkugler/index.html">Mudderkugler</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. april 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/20110419Bureso/index.html">Ved Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Kristian1mFest20110318/index.html">Kristian 
+	1m</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/DramaISkoven20110317/index.html">Drama i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/UggeloseSkov20110311/index.html">I Uggeløse 
+	Skov</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Fastelavn20110307/index.html">Fastelavn på 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Skovdag20110304/index.html">Skovdag med 
+	forberedelse til fastelavn</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">'<a target="_blank" href="Album/TarzanSkranten20110303/index.html">Tarzan 
+	skrænten' ved Jægerspris</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Skovdag20110302/index.html">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. marts 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/BusNavn20110301/index.html">Bussen navngives 
+	Rumle</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. februar 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Reception20110227/index.html">Reception</a>
+	<a target="_blank" href="Album/20110227Reception/index.html">Flere billeder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. februar 2011</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Gymnastik20110202/index.html">Gymnastik i 
+	Sandbjerghallen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. december 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/NissenRisengrod20101224/index.html">Risengrød 
+	til nissen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. december 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Juletra20101219/index.html">Juletræ i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. og 15. december 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Vinterbilleder20101215/index.html">
+	Vinterbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. december 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Lucia20101213/index.html">Lucia</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. december 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial">
+	<a target="_blank" href="Album/VinterBilleder20101206/index.html">
+	<font size="2">Vinterbilleder</font></a><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">November 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/ForsteSneNov2010/index.html">Den første sne</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. og 3. november 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Efteraar20101105/index.html">Efterårsbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">Uge 43, 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Sanserne20101029/index.html">Sanserne</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">15. oktober 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/DenGronneLegeplads20101015/index.html">Den 
+	Grønne Legeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. oktober 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/GaaturTilBureso20101012/index.html">Gåtur fra 
+	Hesselsvinget til Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. oktober 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Baalmad20100110/index.html">Æbler med Nutella 
+	- bålmad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. september 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/HosTina20100929/index.html">Hos Tina</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. september 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Arbejdsdag20100926/index.html">Arbejdsdag på 
+	Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. september 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Yndlingssteder20100923/index.html">De store 
+	børns yndlingssteder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. september 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Bedsteforaeldredag20100917/index.html">
+	Bedsteforældredag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">September 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Skovbilleder2010September/index.html">Diverse 
+	skovbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. september 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/BalanceOgBaal20100903/index.html">Bålmad og 
+	balancegang</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">August 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Skovbilleder2010August/index.html">Diverse 
+	skovbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. august 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/BaalISkoven20100818/index.html">Bage brød på 
+	bål</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. juli 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Bredegrund20100714/index.html">Bredegrund 
+	Byggelegeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. juni - 2 juli 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Skovbilleder20100629-0702/index.html">
+	Skovbilleder. Fisker ved Nældesø, besøger Lystryp Skov og Politi på besøg</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21, 24, 25 juni 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Indianer20100621_24_25/index.html">Indianere 
+	i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. juni 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Olympiade20100618/index.html">Olympiade i 
+	Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. juni 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Gadevanggaard20100602/index.html">
+	Gadevanggaard</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18-20 maj 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Foraar20100518/index.html">Forårsbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. maj 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Skoven40aar20100502/index.html">
+	Skovbørnehavens 40 års fødselsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">28. april 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/LegepladsVirum20100428/index.html">Den Grønne 
+	Legeplads i Virum</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. april 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Cykeltur20100427/index.html">Cykeltur til 
+	Buresø og Bastrup sø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. april 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Legetojsdag20100422/index.html">Legetøjsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. april 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/PlantTra20100421/index.html">Plant et træ</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. april 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/FavoritStederISkoven20100409/index.html">
+	Favoritlegesteder i Skoven</a>.</font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. marts 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/JapanBesog20100325/index.html">Japansk besøg</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. marts 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/TeaterTur20100309/index.html">Tur til 
+	Anemoneteatret</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. marts 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Rytmik20100304/index.html">Rytmik og musik</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. februar 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Maledag20100223/index.html">Maledag v. Stig 
+	Bräuner</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. februar 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Fastelavn20100212/index.html">Fastelavn</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. februar 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/Vinterbilleder20100205/index.html">
+	Vinterbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. januar 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">
+	<a target="_blank" href="Album/PaaIsen20100121/index.html">På isen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6, og 7. januar 2010</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Vinterbilleder20100107/index.html" target="_blank">Vinterbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. december 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Juletra20091213/index.html" target="_blank">Juletræ
+      i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. december 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Lucia20091211/index.html" target="_blank">Lucia
+      i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. november 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Musikdag20091111/index.html" target="_blank">Musikdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">Oktober 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Oktober2009/index.html" target="_blank">Efterårsbilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. oktober 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/BagForEnSag20091009/index.html" target="_blank">Bag
+      for en sag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. oktober 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/39aar20091004/index.html" target="_blank">Skovbørnehaven
+      39 år</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. september 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="http://www.stenlanderne.dk/Albums/Arbejdsdag20090926/index.html" target="_blank">Arbejdsdag
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. september 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Lovejagt20090923/index.html" target="_blank">Løvejagten</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. september 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Legetojsdag20090909/index.html" target="_blank">Legetøjsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. september 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovbilleder20090902/index.html" target="_blank">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. august 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/LystrupNaturLegeplads20090820/index.html" target="_blank">Lystrup
+      Naturlegeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">August 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/August2009/index.html" target="_blank">Billeder
+      fra august 2009</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. juli 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/DenGronneLegeplads20090709/index.html" target="_blank">Den
+      Grønne Legeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. juni 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/MarbakStrand20090624/index.html" target="_blank">Ved
+      Marbæk Strand</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. Juni 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Bureso20090622/index.html" target="_blank">Ved
+      Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. juni 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/OlympiadeOgSommerfest20090619/index.html" target="_blank">Olympiade
+      og sommerfest</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. juni 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Bedsteforaldredag20090616/index.html" target="_blank">Bedsteforældredag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. juni 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Gadevanggaard20090611/index.html" target="_blank">Gadevanggård</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. juni 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Sproglege20090602/index.html" target="_blank">Sproglege</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">28. maj 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Zoo20090528/index.html" target="_blank">Zoo</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. maj 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Smagssansen20090527/index.html" target="_blank">Smagssansen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. maj 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Baalmad20090526/index.html" target="_blank">Bålmad
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. - 14. maj 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Motorik20090511/index.html" target="_blank">Bevægelseslege
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">3. maj 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/HytteDag20090503/index.html" target="_blank">Hytte-hygge-dag</a>.&nbsp;</font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. april 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Affald20090422/index.html" target="_blank">Affaldsindsamling</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. april 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/CyklerTilSkoven20090422/index.html" target="_blank">Cykler
+      til Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. april 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/LystrupNaturLegeplads20090421/index.html" target="_blank">Lystrup
+      Naturlegeplads</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. marts 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/NaturcenterVestAmager20090324/index.html" target="_blank">Vestamager
+      Naturcenter</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. marts 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20090319/index.html" target="_blank">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">18. marts 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Forstehjalp20090318/index.html" target="_blank">Førstehjælp</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. februar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Fastelavn2009/index.html" target="_blank">Fastelavn</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">Februar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Sne20090220/index.html" target="_blank">Snebilleder</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. februar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/ZooMuseum20090209/index.html" target="_blank">Zoologisk
+      Museum</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. februar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Musik20090204/index.html" target="_blank">Musik
+      og rytmik på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">Januar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Januar2009/index.html" target="_blank">Billeder
+      fra januar 2009</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. januar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/PaaIs20090108/index.html" target="_blank">På
+      is</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. januar 2009</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Kaelkedag20090107/index.html" target="_blank">Kælkedag
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. december 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Juletrasfest2008/index.html" target="_blank">Juletræsfest
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. december 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/KalenderlysOgLucia2008/index.html" target="_blank">Kalenderlys
+      og Lucia</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">21. november 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Lanterner20081121/index.html" target="_blank">Lanternefest
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. og 14. nov. 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Malekursus20081113/index.html" target="_blank">Malekursus
+      v. Britta Johanson</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. november 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Efteraarsdag20081104/index.html" target="_blank">En
+      efterårsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. oktober 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/LystrupNaturlegeplads20081031/index.html" target="_blank">Lystrup
+      Naturlegeplads.</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. oktober 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skoven38aar20081004/index.html" target="_blank">Skovbørnehaven
+      fejrer 38 års fødselsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. september 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/BagForEnSag20080926/index.html" target="_blank">Bag
+      for en sag.</a> (Støtte til Børns Vilkårs børnetelefon)</font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. september 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Bedsteforaldredag20080924/index.html" target="_blank">Bedsteforældre
+      med i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. september 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/EventyrOgKlatring20080909/index.html" target="_blank">Eventyrdag
+      i skoven og klatring på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. september 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Eventyr20080908/index.html" target="_blank">Eventyrdag
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. september 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Hostfest20080905/index.html" target="_blank">Høstfest
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. september 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/SkovdageAugSep2008/index.html" target="_blank">Skovdage
+      i august og september 2008</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. juni 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Olympiade20080620/index.html" target="_blank">Olympiade
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. juni 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Klokkekilde20080619/index.html" target="_blank">Vandretur
+      fra Ganløse Egede til Klokkekildeskoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">10. juni 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Zoo20080610/index.html" target="_blank">Zoo</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. juni 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Gadevanggaard20080602/index.html" target="_blank">Gadevanggård</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. maj 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20080529/index.html" target="_blank">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. maj 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/NaturcenterVestAmager20080520/index.html" target="_blank">Naturcenter
+      Vestamager</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. maj 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Forstehjalp20080513/index.html" target="_blank">Førstehjælp</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. maj 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/GronneLegeplads20080509/index.html" target="_blank">Den
+      Grønne Legeplads i Virum</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">8. maj 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/BaalISkoven20080508/index.html" target="_blank">Bål
+      i skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">29. april 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/TilHest20080429/index.html" target="_blank">Til
+      hest</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. april 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/RidderDag20080425/index.html" target="_blank">Prinsesser
+      og riddere på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. april 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Fuglekasser20080411/index.html" target="_blank">Fuglekasser</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9.- og 10. april 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/SkovdageApril2008/index.html" target="_blank">Skovdage,
+      den ene med legetøj</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. april 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Cykeldag20080402/index.html" target="_blank">Cykler
+      med i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. marts 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Cykeldag20080331/index.html" target="_blank">Cykler
+      med i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. marts 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20080325/index.html" target="_blank">Skovdag
+      med sne</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. marts 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20080319/index.html" target="_blank">Skovdag
+      med hængekøje</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. februar 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Musikdag20080206/index.html" target="_blank">Musikdag
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. februar 2008</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Fastelavn2008/index.html" target="_blank">Fastelavn
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. december 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/JuletraISkoven20071216/index.html" target="_blank">Juletræ
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. december 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Krybbespil2007/index.html" target="_blank">Krybbespil
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. december 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Lucia20071213/index.html" target="_blank">Lucia
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">11. december 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/NisseJuletra20071211/index.html" target="_blank">Nissen
+      på besøg &amp; Juletræ til skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12-16 november 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2">Malekursus
+      v. Britta Johanson . <a href="Album/Malekursus20071113/index.html" target="_blank">Billedserie
+      1</a>, <a href="Album/Malekursus2007/index.html" target="_blank">Billedserie
+      2</a>, <a href="Album/MalekursusFernisering2007/index.html" target="_blank">Fernisering</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. november 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/LanterneFest20071109/index.html" target="_blank">Lanternefest
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">2. november 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/SkovdageNovember2007/index.html" target="_blank">Skovbilleder
+      fra november</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. oktober 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/SkovdageOktober2007/index.html" target="_blank">Skovbilleder
+      fra oktober</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. oktober 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Efteraarsferie2007/index.html" target="_blank">Udflugter
+      i Efterårsferien 2007</a> (Danmarks Akvarium, Trafiklegepladsen i
+      Fælledparken og Zoologisk Museum)</font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. oktober 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Klatring20071004/index.html" target="_blank">Stenlænderne
+      arrangerer klatring på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">4. oktober 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Bureso20071004/index.html" target="_blank">Ved
+      Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">30. september 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/37aar/index.html" target="_blank">Skovbørnehavens
+      37 års fødselsdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. september 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/LystrupSkov20070912/index.html" target="_blank">I
+      Lystrup Skov</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">31. august 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Olympiade2007/index.html" target="_blank">Olympiade
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. august 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/HosJacob20070822/index.html" target="_blank">Besøg
+      hos Jacob</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">22. juni 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Indianer20070622/index.html" target="_blank">Indianderdag
+      og sommerfest på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">15.-16. juni 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/FarumNyvang20070615/index.html" target="_blank">Overnatningstur
+      i shelteren Yggdrasil i Farum Nyvang</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. juni 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Muller20070612/index.html" target="_blank">Besøg
+      hos Casper</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">7. juni 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Gadevanggaard2070607/index.html" target="_blank">Besøger
+      bondegården Gadevanggård</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">1. juni 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20070601/index.html" target="_blank">Skovdag
+      med besøg af mini-SFO fra Lærkeskolen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. maj 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Zoo20070523/index.html" target="_blank">Zoo-tur</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. maj 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/SkovdageMaj2007/index.html" target="_blank">Skovdage
+      i Maj&nbsp;</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. april 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20070426/index.html" target="_blank">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">20. april 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/BuresoAffald20070420/index.html" target="_blank">Ved
+      Buresø. Vi samler affald (Danmarks Naturfredningsforenings affaldsuge)</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. april 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/LystrupSkov20070417/index.html" target="_blank">Naturlegepladsen
+      i Lystrup Skov</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. april 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/FodselsdagLeneReception/index.html" target="_blank">Lenes
+      50 år fejres på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. april 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Humlebakken13-13042007/index.html" target="_blank">Besøger
+      Valdemar og Mathias</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">12. april 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Forstehjalp20070412/index.html" target="_blank">Førstehjælp</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">28. marts 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/JapanBesog20070328/index.html" target="_blank">Besøg
+      fra Japan</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">27. marts 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Bureso20070327/index.html" target="_blank">Ved
+      Buresø</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">26. marts 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20070326/index.html" target="_blank">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. marts 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Filtning20070323/index.html" target="_blank">Filtning
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19. februar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Fastelavn20070219/index.html" target="_blank">Fastelavn
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">6. februar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Musikdag20070206/index.html" target="_blank">Musikundervisning
+      på Maglevad. Praktikant Lotte spiller violin.</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. januar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20070125/index.html" target="_blank">Kælker
+      ved Rokkestenen</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">24. januar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20070124/index.html" target="_blank">Kælker</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. januar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Video/VTS_01.wmv" target="_blank">Besøg
+      af TV2 News (video)</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">19 januar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Skovdag20070119/index.html" target="_blank">Skovdag</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">9. januar 2007</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/MusikUndervisning/index.html" target="_blank">Musikundervisning
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">17. december 2006</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/JuleTraISkoven2006/index.html" target="_blank">Juletræ
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">13. december 2006</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Luciadag/index.html" target="_blank">Lucia
+      i Skoven</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">14. november 2006</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/MalekursusNov2006/index.html" target="_blank">Malekursus
+      v. Britta Johanson</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">25. august 2006</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Olympiade2006/index.html" target="_blank">Olympiade
+      på Maglevad</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">16. juni 2006</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Pirat2006/index.html" target="_blank">Sørøverdag
+      og sommerfest</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">5. april 2006</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Forstehjalp2006/index.html" target="_blank">Kursus
+      i førstehjælp</a></font><!--mstheme--></font></td>
+  </tr>
+  <tr>
+    <td width="159" height="18"><!--mstheme--><font face="Arial"><font size="2">23. august 2004</font><!--mstheme--></font></td>
+    <td width="429" height="18"><!--mstheme--><font face="Arial"><font size="2"><a href="Album/Hytten/" target="_blank">Hytten</a></font><!--mstheme--></font></td>
+  </tr>
+</table><!--mstheme--><font face="Arial">&nbsp;<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Arial">
+
+<p>&nbsp;</p>
+<p><font size="2">Sidst opdateret:
+20-11-2013 </font>
+</p>
+
+<!--mstheme--></font></td></tr><!--msnavigation--></table></body>
+
+</html>

@@ -5,12 +5,15 @@ using System.Net.Mail;
 using System.Windows;
 using LunchViewer.Interfaces;
 using LunchViewer.Utils;
+using NLog;
 
 namespace LunchViewer.Model
 {
     [Export(typeof(IEmailService))]
     class EmailService : IEmailService
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
         [Import]
         private ISettings Settings { get; set; }
         [Import]
@@ -24,7 +27,7 @@ namespace LunchViewer.Model
             SmtpClient client = new SmtpClient("smtp.live.com", 587)
             {
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential("firstlast_lunchviewer@outlook.com", "FirstLast"),
+                Credentials = new NetworkCredential("firstlast_lunchviewer@outlook.com", "k4hfjf93JK3"),
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 EnableSsl = true
             };
@@ -46,10 +49,12 @@ namespace LunchViewer.Model
             // Try to send email
             try
             {
+                logger.Debug("Sending mail " + message.Body);
                 await client.SendMailAsync(message);
             }
             catch (Exception e)
             {
+                logger.Debug(e.Message);
                 DialogService.ShowOkMessage(e.Message, "Error");
             }
         }

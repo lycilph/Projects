@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da">
+
+<!-- Free version -->
+<!-- saved from url=(0014)about:internet -->
+<!-- saved from url=(0014)about:internet -->
+<head>
+<title>Besøg af jæger Bjarne Kleis d. 19. november 2013</title>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+<meta name="Keywords" content="photo,album,gallery,Besøg af jæger Bjarne Kleis d. 19. november 2013" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function preventDefault(e) {
+	if (document.addEventListener) e.preventDefault();
+	else e.returnValue=false;
+	return false;
+}
+function keypress(e) {
+	if(typeof _jaWidgetFocus != 'undefined' && _jaWidgetFocus) return true;
+	if(!e) var e = window.event;
+	if(e.keyCode) keyCode = e.keyCode; 
+	else if(e.which) keyCode = e.which;
+	switch(keyCode) {
+		case 63235: case 39: window.location="index2.html"; return preventDefault(e); break;
+		case 63273: case 36: window.location="index.html"; return preventDefault(e); break;
+		case 63275: case 35: window.location="index2.html"; return preventDefault(e); break;
+		case 13: window.location="slides/PB190001.html?show_param=3"; return preventDefault(e); break;
+	}
+	return true;
+}
+function setuplisteners() {
+	if (document.addEventListener) document.addEventListener('keydown',keypress,false);
+	else if (document.attachEvent) document.attachEvent('onkeydown',keypress);
+}
+up0 = new Image(31,31); up0.src = "res/up.gif";
+up1 = new Image(31,31); up1.src = "res/up1.gif";
+next0 = new Image(31,31); next0.src = "res/next.gif";
+next1 = new Image(31,31); next1.src = "res/next1.gif";
+prev0 = new Image(31,31); prev0.src = "res/prev.gif";
+prev1 = new Image(31,31); prev1.src = "res/prev1.gif";
+window.onload = function() {
+	setuplisteners();
+};
+/* ]]> */
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="res/styles.css" />
+</head>
+
+<body id="body">
+<div style="margin-left:auto; margin-right:auto; padding-bottom:10px; text-align:center;">
+<table style="height:54px;" align="center" cellspacing="0" cellpadding="0" border="0">
+<tr><td>
+<!-- Header of index pages -->
+<table style="width:642px;" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td style="width:20px;">
+  <img style="border:0;" src="res/hdr_left.gif" alt="" /></td>
+<td style="text-align:left; background:transparent url(res/hdr_mid.gif); background-repeat: repeat-x; white-space:nowrap;" class="title"> Besøg af jæger Bjarne Kleis d. 19. november 2013 </td>
+<td style="width:20px;">
+  <img style="border:0;" src="res/hdr_right.gif" alt="" /></td>
+<td style="width:31px;"> <!-- Previous button -->
+  <img style="border:0;" src="res/prev_disabled.gif" width="31" height="31" alt="Prev" title=" Dette er første side " /></td>
+<td style="width:31px;"> <!-- Next button -->
+  <a href="index2.html"><img style="border:0;" onmouseover="this.src=next1.src" onmouseout="this.src=next0.src" src="res/next.gif" width="31" height="31" title=" Næste side " alt="Next" id="next" /></a></td>
+</tr></table>
+</td></tr></table>
+<br />
+<table style="width:642px;" align="center" class="infotable" cellspacing="0" cellpadding="2">
+<tr><td align="center" class="smalltxt">Side |<span class="current">&nbsp;1&nbsp;</span>|<a href="index2.html"> 2 </a>|</td></tr>
+
+</table><br />
+
+
+
+<!-- Thumbnail images -->
+
+<table align="center" cellspacing="6" cellpadding="0" border="0">
+<tr><td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190001.html">
+<img  class="image" src="thumbs/PB190001.JPG" width="124" height="93" title=" PB190001.JPG " alt="PB190001" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190003.html">
+<img  class="image" src="thumbs/PB190003.JPG" width="93" height="124" title=" PB190003.JPG " alt="PB190003" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190004.html">
+<img  class="image" src="thumbs/PB190004.JPG" width="93" height="124" title=" PB190004.JPG " alt="PB190004" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190006.html">
+<img  class="image" src="thumbs/PB190006.JPG" width="124" height="93" title=" PB190006.JPG " alt="PB190006" /></a></td></tr>
+</table>
+</td></tr>
+<tr><td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190009.html">
+<img  class="image" src="thumbs/PB190009.JPG" width="93" height="124" title=" PB190009.JPG " alt="PB190009" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190010.html">
+<img  class="image" src="thumbs/PB190010.JPG" width="124" height="93" title=" PB190010.JPG " alt="PB190010" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190012.html">
+<img  class="image" src="thumbs/PB190012.JPG" width="124" height="93" title=" PB190012.JPG " alt="PB190012" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190013.html">
+<img  class="image" src="thumbs/PB190013.JPG" width="93" height="124" title=" PB190013.JPG " alt="PB190013" /></a></td></tr>
+</table>
+</td></tr>
+<tr><td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190014.html">
+<img  class="image" src="thumbs/PB190014.JPG" width="124" height="93" title=" PB190014.JPG " alt="PB190014" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190015.html">
+<img  class="image" src="thumbs/PB190015.JPG" width="124" height="93" title=" PB190015.JPG " alt="PB190015" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190017.html">
+<img  class="image" src="thumbs/PB190017.JPG" width="124" height="93" title=" PB190017.JPG " alt="PB190017" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190018.html">
+<img  class="image" src="thumbs/PB190018.JPG" width="124" height="93" title=" PB190018.JPG " alt="PB190018" /></a></td></tr>
+</table>
+</td></tr>
+<tr><td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190019.html">
+<img  class="image" src="thumbs/PB190019.JPG" width="124" height="93" title=" PB190019.JPG " alt="PB190019" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190020.html">
+<img  class="image" src="thumbs/PB190020.JPG" width="124" height="93" title=" PB190020.JPG " alt="PB190020" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190021.html">
+<img  class="image" src="thumbs/PB190021.JPG" width="93" height="124" title=" PB190021.JPG " alt="PB190021" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190022.html">
+<img  class="image" src="thumbs/PB190022.JPG" width="124" height="93" title=" PB190022.JPG " alt="PB190022" /></a></td></tr>
+</table>
+</td></tr>
+<tr><td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190023.html">
+<img  class="image" src="thumbs/PB190023.JPG" width="124" height="93" title=" PB190023.JPG " alt="PB190023" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190024.html">
+<img  class="image" src="thumbs/PB190024.JPG" width="124" height="93" title=" PB190024.JPG " alt="PB190024" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190025.html">
+<img  class="image" src="thumbs/PB190025.JPG" width="124" height="93" title=" PB190025.JPG " alt="PB190025" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190026.html">
+<img  class="image" src="thumbs/PB190026.JPG" width="124" height="93" title=" PB190026.JPG " alt="PB190026" /></a></td></tr>
+</table>
+</td></tr>
+<tr><td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190028.html">
+<img  class="image" src="thumbs/PB190028.JPG" width="124" height="93" title=" PB190028.JPG " alt="PB190028" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190031.html">
+<img  class="image" src="thumbs/PB190031.JPG" width="124" height="93" title=" PB190031.JPG " alt="PB190031" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190036.html">
+<img  class="image" src="thumbs/PB190036.JPG" width="124" height="93" title=" PB190036.JPG " alt="PB190036" /></a></td></tr>
+</table>
+</td>
+<td style="vertical-align:top; text-align:center;"><table width="140" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr><td style="width:140px; height:140px; background:url(res/dia.gif); background-repeat:no-repeat; margin-left:auto; margin-right:auto; text-align:center;">
+<a href="slides/PB190038.html">
+<img  class="image" src="thumbs/PB190038.JPG" width="124" height="93" title=" PB190038.JPG " alt="PB190038" /></a></td></tr>
+</table>
+</td></tr>
+
+</table>
+
+<br />
+<table style="width:642px;" align="center" class="infotable" cellspacing="0" cellpadding="2">
+<tr><td align="center" class="xsmalltxt">Billeder i alt: <strong>31</strong> | Sidst opdateret: <strong>2013-11-20</strong> | Create <a href="http://jalbum.net/" target="_blank">web photo albums</a> with <a href="http://jalbum.net" title="JAlbum - Freeware web fotoalbum generator, v10.10.8" target="_blank">Jalbum</a> | <a href="http://lazaworx.com/" title=" Chameleon v4.6.7 Black skin by LazaWorx " target="_blank">Chameleon</a> skin</td></tr>
+</table>
+
+</div>
+<div id="jalbumwidgetcontainer"></div>
+<script type="text/javascript" charset="utf-8"><!--//--><![CDATA[//><!--
+_jaSkin = "Chameleon";
+_jaStyle = "Black.css";
+_jaVersion = "10.10.8";
+_jaGeneratorType = "desktop";
+_jaLanguage = "en";
+_jaPageType = "index";
+_jaRootPath = ".";
+_jaUserId = "766585";
+var script = document.createElement("script");
+script.type = "text/javascript";
+script.src = "http://jalbum.net/widgetapi/load.js";
+document.getElementById("jalbumwidgetcontainer").appendChild(script);
+//--><!]]></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<metro:MetroWindow x:Class="CaliburnMicroTest.Views.ShellView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:cal="http://www.caliburnproject.org"
+                   xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+                   xmlns:utils="clr-namespace:CaliburnMicroTest.Utils"
+                   ShowWindowCommandsOnTop="False"
+                   Title="ShellView"
+                   Height="500"
+                   Width="500">
+    <metro:MetroWindow.WindowCommands>
+        <metro:WindowCommands>
+            <Button Content="Show Message Box" cal:Message.Attach="ShowMessageBox"/>
+            <Button Content="Settings" cal:Message.Attach="ShowFlyout('Settings')"/>
+        </metro:WindowCommands>
+    </metro:MetroWindow.WindowCommands>
+    <metro:MetroWindow.Flyouts>
+        <metro:FlyoutsControl x:Name="FlyoutViewModels">
+            <metro:FlyoutsControl.ItemContainerStyle>
+                <Style TargetType="{x:Type metro:Flyout}" BasedOn="{StaticResource {x:Type metro:Flyout}}" >
+                    <Setter Property="Header" Value="{Binding Header}" />
+                    <Setter Property="IsOpen" Value="{Binding IsOpen}" />
+                    <Setter Property="Position" Value="{Binding Position}" />
+                </Style>
+            </metro:FlyoutsControl.ItemContainerStyle>
+        </metro:FlyoutsControl>
+    </metro:MetroWindow.Flyouts>
+    
+    <Grid>
+        <metro:MetroAnimatedTabControl x:Name="Items" DisplayMemberPath="Header" Padding="20"/>
+        <Border Background="{DynamicResource GrayBrush5}" Opacity="0.7"
+                Visibility="{Binding IsOverlayVisible, Converter={utils:VisibilityConverter}}"/>
+        <metro:ProgressRing IsActive="{Binding IsBusy}"/>
+    </Grid>
+</metro:MetroWindow>
