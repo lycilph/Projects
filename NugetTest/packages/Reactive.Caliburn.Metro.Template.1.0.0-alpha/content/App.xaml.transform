@@ -1,0 +1,22 @@
+﻿<p:Application x:Class="$rootnamespace$.App"
+             xmlns:p="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform"
+             xmlns:local="clr-namespace:$rootnamespace$"
+             xdt:Transform="Replace">
+    <p:Application.Resources>
+        <p:ResourceDictionary>
+            <p:ResourceDictionary.MergedDictionaries>
+                <p:ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <p:ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/FlatButton.xaml" />
+                <p:ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <p:ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <p:ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <p:ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+                <p:ResourceDictionary>
+                    <local:ApplicationBootstrapper x:Key="bootstrapper"/>
+                </p:ResourceDictionary>
+            </p:ResourceDictionary.MergedDictionaries>
+        </p:ResourceDictionary>
+    </p:Application.Resources>
+</p:Application>
