@@ -1,0 +1,19 @@
+<metro:MetroWindow x:Class="MetroWebbrowser.Shell.Views.ShellView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                   xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+                   xmlns:shared="http://metro.mahapps.com/winfx/xaml/shared"
+                   GlowBrush="{DynamicResource AccentColorBrush}"
+                   WindowStartupLocation="CenterScreen"
+                   WindowTransitionsEnabled="False"
+                   Height="600"
+                   Width="800">
+    <i:Interaction.Behaviors>
+        <shared:BorderlessWindowBehavior AllowsTransparency="False"/>
+    </i:Interaction.Behaviors>
+    
+    <Grid>
+        <WebBrowser x:Name="browser" Source="http://stackoverflow.com/questions/4412915/how-to-deactivate-right-click-on-wpf-webbrowser-control"/>
+    </Grid>
+</metro:MetroWindow>
