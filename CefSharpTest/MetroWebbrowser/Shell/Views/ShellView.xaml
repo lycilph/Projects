@@ -1,19 +1,34 @@
 <metro:MetroWindow x:Class="MetroWebbrowser.Shell.Views.ShellView"
                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                   xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
                    xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
                    xmlns:shared="http://metro.mahapps.com/winfx/xaml/shared"
+                   xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+                   xmlns:view="clr-namespace:MetroWebbrowser.Shell.Views"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                   mc:Ignorable="d" 
                    GlowBrush="{DynamicResource AccentColorBrush}"
                    WindowStartupLocation="CenterScreen"
                    WindowTransitionsEnabled="False"
                    Height="600"
                    Width="800">
+    <metro:MetroWindow.Resources>
+        <view:BooleanToVisibilityConverter x:Key="visibility_converter" Collapse="false"/>
+    </metro:MetroWindow.Resources>
+    
     <i:Interaction.Behaviors>
         <shared:BorderlessWindowBehavior AllowsTransparency="False"/>
+        <shared:GlowWindowBehavior/>
     </i:Interaction.Behaviors>
     
-    <Grid>
-        <WebBrowser x:Name="browser" Source="http://stackoverflow.com/questions/4412915/how-to-deactivate-right-click-on-wpf-webbrowser-control"/>
-    </Grid>
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Button DockPanel.Dock="Left" Content="Home" x:Name="Home"/>
+            <TextBox x:Name="Address"/>
+        </DockPanel>
+        <metro:MetroProgressBar DockPanel.Dock="Top" IsIndeterminate="True" Visibility="{Binding ElementName=web_view, Path=IsLoading, Converter={StaticResource visibility_converter}}"/>
+
+        <view:WebViewContentControl x:Name="web_view" Address="{Binding Address, Mode=TwoWay}"/>
+    </DockPanel>
 </metro:MetroWindow>
